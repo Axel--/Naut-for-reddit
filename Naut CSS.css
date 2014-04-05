@@ -1063,7 +1063,7 @@
 					#siteTable div.thing ul {visibility: hidden;}
 					#siteTable div.thing:hover ul {visibility: visible;}
 					.link .usertext .md ul {visibility: visible !important;}
-					.nsfw-stamp acronym {visibility: visible;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;}
+					.nsfw-stamp acronym {visibility: visible;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
 
 					.entry .buttons a[onclick*="reply"] {
 						color: #5b92fa !important;
@@ -2014,7 +2014,7 @@
 		.res #header-bottom-right {
 			right: 10px;
 			top: 141px !important;
-			padding: 4px 2px 5px 2px !important;
+			padding: 4px 10px 5px 2px !important;
 			border-radius: 0px !important;
 		}
 
@@ -2054,51 +2054,121 @@
 			}
 
 	/*  NIGHTMODE - Work in progress */
-	body:lang(nt), #search input[type=text]:lang(nt) {background-color: #272b30;}
-	.link, .side:lang(nt), .submit-page .infobar:lang(nt), .roundfield:lang(nt), .submit-page .content button:lang(nt),
+	body:lang(nt), #search input[type=text]:lang(nt), .res-nightmode body  		{background-color: #1c1f26;}
+	.comments-page textarea:lang(nt), textarea:lang(nt) 						{background-color: #1c1f26 !important;}
+
+	.link:lang(nt), .side:lang(nt), .submit-page .infobar:lang(nt), .roundfield:lang(nt), .submit-page .content button:lang(nt),
 	content.submit .info-notice:lang(nt), .stylesheet-customize-container .pretty-form:lang(nt), #images:lang(nt), 
 	.search-page .raisedbox:lang(nt), .search-page .searchfacets:lang(nt), .linefield:lang(nt), 
-	.search-page .searchpane:lang(nt), .nextprev:lang(nt), .commentarea:lang(nt), .link.last-clicked:lang(nt) {
-		background-color: #323a45;
-		border-bottom-color: #1C2125 !important;
+	.search-page .searchpane:lang(nt), .nextprev:lang(nt), .commentarea:lang(nt), .link.last-clicked:lang(nt),
+	res-nightmode .side, .res-nightmode .flairselector, .res-nightmode .linefield, .res-nightmode .icon-menu a, 
+	.res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox, 
+	.res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle, 
+	.res-nightmode .side .usertext-body .md ol, .res-nightmode .side .usertext-body .md ol ol, 
+	.res-nightmode .side .usertext-body .md ol ol li, .res-nightmode .side blockquote, .res-nightmode .modactionlisting table *,
+	.res-nightmode .link, .res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1), .res-nightmode .messages-page .sitetable > div:nth-of-type(4n+1),
+	 .res-nightmode .organic-listing .thing, .res-nightmode .sr-interest-bar, .res-nightmode .commentarea,
+	 .res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .trophy-area .content, .res-nightmode .NERPageMarker, 
+	 .res-nightmode .side .titlebox .usertext-body ol, .res-nightmode .side .titlebox .usertext-body ol, 
+	 .res-nightmode .side .titlebox .usertext-body ul  {
+		background-color: #2b303b;
+		border-bottom-color: #17191A !important;
 	}
 
-	#header:lang(nt):after, #header-bottom-right:lang(nt), .titlebox h6:lang(nt){background-color: #323a45;}
-	.domain:lang(nt) {color: #323a45;}
-	.titlebox h6:lang(nt) {box-shadow: 0 2px 4px 0 #1A1B1D; -webkit-box-shadow:0 2px 4px 0 #1A1B1D;}
-	.stickied.link:lang(nt) {border-color: #1C2125 !important}
-
-	.domain a:lang(nt), .entry .buttons li a:lang(nt), .link .tagline:lang(nt), .tabmenu li a:lang(nt), 
-	.thing .title:visited:lang(nt), .thing.visited .title:lang(nt), .comments-page .tagline:lang(nt), .comment .expand:lang(nt),
-	.titlebox h6 a:lang(nt) {color: #898E97}
-	.tabmenu li.selected a:lang(nt), .link .usertext .md:lang(nt), .comments-page .comment .md:lang(nt), .titlebox:lang(nt) {color: #EBEBEB;}
-	.titlebox h6 a:lang(nt):hover {color: #EBEBEB !important;}
-
-	.comments-page .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
-	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	#header:lang(nt):after, #header-bottom-right:lang(nt), .titlebox h6:lang(nt), .res-nightmode #header:after,
+	.res-nightmode .tabmenu li a, .res-nightmode .login-form, .res-nightmode .login-form input[name*="passwd"], 
+	.res-nightmode .login-form-side .submit, .res-nightmode #header-bottom-right {background-color: #2b303b;}
 	
+	.titlebox h6:lang(nt) {box-shadow: 0 2px 4px 0 #1A1B1D; -webkit-box-shadow:0 2px 4px 0 #1A1B1D;}
+	.stickied.link:lang(nt) {border-color: #17191A !important}
+
+	/* gotta have that important important */
+	.comments-page .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #2b303b !important;}
+	
+
+	/* text */
+	.domain a:lang(nt), .entry .buttons li a:lang(nt), .link .tagline:lang(nt), .tabmenu li a:lang(nt), 
+	.thing .title:visited:lang(nt), .thing.visited .title:lang(nt), 
+	.comments-page .tagline:lang(nt), .comment .expand:lang(nt),
+	.titlebox h6 a:lang(nt), .titlebox .bottom:lang(nt),
+	.sidecontentbox .content a:lang(nt), body:lang(nt),	.res-nightmode #siteTable .visited.link .title.loggedin, 
+	.res-nightmode #siteTable .link .title.loggedin:visited, 
+	.res-nightmode #siteTable .link .title:visited, 
+	.res-nightmode #siteTable .link .title.loggedin.click, 
+	.res-nightmode .organic-listing .link .title:visited, .res-nightmode .tabmenu li a, 
+	.res-nightmode .login-form, 
+	.res-nightmode .login-form input[name*="passwd"], 
+	.res-nightmode .login-form-side .submit, .res-nightmode #header-bottom-right, 
+	.res-nightmode .entry .domain a																{color: #6A7A88}
+
+	.tabmenu li.selected a:lang(nt), .link .usertext .md:lang(nt), 
+	.comments-page .comment .md:lang(nt), .titlebox:lang(nt), 
+	.linkinfo:lang(nt), .menuarea .dropdown.lightdrop .selected:lang(nt), .flair:lang(nt),
+	.new-page .titlebox h6 a[href*="/new"]:lang(nt), 
+	.top-page .titlebox h6 a[href*="/top"]:lang(nt), 
+	.hot-page .titlebox h6 a[href*="/hot"]:lang(nt),
+	.res-nightmode > .content > .spacer > .sitetable::before, 
+	.res-nightmode > .content > .sharelink ~ .sitetable::before, 
+	.res-nightmode .side .age, .res-nightmode .trophy-info *, 
+	.res-nightmode .golddvertisement, .res-nightmode .flair-jump .title, 
+	.res-nightmode #siteTable .thing .title.loggedin, 
+	.res-nightmode #siteTable .thing .title, 
+	.res-nightmode .NERdupe p.title::after, .res-nightmode .savedComment, 
+	.res-nightmode .organic-listing .thing .title, .res-nightmode .tabmenu li a:hover
+																									{color: #EBEBEB;}
+	.titlebox h6 a:lang(nt):hover, #header-bottom-right a:lang(nt):hover, textarea:lang(nt), 
+	.tabmenu li a:lang(nt):hover, .res-nightmode #header-bottom-left .tabmenu .selected a			{color: #EBEBEB!important;}
+
+	.domain:lang(nt), .res-nightmode .domain														{color: #2b303b;}
+
 	/* border colors */
 	.link .usertext .md:lang(nt), #search input[type=text]:lang(nt), .linkinfo:lang(nt), .comments-page textarea:lang(nt), 
 	.submit-page textarea:lang(nt), .roundfield input[type=url]:lang(nt), 
 	.roundfield input[type=text]:lang(nt), .login-form-side input[type=text]:lang(nt), 
 	.login-form-side input[type=password]:lang(nt), .linefield textarea:lang(nt), 
 	.linefield input[type="text"]:lang(nt), .flairlist .flaircell input[type="text"]:lang(nt), 
-	.linkinfo .shortlink input:lang(nt), .search-page #search input[type=text]:lang(nt), .flair:lang(nt) {border-color: #414955 !important;}
+	.linkinfo .shortlink input:lang(nt), .search-page #search input[type=text]:lang(nt), .flair:lang(nt),
+	.titlebox .bottom:lang(nt), .footer .col:lang(nt) {border-color: #414955 !important;}
 
-	.comments-page textarea:lang(nt), textarea:lang(nt) {
-		background-color: #272B30 !important;
+
+	/* fucking nightmode  */
+	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
+	.res-nightmode .tabmenu li {margin: 8px 0px 0px 0px;}
+
+	/* I swear to god who thinks pink backgrounds are a good idea */
+	.res-nightmode #header-bottom-left, .res-nightmode ul.tabmenu li.selected a, .res-nightmode .redditname a.active, 
+	.res-nightmode .RESDashboardToggle, .res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .usertext-body, 
+	.res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, 
+	.res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed, 
+	.res-nightmode .RES-keyNav-activeElement .noncollapsed .md, .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
+	.res .res-nightmode .RES-keyNav-activeElement, .res .res-nightmode .commentarea .RES-keyNav-activeElement .md, 
+	.res .res-nightmode .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res-nightmode #sr-header-area, 
+	.res-nightmode #sr-more-link, .res-nightmode #RESConsoleTopBar, 
+	.res-nightmode .moduleHeader, .res-nightmode .allOptionsContainer, .res-nightmode .optionContainer {
+		background-color: transparent !important;
 	}
 
-	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
+	/* spruce it up */
+	.res-nightmode #header {background: #2B303B !important;}
 
+	.res-nightmode .share-button .option, .res-nightmode #subscribe a, 
+	.res-nightmode .share .option, .res-nightmode .tagline a, .res-nightmode .tagline .head .author, 
+	.res-nightmode .footer a, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .subredditbox li a, 
+	.res-nightmode .link .score.dislikes, .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, 
+	.res-nightmode #authorInfoToolTip h3 a, .res-nightmode .RES-keyNav-activeElement .md, .res-nightmode .help-toggle .option, 
+	.res-nightmode .morecomments a, .res-nightmode .reddiquette, .res-nightmode .parent .author, .res-nightmode .parent .subreddit, 
+	.res-nightmode .comment .md p a {color: #5B92FA !important;}
+
+	.res-nightmode .side:after {content: "Hello nightmode user. You're very brave."}
 
 
 
