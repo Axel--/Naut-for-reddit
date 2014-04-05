@@ -173,6 +173,10 @@
 			height: 167px;
 			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 68% 0%;
 			border-bottom: 0px solid;
+			overflow: visible !important;
+
+			
+
 		}
 
 			#header:after {
@@ -404,6 +408,20 @@
 			text-align: left;
 			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		}
+
+			.side:after {
+				display: block;
+				margin: 10px 0px;
+				padding: 10px 0px;
+				color: #5b92fa;
+				content: "This subreddit uses /r/naut!"; /* Hey! Please don't remove or change this. */
+				text-transform: none;
+				font-size: 16px;
+				font-family: arial, sans-serif;
+				position: absolute;
+				width: 300px;
+				text-align: center;
+			}
 					
 			/* SUBMIT LINK OR POST */
 			.morelink {
@@ -490,9 +508,8 @@
 				margin: 0px;
 				margin-bottom: 5px;
 				margin-left: 5px;
-				color: #707070;
-				text-transform: capitalize;
 				font-weight: lighter;
+				color: #707070;
 				font-size: 25px;
 				font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 			}
@@ -872,6 +889,7 @@
 
 							.titlebox h6 a[href*="http://www.reddit.com#top"]:hover {
 								background-position: -35px -49px;
+								border-bottom: 0px solid;
 							}
 
 						.new-page .titlebox h6 a[href*="/new"], .top-page .titlebox h6 a[href*="/top"], .hot-page .titlebox h6 a[href*="/hot"]  {border-bottom: 2px solid #5b92fa; color: #262626;}
@@ -904,11 +922,18 @@
 					border-top-width: 0px;
 				}
 
-				.link .title {
-					font-weight: bold;
-					font-family: Arial, sans-serif;
-					line-height: 100%;
-				}
+					.link.promotedlink.promoted {
+					border-bottom: 0px !important;
+					margin-right: 0px;
+					}
+	
+					.link.promotedlink.promoted .thumbnail {max-height:70px !important;}
+	
+					.link .title {
+						font-weight: bold;
+						font-family: Arial, sans-serif;
+						line-height: 100%;
+					}
 
 					.link .title:hover {color: #5b92fa !important;}
 						/* Link Titles */
@@ -968,7 +993,7 @@
 					/* Selftext expand */
 					.link .usertext .md {
 						padding: 0 5px;
-						background-color: #fff;
+						background-color: transparent;
 						border: 0px solid;
 						border-top: 1px solid #e5e5e5;
 						border-radius: 0px;
@@ -1378,7 +1403,7 @@
 			.linefield {
 				margin-bottom: 5px;
 				padding: 10px 10px 10px 10px;
-				width: 55.5%;
+				width: 45%;
 				color: #707070;
 				margin-bottom: 15px;
 			}
@@ -1641,6 +1666,8 @@
 					font-family: arial, sans-serif;
 				}
 
+					.titlebox form.toggle, .leavemoderator {background-color: transparent;}
+
 					.menuarea .spacer .drop-choices.lightdrop a.choice, .commentarea .menuarea form {
 						padding: 0.5px;
 						font-size: 14px;
@@ -1753,17 +1780,6 @@
 			font-family: arial, sans-serif;
 		}
 
-			.footer:before {
-				display: block;
-				margin: 10px;
-				padding: 10px;
-				color: #5b92fa;
-				content: "Subreddit Layout /r/Naut";
-				text-transform: none;
-				font-size: 16px;
-				font-family: arial, sans-serif;
-			}
-		
 			.footer a {
 				color: #969696;
 				font-weight: normal;
@@ -2037,7 +2053,56 @@
 
 			}
 
+	/*  NIGHTMODE - Work in progress */
+	body:lang(nt), #search input[type=text]:lang(nt) {background-color: #272b30;}
+	.link, .side:lang(nt), .submit-page .infobar:lang(nt), .roundfield:lang(nt), .submit-page .content button:lang(nt),
+	content.submit .info-notice:lang(nt), .stylesheet-customize-container .pretty-form:lang(nt), #images:lang(nt), 
+	.search-page .raisedbox:lang(nt), .search-page .searchfacets:lang(nt), .linefield:lang(nt), 
+	.search-page .searchpane:lang(nt), .nextprev:lang(nt), .commentarea:lang(nt), .link.last-clicked:lang(nt) {
+		background-color: #323a45;
+		border-bottom-color: #1C2125 !important;
+	}
 
+	#header:lang(nt):after, #header-bottom-right:lang(nt), .titlebox h6:lang(nt){background-color: #323a45;}
+	.domain:lang(nt) {color: #323a45;}
+	.titlebox h6:lang(nt) {box-shadow: 0 2px 4px 0 #1A1B1D; -webkit-box-shadow:0 2px 4px 0 #1A1B1D;}
+	.stickied.link:lang(nt) {border-color: #1C2125 !important}
+
+	.domain a:lang(nt), .entry .buttons li a:lang(nt), .link .tagline:lang(nt), .tabmenu li a:lang(nt), 
+	.thing .title:visited:lang(nt), .thing.visited .title:lang(nt), .comments-page .tagline:lang(nt), .comment .expand:lang(nt),
+	.titlebox h6 a:lang(nt) {color: #898E97}
+	.tabmenu li.selected a:lang(nt), .link .usertext .md:lang(nt), .comments-page .comment .md:lang(nt), .titlebox:lang(nt) {color: #EBEBEB;}
+	.titlebox h6 a:lang(nt):hover {color: #EBEBEB !important;}
+
+	.comments-page .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment:lang(nt) {background-color: #323a45 !important;}
+	
+	/* border colors */
+	.link .usertext .md:lang(nt), #search input[type=text]:lang(nt), .linkinfo:lang(nt), .comments-page textarea:lang(nt), 
+	.submit-page textarea:lang(nt), .roundfield input[type=url]:lang(nt), 
+	.roundfield input[type=text]:lang(nt), .login-form-side input[type=text]:lang(nt), 
+	.login-form-side input[type=password]:lang(nt), .linefield textarea:lang(nt), 
+	.linefield input[type="text"]:lang(nt), .flairlist .flaircell input[type="text"]:lang(nt), 
+	.linkinfo .shortlink input:lang(nt), .search-page #search input[type=text]:lang(nt), .flair:lang(nt) {border-color: #414955 !important;}
+
+	.comments-page textarea:lang(nt), textarea:lang(nt) {
+		background-color: #272B30 !important;
+	}
+
+	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
+
+
+
+
+	/* --------------------------- */
 
 		/* CUSTOMIZATION */
 
@@ -2111,98 +2176,3 @@
 			.pagename a:hover {background-position: 0px -60px;} /* Replace the 77 with your height */
 
 	/* --------------------------- */
-
-.titlebox h4 a {
-display: block;
-margin-top: 10px;
-margin-bottom: 15px;
-background-color: #5B92FA;
-background-image: none!important;
-border: none;
-border-top: 2px solid #5B92FA;
-border-bottom: 2px solid #5B92FA;
--webkit-box-shadow: 0 1px 0 #E2E0E0;
-box-shadow: 0 1px 0 #E2E0E0;
-color: #FFF!important;
-text-align: center;
-text-transform: capitalize;
-text-shadow: 0px 1px 0px #5787E1;
-letter-spacing: 0px;
-font-weight: bold;
-font-size: 16px;
-font-family: Arial,sans-serif;
-line-height: 32px;
-cursor: pointer;
-}
-
-.titlebox h4 a:hover {
-background-color: #76A6FF;
-border-top: 2px solid #76A6FF;
-border-bottom: 2px solid #3863B6;
--webkit-box-shadow: none;
-box-shadow: none;
-text-decoration: none;
-}
-
-.titlebox h4 a:active {
-background-color: #3863B6;
-border-top: 2px solid #21407A;
-border-bottom: 2px solid #3863B6;
--webkit-box-shadow: none;
-box-shadow: none;
-}
-
-
-
-
-/* 	A set of default Flairs made by /u/Cryptonaut */
-
-.flair {
-	height: auto;
-	background-color: transparent;
-	border: none;
-	color: #555;
-	font-size: small !important;
-	font-family: Calibri,Arial,sans-serif;
-	cursor: help;
-}
-
-	.flair:before {
-	    display: inline-block;
-	    margin-right: 5px;
-	    width: 16px;
-	    height: 16px;
-	    background: url(%%flairsheet%%) no-repeat scroll -9999px -9999px transparent;
-	    content: "";
-	    vertical-align: top;
-	}
-
-
-		/* The ex + the number is the name you fill in the "css class" field 
-		at the flair page. You can change it to anything you like */
-
-		.flair-ex01:before	{background-position: -000px -000px;}
-		.flair-ex02:before	{background-position: -016px -000px;}
-		.flair-ex03:before	{background-position: -032px -000px;}
-		.flair-ex04:before	{background-position: -048px -000px;}
-		.flair-ex05:before	{background-position: -064px -000px;}
-		.flair-ex06:before	{background-position: -080px -000px;}
-		.flair-ex07:before	{background-position: -096px -000px;}
-		.flair-ex08:before	{background-position: -112px -000px;}
-		.flair-ex09:before	{background-position: -128px -000px;}
-		.flair-ex10:before	{background-position: -144px -000px;}
-		.flair-ex11:before	{background-position: -160px -000px;}
-		.flair-ex12:before	{background-position: -176px -000px;}
-
-		.flair-ex13:before	{background-position: -000px -016px;}
-		.flair-ex14:before	{background-position: -016px -016px;}
-		.flair-ex15:before	{background-position: -032px -016px;}
-		.flair-ex16:before	{background-position: -048px -016px;}
-		.flair-ex17:before	{background-position: -064px -016px;}
-		.flair-ex18:before	{background-position: -080px -016px;}
-		.flair-ex19:before	{background-position: -096px -016px;}
-		.flair-ex20:before	{background-position: -112px -016px;}
-		.flair-ex21:before	{background-position: -128px -016px;}
-		.flair-ex22:before	{background-position: -144px -016px;}
-		.flair-ex23:before	{background-position: -160px -016px;}
-		.flair-ex24:before	{background-position: -176px -016px;}
