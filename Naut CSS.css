@@ -205,7 +205,7 @@
 				display: block;
 				visibility: visible !important;
 				position: absolute;
-				left: 50%;
+				left: 8px;
 				z-index: 99;
 				background-image: url(%%logo%%);
 				background-position: 0px 0px;
@@ -233,7 +233,8 @@
 			color: #999;
 			list-style-type: none;
 			vertical-align: bottom;
-			text-align: center;
+			text-align: left;
+			padding-left: 55px;
 			white-space: nowrap;
 			font-weight: normal;
 			font-size: 15px;
@@ -845,7 +846,7 @@
 					-webkit-box-shadow: 0 2px 4px 0 #d3d3d3;
 					box-shadow: 0 2px 4px 0 #d3d3d3;
 					color: #737373;
-					text-align: center;
+					padding-left: 55px;
 					font-weight: normal;
 					font-size: 22px;
 					line-height: 35px;
@@ -2267,12 +2268,11 @@
 
 	/* CUSTOM LOGO CSS */
 		.pagename a {
-			top: 49px; /* The length the logo is moved from the top of the page */
-			width: 150px; /* TOTAL Image width */
-			margin-left: -75px; /* This HAS to be ->50%< of the TOTAL image width. Don't delete the MINUS! */
-			height: 60px; /* 50% of the TOTAL height of the image. */
+			top: 84px; /* The length the logo is moved from the top of the page */
+			width: 185px; /* TOTAL Image width */
+			height: 43px; /* 50% of the TOTAL height of the image. */
 		}
 	
-			.pagename a:hover {background-position: 0px -60px;} /* Replace the 77 with your height */
+			.pagename a:hover {background-position: 0px -43px;} /* Replace the 77 with your height */
 
 	/* --------------------------- */
