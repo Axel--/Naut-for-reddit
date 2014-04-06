@@ -1,15 +1,9 @@
 	/*
-		Version 1.7
+		Version 2.0
 		Stylesheet by Cryptonaut
-		Last modified: 01 December 2013
+		Last modified: 06 April 2014
 		Details: This is a custom template made by /u/Cryptonaut. 
 		Find out more on /r/Naut.
-
-		Hirarchy
-		--------------------------------------------------------------------------
-		
-		The individual classes are ranked below their inherited class as good as 
-		possible. You are encouraged to use Ctrl + F!
 
 		--------------------------------------------------------------------------
 		[Changelog]
@@ -17,6 +11,7 @@
 		v1.5 - Update 1 - New colours, icons and a whole bunch of fixes.
 		V1.6 - Update 2 - Adjustments to make Naut come back to the reddit UX.
 		V1.7 - Update 3 - A whole lot of UI tweaks and fixes.
+		V2.0 - Update 4 - Naut is now on GitHub, added nightmode and some fixes.
 		-------------------------------------------------------------------------- */
 			
 	body {
@@ -403,6 +398,7 @@
 		.side {
 			float: right;
 			margin: 34px 10px 0px 0px;
+			border-radius: 2px;
 			padding-top: 25px;
 			width: 300px;
 			text-align: left;
@@ -899,6 +895,7 @@
 				margin-right: 320px;
 				margin-bottom: 8px;
 				padding: 8px 10px 6px 10px;
+				border-radius: 2px;
 			}
 
 				.link, .side, .submit-page .infobar, .roundfield, .submit-page .content button,
@@ -932,7 +929,6 @@
 					.link .title {
 						font-weight: bold;
 						font-family: Arial, sans-serif;
-						line-height: 100%;
 					}
 
 					.link .title:hover {color: #5b92fa !important;}
@@ -1330,9 +1326,12 @@
 
 		/* LINKFLAIRS */
 		.linkflairlabel {
-			padding: 0px 6px 1px 6px;
+			padding: 0px 6px 1px 10px;
 			height: auto;
 			border-radius: 0px;
+			border-top-left-radius: 16px;
+			border-bottom-left-radius: 16px;
+			border: 0px solid;
 			color: #333;
 			font-weight: bold;
 			font-style: normal;
@@ -1341,12 +1340,13 @@
 			font-family: Tahoma, Arial, sans-serif;
 			cursor: default;
 			vertical-align: middle;
+			position: relative;
+			top: -2px;
 
 		}
 
 			.linkflair-mod .linkflairlabel {
 				background-color: #5fb04d;
-				border: 1px solid #4c8d3e;
 				color: #fff;
 			}
 
@@ -1359,20 +1359,17 @@
 				}
 
 			.linkflair-image .linkflairlabel {
-				background-color: #dc4437;
-				border: 1px solid #d03e32;
+				background-color: #F86154;
 				color: #fff;
 			}
 
 			.linkflair-gif .linkflairlabel {
 				background-color: #f5b400;
-				border: 1px solid #e5a800;
 				color: #fff;
 			}
 
 			.linkflair-extra .linkflairlabel {
 				background-color: #5b92fa;
-				border: 1px solid #3a7ae6;
 				color: #fff;
 			}
 
@@ -2169,6 +2166,39 @@
 	.res-nightmode .comment .md p a {color: #5B92FA !important;}
 
 	.res-nightmode .side:after {content: "Hello nightmode user. You're very brave."}
+
+	/* Button */
+	button:lang(nt), #search input[type='submit']:lang(nt), .wiki-page .wiki-page-content .wiki_button:lang(nt) {
+		padding: 0px 8px 0px 8px;
+		background-color: transparent;
+		border: 1px solid #414955;
+		border-radius: 0px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		color: #e5e5e5 !important;
+		line-height: 28px;
+	}
+
+		button:lang(nt):hover, #search input[type='submit']:lang(nt):hover, .wiki-page .wiki-page-content .wiki_button:lang(nt):hover {
+			padding-bottom: 0px;
+			border-color: #414955;
+			border-width: 1px;
+			color: #fff !important;
+			line-height: 28px;
+			background-color: #1C1F26;
+		}
+
+			button:lang(nt):active, #search input[type='submit']:lang(nt):active, .wiki-page .wiki-page-content .wiki_button:lang(nt):active {
+				padding-bottom: 0px;
+				background-color: #1C1F26;
+				border-color: #414955;
+				border-width: 1px;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				color: #fff !important;
+				line-height: 28px;
+			}
+
 
 
 
