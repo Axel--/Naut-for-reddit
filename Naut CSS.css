@@ -1,7 +1,7 @@
 	/*
 		Version 2.0
 		Stylesheet by Cryptonaut
-		Last modified: 06 April 2014
+		Last modified: 29 April 2014
 		Details: This is a custom template made by /u/Cryptonaut. 
 		Find out more on /r/Naut.
 
@@ -12,10 +12,10 @@
 		V1.6 - Update 2 - Adjustments to make Naut come back to the reddit UX.
 		V1.7 - Update 3 - A whole lot of UI tweaks and fixes.
 		V2.0 - Update 4 - Naut is now on GitHub, added nightmode and some fixes.
+		V2.1 - Update 5 - Initial CSS3 update - Added transitions and minor responsive tweaks.
 		-------------------------------------------------------------------------- */
 			
 	body {
-		min-width: 940px;
 		background-color: #f1f1f1;
 		color: #3b3b3b;
 		font-family: arial, sans-serif;
@@ -110,7 +110,6 @@
 		/* Top Most header */
 		#sr-header-area {
 			opacity: 0.4;
-			filter: alpha(opacity=40);
 			height: 18px;
 			background-color: #333;
 			border-bottom: 1px solid #333;
@@ -119,7 +118,6 @@
 
 			#sr-header-area:hover {
 				opacity: 90;
-				filter: alpha(opacity=90);
 			}
 
 			#sr-header-area a {
@@ -166,7 +164,7 @@
 		/* Header Image */
 		#header {
 			height: 167px;
-			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 68% 0%;
+			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 50% 0%;
 			border-bottom: 0px solid;
 			overflow: visible !important;
 
@@ -252,13 +250,14 @@
 					padding: 8px 0px 8px 0px;
 					background-color: transparent;
 					border: 0px solid;
+					border-bottom: 2px solid transparent;
 					color: #999;
 					font-weight: normal;
 					font-size: 22px;
 					font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
 				}
 
-					.tabmenu li a:hover {border-bottom: 2px solid #5b92fa;color: #262626;text-decoration: none;}
+					.tabmenu li a:hover {border-bottom-color: #5b92fa;color: #262626;text-decoration: none;}
 			
 				.tabmenu li.selected a {
 					z-index: 100;
@@ -507,6 +506,7 @@
 				margin-left: 5px;
 				font-weight: lighter;
 				color: #707070;
+				text-transform: capitalize;
 				font-size: 25px;
 				font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 			}
@@ -863,7 +863,7 @@
 					}
 
 						.titlebox h6 a:hover {
-							border-bottom: 2px solid #5b92fa !important;
+							border-bottom-color: #5b92fa !important;
 							color: #262626 !important;
 							text-decoration: none;
 						}
@@ -889,7 +889,7 @@
 								border-bottom: 0px solid;
 							}
 
-						.new-page .titlebox h6 a[href*="/new"], .top-page .titlebox h6 a[href*="/top"], .hot-page .titlebox h6 a[href*="/hot"]  {border-bottom: 2px solid #5b92fa; color: #262626;}
+						.new-page .titlebox h6 a[href*="/new"], .top-page .titlebox h6 a[href*="/top"], .hot-page .titlebox h6 a[href*="/hot"]  {border-bottom:2px solid #5b92fa; color: #262626;}
 
 
 			.link {
@@ -1050,17 +1050,18 @@
 						color: #5b92fa;
 					}
 
+					.link .entry li a {opacity: 0;}
+					.link:hover .entry li a {opacity: 100;}
+
+
 					.link .entry li .comments {
-						visibility: visible;
+						opacity: 100 !important;
 						color: #5b92fa;
 						font-weight: bold;
 						font-size: 13px;
 					}
 
-					#siteTable div.thing ul {visibility: hidden;}
-					#siteTable div.thing:hover ul {visibility: visible;}
-					.link .usertext .md ul {visibility: visible !important;}
-					.nsfw-stamp acronym {visibility: visible;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
+					.nsfw-stamp acronym {opacity: 100;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
 
 					.entry .buttons a[onclick*="reply"] {
 						color: #5b92fa !important;
@@ -1684,7 +1685,6 @@
 					color: #3b3b3b;
 					text-decoration: none;
 					opacity: 10;
-					filter: alpha(opacity=100);
 					cursor: pointer;
 				}
 
@@ -1693,7 +1693,6 @@
 						content: " ≡";
 						vertical-align: middle;
 						opacity: 0.5;
-						filter: alpha(opacity=50);
 					}
 				
 			.comments-page .comment .md {
@@ -1827,8 +1826,7 @@
 					height: 100%;
 					background-color: white;
 					opacity: .6;
-					filter: alpha(opacity=60);
-				}
+								}
 
 		/* Search page */
 		.search-page #search {
@@ -2050,6 +2048,56 @@
 				border-radius: 0px !important;
 
 			}
+
+	/* CSS3 on reddit! */
+	@media (max-width: 800px) and (min-width: 601px) {
+	  body {
+	    
+	  }
+
+	  	.link, .commentarea {margin-right: 10px;}
+	  .side {display: none;}
+	}
+
+	@media (max-width: 600px) and (min-width: 100px) {
+	  body {
+	    
+	  }
+
+	  	#header-bottom-right {
+	  		margin-right: 12px;
+	  		width: 25px;
+	  		
+	  		overflow: hidden;
+	  	}
+
+	  			#header-bottom-right:hover {
+	  				width: auto;
+	  				overflow: visible;
+	  			}
+
+	  	.listing-page .tabmenu li a[href*="/ads"] {display: none;}
+
+	  	.link, .commentarea {margin-right: 10px;}
+	  .side {display: none;}
+	}
+
+
+	body {transition: all 0.25s ease;}
+
+		a, .domain a {
+			transition: color 0.25s;
+			transition: border-color 0.25s;
+		}
+
+		#sr-header-area {transition: opacity 0.5s;}
+
+		.tabmenu li a {
+			transition: border-color 0.25s;
+		}
+
+		.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}
+
 
 	/*  NIGHTMODE - Work in progress */
 	body:lang(nt), #search input[type=text]:lang(nt), .res-nightmode body  		{background-color: #1c1f26;}
