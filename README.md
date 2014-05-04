@@ -14,7 +14,7 @@ From here on, 'subreddit' should be changed to your subreddit name.
 Step one: Setting up the sidebar
   1. Go to /r/subreddit/about/edit
   2. Paste the following in the sidebar textarea: 
-  ######[Home](http://www.reddit.com#top) [hot](http://www.reddit.com/r/subreddit/hot) [new](http://www.reddit.com/r/subreddit/new/) [top](http://www.reddit.com/r/subreddit/top/)
+    `######[Home](http://www.reddit.com#top) [hot](http://www.reddit.com/r/subreddit/hot) [new](http://www.reddit.com/r/subreddit/new/) [top](http://www.reddit.com/r/subreddit/top/)`
   3. Scroll down more and under 'look and feel' click 'choose file' and upload the headerbypass.png. 
   4. Hit save!
 
