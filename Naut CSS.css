@@ -771,6 +771,7 @@
 			/* Mod icons */
 			.icon-menu a {background-color: transparent;}
 			.icon-menu .reddit-edit:before{background-image:url(%%spritesheet%%);background-position: 0px  -33px;}
+            .icon-menu .edit-stylesheet:before{background-image:url(%%spritesheet%%);background-position: -112px -49px;}
 			.icon-menu .moderator-mail:before{margin-top:-1px;height:16px;background-image:url(%%spritesheet%%);background-position: -16px -32px;}
 			.icon-menu .reddit-moderators:before{background-image:url(%%spritesheet%%);background-position: -32px -33px;}
 			.icon-menu .reddit-contributors:before{background-image:url(%%spritesheet%%);background-position: -48px -33px;}
