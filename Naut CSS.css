@@ -2343,26 +2343,3 @@
 
 	/* --------------------------- */
 
-.titlebox h4 a {
-display: block;
-margin-right: 10px;
-margin-bottom: 15px;
-background-color: #5B92FA;
-border: none;
-color: #FFF!important;
-text-align: center;
-text-transform: capitalize;
-text-shadow: 0px 1px 0px #5787E1;
-letter-spacing: 0px;
-font-weight: bold;
-font-size: 17px;
-font-family: Arial,sans-serif;
-line-height: 37px;
-height: 36px;
-transition: all 0.2s ease;
-}
-
-	.titlebox h4 a:hover {
-		background-color: #80ACFF;
-		text-decoration: none;
-	}
