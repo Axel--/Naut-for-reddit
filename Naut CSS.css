@@ -82,8 +82,9 @@
 			color: #737373 !important;
 			text-transform: capitalize;
 			font-weight: bold;
-			line-height: 26px;
+			line-height: 27px;
 			cursor: default;
+			transition: all 0.2s ease;
 		}
 
 			button:hover, #search input[type='submit']:hover, .wiki-page .wiki-page-content .wiki_button:hover {
@@ -109,7 +110,7 @@
 		/* Header Area */
 		/* Top Most header */
 		#sr-header-area {
-			opacity: 0.4;
+			opacity: 0.25;
 			height: 18px;
 			background-color: #333;
 			border-bottom: 1px solid #333;
@@ -272,11 +273,6 @@
 						border-color: #719ff2;
 					}
 
-				.res #header .tabmenu {
-					text-align: left;
-					margin-left: 55px;
-				}
-
 		.listing-page .tabmenu li:nth-of-type(3),	/* Rising */
 		.listing-page .tabmenu li:nth-of-type(4),	/* Controversial */
 		.listing-page .tabmenu li a[href*="/promoted"], /* Self-serve advertising */
@@ -325,23 +321,6 @@
 				#mail.nohavemail {background-position: -64px 0px;}
 				#mail.havemail   {background-position:-80px 0px;}
 
-					#mail.havemail:before, #modmail.havemail:before  {
-						display: block;
-						visibility: visible !important;
-						position: fixed;
-						top: 4px;
-						right: 10px;
-						z-index: 2;
-						z-index: 0;
-						width: 25px;
-						height: 25px;
-						background-color: #fff;
-						background-image: url(%%spritesheet%%);
-						background-position: -126px -50px;
-						border-radius: 50%;
-						content: " ";
-					}
-
 			
 			#modmail {
 				top: -2px;
@@ -354,7 +333,6 @@
 
 				#modmail.havemail   {background-position:-112px 0px;}
 				#modmail.nohavemail {background-position:-96px 0px;}
-				#modmail.havemail:before {background-position: -151px -50px; margin-right: 40px;}
 
 
 			/* Preferences & Logout Icons */
@@ -423,41 +401,30 @@
 			.morelink {
 				z-index: 97;
 				width: 270px;
-				height: 28px;
+				height: 32px;
 				background-color: #5B92FA;
 				background-image: none!important;
 				border: none;
-				border-top: 2px solid #5B92FA;
-				border-bottom: 3px solid #5B92FA;
-				border-radius: 1px;
-				-webkit-box-shadow: 0 1px 2px #CECECE;
-				box-shadow: 0 1px 2px #CECECE;
+				border-radius: 2px;
 				margin-left: 15px;
+				transition: all 0.15s ease;
 			}
 
 				.morelink:hover {
 					background-color: #7BA8FF;
-					border-top: 2px solid #7BA8FF;
-					border-bottom: 3px solid #3863B6;
 				}
 
 					.morelink:active {
 						background-color: #3863B6;
-						border-top: 2px solid #21365F;
-						border-bottom: 3px solid #3863B6;
-						-webkit-box-shadow: none;
-						box-shadow: none;
 					}
 
 				.morelink a {
 					color: #fff !important;
-					text-shadow: 0px 1px 0px #5787e1;
 					letter-spacing: 0px;
 					font-weight: bold;
 					font-size: 15px;
 					font-family: arial, sans-serif;
-					cursor: default;
-					line-height: 30px;
+					line-height: 32px;
 				}
 
 					.morelink a:hover {text-decoration: none;}
@@ -517,7 +484,7 @@
 		
 			/* Sub / Unsub button */
 			.fancy-toggle-button .active {
-				padding: 1px 8px;
+				padding: 3px 8px;
 				background-image: none !important;
 				outline: none !important;
 				border: 0px;
@@ -528,33 +495,21 @@
 				font-size: 12px;
 				font-family: arial, sans-serif!important;
 				line-height: 26px;
-				cursor: default;
+				transition: all 0.2s ease;
 			}	
 
 				/* Sub */
 				.fancy-toggle-button .add {
-					background-color: #5b92fa;
-					border-top: 2px solid #5b92fa;
-					border-bottom: 2px solid #5b92fa;
-					-webkit-box-shadow: 0 1px 0 #e2e0e0;
-					box-shadow: 0 1px 0 #e2e0e0;					
+					background-color: #5b92fa;				
 				}
 
 					.fancy-toggle-button .add:hover {
 						background-color: #6599fa;
-						border-top: 2px solid #6599fa;
-						border-bottom: 2px solid #3863b6;
-						-webkit-box-shadow: none;
-						box-shadow: none;
 						text-decoration: none;
 					}
 
 						.fancy-toggle-button .add:active {
 							background-color: #3863b6;
-							border-top: 2px solid #21407a;
-							border-bottom: 2px solid #3863b6;
-							-webkit-box-shadow: none;
-							box-shadow: none;
 						}
 
 				/* Unsub */
@@ -569,6 +524,7 @@
 					line-height: 16px;
 					color: #737373 !important;
 					cursor: pointer;
+					transition: all 0.2s ease;
 				}
 
 					.fancy-toggle-button .remove:hover {
@@ -585,24 +541,6 @@
 							border-top-width: 2px;
 							color: #333;
 						}
-
-
-				/* Sub notice */
-				.fancy-toggle-button .add:after {
-					position: fixed;
-					top: 4px;
-					right: 25px;
-					z-index: 98;
-					background-color: #5B92FA;
-					color: #FFF;
-					content: "Subscribe Now";
-					padding: 0px 16px;
-				}
-					.fancy-toggle-button .add:hover:after {
-						background-color: #7BA8FF;
-						border-bottom: 3px solid #3863B6 ;
-						height: 23px;
-					}
 
 
 			
@@ -964,7 +902,7 @@
 
 				/* Expand post */
 				.expando-button {
-					margin: 0px 5px 0px 0px !important;
+					margin: -1px 5px 0px 0px !important;
 					width: 16px !important;
 					height: 16px !important;
 					background-color: transparent !important;
@@ -1050,8 +988,10 @@
 						color: #5b92fa;
 					}
 
-					.link .entry li a {opacity: 0;}
-					.link:hover .entry li a {opacity: 100;}
+						.redditSingleClick {transition: opacity 0.15s ease-in-out;}
+
+					.link .entry li a, .redditSingleClick {opacity: 0;}
+					.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
 
 
 					.link .entry li .comments {
@@ -1260,7 +1200,7 @@
 
 					.submit-page button:active {
 						background-color: #315fb2;
-						border-bottom-color: #315fb2;
+						border-bottom-color: #315fb2 !important;
 					}
 
 				.submit-page h1 {display: none;}
@@ -1283,8 +1223,56 @@
 				.content.submit .info-notice a:hover {text-decoration: underline;}
 				.thing.spam {border-color: #F3B9B9; background-color: #fff;margin-right: 320px;}			
 				#file {margin: 10px;}		
-				.submit-page .gray, #url-field button, #suggested-reddits {display: none;}
+				.submit-page .gray, #suggested-reddits {display: none;}
 				.submit-page form .spacer+.spacer {margin: 8px 0px;}
+
+
+				/* Suggest Title Button */
+				#url-field button {
+				margin: 10px 0 0 5px;
+				height: 31px;
+				width: 32px;
+				position: relative;
+				top: -42px;
+				left: -1px;
+				border-radius: 0px;
+				background-color: #F4F4F4;
+				border-bottom: 0px solid !important;
+				box-shadow: none;
+				border-left: 1px solid #D8D8D8;
+				font-size: 0px;
+				background-image: url(%%spritesheet%%);
+				background-position: -112px -49px;
+				}
+
+					#url-field #suggest-title {height: 0px;}
+					#url-field button:hover {background-color: #DEDEDE;}
+
+					#url-field button:before {
+						font-size: 12px;
+						content: "Automatically generate a title.";
+						background-color: rgba(0, 0, 0, 0.0);
+						position: absolute;
+						width: 175px;
+						cursor: default;
+						padding: 0.25em 3em;
+						top: -60px;
+						left: -100px;
+						border-radius: 100px;
+						text-transform: none;
+						color: #FFF;
+						transition: all 0.2s ease;
+						line-height: 2em;
+						visibility: hidden;
+						opacity: 0;
+					}
+
+						#url-field button:hover:before {
+							top: -40px;
+							opacity: 100;
+							visibility: visible;
+							background-color: rgba(0, 0, 0, 0.7);
+						}
 
 		/* Flair Selector */
 		.flairselector.drop-choices.active {
@@ -1545,6 +1533,22 @@
 		}
 
 			.pretty-form textarea {-webkit-box-shadow: none;box-shadow: none;}
+
+			/* Let me help you read the manual */
+			.pretty-form:after {
+				color: #666;
+				display: block;
+				font-size: 0.8rem;
+				content: "If your reddit alien looks 'glitched', check that you upload the headerbypass.png image on the /about/edit page and NOT below.";
+				margin: 1em 0 0 0;
+				position: absolute;
+				top: 119px;
+				z-index: 99;
+				line-height: 47px;
+				left: 139px;
+				padding: 0 1em;
+				height: 44px;
+			}
 		
 		.stylesheet-customize-container textarea {
 			margin: 0;
@@ -1882,6 +1886,20 @@
 			}
 
 				.res .RES-keyNav-activeElement {outline: 1px dashed #C5C5C5 !important; border-radius: 0px !important;}
+
+				.res #searchexpando {
+					padding: 10px 5px 10px 25px;
+					height: inherit;
+				}
+
+				.res .content .RESBigEditorPop {
+					border-bottom: 0px solid !important;
+					border: 1px solid #d8d8d8 !important;
+					width: 150px !important;
+					text-align: left !important;
+					padding: 2px;
+					margin: 0px 12px 0px 12px;
+				}
 
 		/* Res Live Preview */
 		.RESDialogSmall {
@@ -2324,3 +2342,27 @@
 			.pagename a:hover {background-position: 0px -43px;} /* Replace the 77 with your height */
 
 	/* --------------------------- */
+
+.titlebox h4 a {
+display: block;
+margin-right: 10px;
+margin-bottom: 15px;
+background-color: #5B92FA;
+border: none;
+color: #FFF!important;
+text-align: center;
+text-transform: capitalize;
+text-shadow: 0px 1px 0px #5787E1;
+letter-spacing: 0px;
+font-weight: bold;
+font-size: 17px;
+font-family: Arial,sans-serif;
+line-height: 37px;
+height: 36px;
+transition: all 0.2s ease;
+}
+
+	.titlebox h4 a:hover {
+		background-color: #80ACFF;
+		text-decoration: none;
+	}
