@@ -868,6 +868,7 @@
 					.link .title {
 						font-weight: bold;
 						font-family: Arial, sans-serif;
+						overflow: visible;
 					}
 
 					.link .title:hover {color: #5b92fa !important;}
@@ -1267,6 +1268,12 @@
 						opacity: 0;
 					}
 
+						#url-field .error.NO_URL.field-url {
+							position: absolute;
+							left: 550px;
+							margin-top: -20px;
+						}
+
 						#url-field button:hover:before {
 							top: -40px;
 							opacity: 100;
@@ -1331,7 +1338,7 @@
 			cursor: default;
 			vertical-align: middle;
 			position: relative;
-			top: -2px;
+			top: -1px;
 
 		}
 
