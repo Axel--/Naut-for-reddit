@@ -273,11 +273,10 @@
 						border-color: #719ff2;
 					}
 
-		.listing-page .tabmenu li:nth-of-type(3),	/* Rising */
-		.listing-page .tabmenu li:nth-of-type(4),	/* Controversial */
-		.listing-page .tabmenu li a[href*="/promoted"], /* Self-serve advertising */
-		.listing-page .tabmenu li a[href*="/gilded"]	/* gilded */
-		{display:none;}
+		/* Rising, Controversial, Self-serve advertising, Gilded */
+		.listing-page .tabmenu li:nth-of-type(3), .listing-page .tabmenu li:nth-of-type(4), .listing-page .tabmenu li a[href*="/promoted"], .listing-page .tabmenu li a[href*="/gilded"] {
+			display: none;
+		}
 
 
 		/* User bar */
