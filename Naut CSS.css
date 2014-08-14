@@ -992,7 +992,7 @@
 
 						.redditSingleClick {transition: opacity 0.15s ease-in-out;}
 
-					.link .entry li a, .redditSingleClick {opacity: 0;}
+					/*.link .entry li a, .redditSingleClick {opacity: 0;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 					.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
 
 
@@ -2122,7 +2122,7 @@
 			transition: border-color 0.25s;
 		}
 
-		.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}
+		/*.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 
 
 	/*  NIGHTMODE - Work in progress */
