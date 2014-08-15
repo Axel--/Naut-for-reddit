@@ -1568,7 +1568,6 @@
 			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		}
 		
-			.sheets .btn.right {display: none;}
 			.sheets .col textarea {width: 100%;background-color: #fff;}
 				.sheets .col textarea:hover {border-color: #B1B1B1;}
 					.sheets .col textarea:focus {border-color: #5b92fa;}
