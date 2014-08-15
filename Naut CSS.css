@@ -13,6 +13,7 @@
 		V1.7 - Update 3 - A whole lot of UI tweaks and fixes.
 		V2.0 - Update 4 - Naut is now on GitHub, added nightmode and some fixes.
 		V2.1 - Update 5 - Initial CSS3 update - Added transitions and minor responsive tweaks.
+		V2.2 - Update 6 - Bugfixes and the return of the suggest-title button.
 		-------------------------------------------------------------------------- */
 			
 	body {
@@ -990,7 +991,7 @@
 
 						.redditSingleClick {transition: opacity 0.15s ease-in-out;}
 
-					.link .entry li a, .redditSingleClick {opacity: 0;}
+					/*.link .entry li a, .redditSingleClick {opacity: 0;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 					.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
 
 
@@ -2120,7 +2121,7 @@
 			transition: border-color 0.25s;
 		}
 
-		.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}
+		/*.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 
 
 	/*  NIGHTMODE - Work in progress */
