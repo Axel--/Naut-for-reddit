@@ -1,7 +1,7 @@
 	/*
-		Version 2.0
+		Version 2.3
 		Stylesheet by Cryptonaut
-		Last modified: 29 April 2014
+		Last modified: 22 October 2014
 		Details: This is a custom template made by /u/Cryptonaut. 
 		Find out more on /r/Naut.
 
@@ -13,6 +13,8 @@
 		V1.7 - Update 3 - A whole lot of UI tweaks and fixes.
 		V2.0 - Update 4 - Naut is now on GitHub, added nightmode and some fixes.
 		V2.1 - Update 5 - Initial CSS3 update - Added transitions and minor responsive tweaks.
+		V2.2 - Update 6 - Bugfixes and the return of the suggest-title button.
+		V2.3 - Update 7 - Bugfixes, including the search button.
 		-------------------------------------------------------------------------- */
 			
 	body {
@@ -71,7 +73,7 @@
 			}
 
 		/* General Button*/
-		button, #search input[type='submit'], .wiki-page .wiki-page-content .wiki_button {
+		button, .wiki-page .wiki-page-content .wiki_button {
 			margin: 3px 3px 3px 3px;
 			padding: 0px 8px 1px 8px;
 			background-color: #ffffff;
@@ -87,14 +89,14 @@
 			transition: all 0.2s ease;
 		}
 
-			button:hover, #search input[type='submit']:hover, .wiki-page .wiki-page-content .wiki_button:hover {
+			button:hover, .wiki-page .wiki-page-content .wiki_button:hover {
 				padding-bottom: 0px;
 				border-color: #bababa;
 				border-bottom-width: 2px;
 				color: #333 !important;
 			}
 
-				button:active, #search input[type='submit']:active, .wiki-page .wiki-page-content .wiki_button:active {
+				button:active, .wiki-page .wiki-page-content .wiki_button:active {
 					padding-bottom: 0px;
 					background-color: #e5e5e5;
 					border-color: #a7a7a7;
@@ -110,39 +112,43 @@
 		/* Header Area */
 		/* Top Most header */
 		#sr-header-area {
-			opacity: 0.25;
 			height: 18px;
-			background-color: #333;
-			border-bottom: 1px solid #333;
+			background-color: rgba(0,0,0,0.05);
+			border-bottom: 0px solid;
+			color: rgba(255,255,255,0.5);
 
 		}
 
+			#sr-header-area .sr-list {margin-right: 55px;}
+
+
 			#sr-header-area:hover {
-				opacity: 90;
+				background-color: rgba(0,0,0,0.35);
 			}
 
 			#sr-header-area a {
-				color: #C4C4C4;
+				color: rgba(255,255,255,0.5);
 				font-family: Verdana, Arial, sans-serif;
 			}
 		
-				#sr-header-area a:hover {
-					color: #7CA9FF; 
+				#sr-header-area a:hover { 
 					text-decoration: none;
 				}
+
+				#sr-header-area:hover a {color: rgba(255,255,255,1);}
 		
 			#sr-more-link {
 				position: absolute;
-				background-color: #333;
+				background-color: rgba(0,0,0,0.05);
 				color: #C4C4C4;
 			}
 		
 			.dropdown.srdrop .selected {background-image: none;}
 				.dropdown.srdrop .selected:after {content: "▼";}
-			.sr-bar .separator {color: #333;}
+			.sr-bar .separator, .seperator {color: rgba(255,255,255,0.5);}
 
 			#sr-header-area .width-clip .dropdown.srdrop .selected.title {
-				color: #C4C4C4;
+				color: rgba(255,255,255,0.5);
 				font-size: 9px;
 				font-weight: normal;
 				font-family: Verdana, Arial, sans-serif;
@@ -150,7 +156,7 @@
 			}
 
 				#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover {
-					color: #5b92fa;
+					color: rgba(255,255,255,1);
 				}
 
 			#sr-header-area .drop-choices a.choice {
@@ -168,9 +174,6 @@
 			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 50% 0%;
 			border-bottom: 0px solid;
 			overflow: visible !important;
-
-			
-
 		}
 
 			#header:after {
@@ -273,11 +276,10 @@
 						border-color: #719ff2;
 					}
 
-		.listing-page .tabmenu li:nth-of-type(3),	/* Rising */
-		.listing-page .tabmenu li:nth-of-type(4),	/* Controversial */
-		.listing-page .tabmenu li a[href*="/promoted"], /* Self-serve advertising */
-		.listing-page .tabmenu li a[href*="/gilded"]	/* gilded */
-		{display:none;}
+		/* Rising, Controversial, Self-serve advertising, Gilded */
+		.listing-page .tabmenu li:nth-of-type(3), .listing-page .tabmenu li:nth-of-type(4), .listing-page .tabmenu li a[href*="/promoted"], .listing-page .tabmenu li a[href*="/gilded"] {
+			display: none;
+		}
 
 
 		/* User bar */
@@ -613,11 +615,8 @@
 			
 				#search input[type=text] {
 					margin: 17px 0px 0px 0px;
-					padding: 5px 0px 5px 40px;
+					padding: 5px 0px 5px 17px;
 					width: 258px;
-					background-image: url(%%spritesheet%%);
-					background-position: -129px 0px;
-					background-repeat: no-repeat;
 					border: none;
 					border-top: 1px solid #d5d5d5;
 					border-bottom: 1px solid #d5d5d5;
@@ -629,7 +628,7 @@
 				}
 
 						#search input[type=text]:focus {
-							padding: 5px 0px 5px 40px;
+							padding: 5px 0px 5px 17px;
 							width: 258px;
 							outline: none !important;
 							border: none;
@@ -653,6 +652,33 @@
 
 									#searchexpando label {cursor: pointer;}
 									.search-page form#search label {font-size: 150%;cursor: pointer;}
+
+					#search input[type=submit] {
+						margin-left: 0px;
+						height: 30px;
+						margin-top: 16px;
+						width: 42px;
+						border: 1px solid #D5D5D5;
+						border-right: 0px solid;
+						background: rgba(0,0,0,0);
+						background-image: url(%%spritesheet%%) !important;
+						background-position: -130px -1px !important;
+						transition: all 0.25s ease;
+					}
+
+						#search input[type=submit]:hover {
+							background-color: rgba(0,0,0,0.05) !important;
+							background-image:  url(%%spritesheet%%) !important;
+							background-position: -130px -1px !important;
+							background-position: none;
+						}
+
+						.search-page #search input[type=submit] {
+							margin-top: inherit;
+							border-left: 0px solid;
+							height: 29px;
+							border-right: 1px solid #d5d5d5;
+						}
 			
 					#search_showmore {display: none;}
 			
@@ -989,20 +1015,14 @@
 						color: #5b92fa;
 					}
 
-						.redditSingleClick {transition: opacity 0.15s ease-in-out;}
-
-					.link .entry li a, .redditSingleClick {opacity: 0;}
-					.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
-
 
 					.link .entry li .comments {
-						opacity: 100 !important;
 						color: #5b92fa;
 						font-weight: bold;
 						font-size: 13px;
 					}
 
-					.nsfw-stamp acronym {opacity: 100;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
+					.nsfw-stamp acronym {;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
 
 					.entry .buttons a[onclick*="reply"] {
 						color: #5b92fa !important;
@@ -1568,7 +1588,6 @@
 			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		}
 		
-			.sheets .btn.right {display: none;}
 			.sheets .col textarea {width: 100%;background-color: #fff;}
 				.sheets .col textarea:hover {border-color: #B1B1B1;}
 					.sheets .col textarea:focus {border-color: #5b92fa;}
@@ -2115,13 +2134,13 @@
 			transition: border-color 0.25s;
 		}
 
-		#sr-header-area {transition: opacity 0.5s;}
+		#sr-header-area {transition: background-color 0.5s;}
 
 		.tabmenu li a {
 			transition: border-color 0.25s;
 		}
 
-		.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}
+		/*.link .entry li a, .link:hover .entry li a {transition: opacity 0.15s ease-in-out;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 
 
 	/*  NIGHTMODE - Work in progress */
@@ -2349,3 +2368,5 @@
 			.pagename a:hover {background-position: 0px -43px;} /* Replace the 77 with your height */
 
 	/* --------------------------- */
+
+
