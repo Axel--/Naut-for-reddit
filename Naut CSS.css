@@ -24,7 +24,7 @@
 	}
 
 		/* Custom browser CSS */
-		:focus {outline: 0px;}
+		:focus {outline: 0;}
 			
 		::-webkit-scrollbar {
 			width: 12px;
@@ -75,7 +75,7 @@
 		/* General Button*/
 		button, .wiki-page .wiki-page-content .wiki_button {
 			margin: 3px 3px 3px 3px;
-			padding: 0px 8px 1px 8px;
+			padding: 0 8px 1px 8px;
 			background-color: #ffffff;
 			border: 1px solid #d4d4d4;
 			border-radius: 2px;
@@ -90,14 +90,14 @@
 		}
 
 			button:hover, .wiki-page .wiki-page-content .wiki_button:hover {
-				padding-bottom: 0px;
+				padding-bottom: 0;
 				border-color: #bababa;
 				border-bottom-width: 2px;
 				color: #333 !important;
 			}
 
 				button:active, .wiki-page .wiki-page-content .wiki_button:active {
-					padding-bottom: 0px;
+					padding-bottom: 0;
 					background-color: #e5e5e5;
 					border-color: #a7a7a7;
 					border-top-width: 2px;
@@ -114,7 +114,7 @@
 		#sr-header-area {
 			height: 18px;
 			background-color: rgba(0,0,0,0.05);
-			border-bottom: 0px solid;
+			border-bottom: 0 solid;
 			color: rgba(255,255,255,0.5);
 
 		}
@@ -171,20 +171,20 @@
 		/* Header Image */
 		#header {
 			height: 167px;
-			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 50% 0%;
-			border-bottom: 0px solid;
+			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 50% 0;
+			border-bottom: 0 solid;
 			overflow: visible !important;
 		}
 
 			#header:after {
 				position: absolute;
 				top: 132px;
-				left: 0px;
+				left: 0;
 				z-index: -1;
 				width: 100%;
 				height: 44px;
 				background: #fff;
-				border-bottom: 0px solid;
+				border-bottom: 0 solid;
 				content: " ";
 				text-indent: -999px;
 			}
@@ -192,12 +192,12 @@
 			#header-img {
 				position: absolute;
 				top: 130px;
-				left: 0px;
+				left: 0;
 				z-index: 99;
 				width: 44px;
 				height: 44px;
 				background-image: url(%%spritesheet%%);
-				background-position: 0px -226px;
+				background-position: 0 -226px;
 				background-repeat: no-repeat;
 			} 
 
@@ -210,12 +210,12 @@
 				left: 8px;
 				z-index: 99;
 				background-image: url(%%logo%%);
-				background-position: 0px 0px;
+				background-position: 0 0;
 				background-repeat: no-repeat;
 				text-indent: -9999px;
 			}
 
-				.pagename a:hover {background-position: 0px -77px;}
+				.pagename a:hover {background-position: 0 -77px;}
 
 
 				.pagename {visibility: hidden;}
@@ -225,13 +225,13 @@
 			display: block;
 			position: absolute;
 			top: 132px;
-			margin: 0px;
-			right:0px;
-			left: 0px;
-			padding: 0px;
+			margin: 0;
+			right:0;
+			left: 0;
+			padding: 0;
 			height: 44px;
 			background-color: transparent;
-			border-bottom: 0px solid;
+			border-bottom: 0 solid;
 			color: #999;
 			list-style-type: none;
 			vertical-align: bottom;
@@ -246,14 +246,14 @@
 
 			.tabmenu li {
 				display: inline-block;
-				margin:7px 0px 0px 0px;
+				margin:7px 0 0 0;
 			}
 			
 				.tabmenu li a {
-					margin: 0px 17px 0px 17px;
-					padding: 8px 0px 8px 0px;
+					margin: 0 17px 0 17px;
+					padding: 8px 0 8px 0;
 					background-color: transparent;
-					border: 0px solid;
+					border: 0 solid;
 					border-bottom: 2px solid transparent;
 					color: #999;
 					font-weight: normal;
@@ -266,7 +266,7 @@
 				.tabmenu li.selected a {
 					z-index: 100;
 					background-color: transparent;
-					border: 0px solid;
+					border: 0 solid;
 					border-bottom: 2px solid #5b92fa;
 					color: #262626;
 					font-size: 22px;
@@ -286,7 +286,7 @@
 		#header-bottom-right {
 			position: absolute;
 			top: 141px;
-			right: 0px;
+			right: 0;
 			padding: 8px 15px 7px 15px;
 			width: auto;
 			height: 12px;
@@ -309,7 +309,7 @@
 
 			/* Mail / Modmail icons */
 			#mail {
-				top: 0px;
+				top: 0;
 				overflow: visible;
 				width: 16px;
 				height: 16px;
@@ -317,11 +317,11 @@
 			}
 
 				#mail:hover, #modmail:hover {
-					border-bottom: 0px solid !important;
+					border-bottom: 0 solid !important;
 				}
 			
-				#mail.nohavemail {background-position: -64px 0px;}
-				#mail.havemail   {background-position:-80px 0px;}
+				#mail.nohavemail {background-position: -64px 0;}
+				#mail.havemail   {background-position:-80px 0;}
 
 			
 			#modmail {
@@ -333,8 +333,8 @@
 			}
 			
 
-				#modmail.havemail   {background-position:-112px 0px;}
-				#modmail.nohavemail {background-position:-96px 0px;}
+				#modmail.havemail   {background-position:-112px 0;}
+				#modmail.nohavemail {background-position:-96px 0;}
 
 
 			/* Preferences & Logout Icons */
@@ -345,7 +345,7 @@
 				height: 16px;
 				display: inline-block;
 				text-indent: -9999px;
-				margin: 0px;
+				margin: 0;
 				position: relative;
 				top: -2px;
 			}
@@ -370,14 +370,14 @@
 				.loggedin .logout a:hover, .gearIcon:hover {
 					opacity: 1;
 					text-decoration: none !important;
-					border-bottom: 0px solid !important;
+					border-bottom: 0 solid !important;
 				}
 
 
 		/* Sidebar */
 		.side {
 			float: right;
-			margin: 34px 10px 0px 0px;
+			margin: 34px 10px 0 0;
 			border-radius: 2px;
 			padding-top: 25px;
 			width: 300px;
@@ -387,8 +387,8 @@
 
 			.side:after {
 				display: block;
-				margin: 10px 0px;
-				padding: 10px 0px;
+				margin: 10px 0;
+				padding: 10px 0;
 				color: #5b92fa;
 				content: "This subreddit uses /r/naut!"; /* Hey! Please don't remove or change this. */
 				text-transform: none;
@@ -422,7 +422,7 @@
 
 				.morelink a {
 					color: #fff !important;
-					letter-spacing: 0px;
+					letter-spacing: 0;
 					font-weight: bold;
 					font-size: 15px;
 					font-family: arial, sans-serif;
@@ -440,14 +440,14 @@
 						background-color: #5B92FA;
 						color: #FFF;
 						content: "Submit Content";
-						padding: 0px 12px;
+						padding: 0 12px;
 					}
 			
 				.disabled .morelink,.disabled .morelink:hover {
 					background-image: none;
-					border: 0px solid;
+					border: 0 solid;
 					color: white;
-					font-size: 0px;
+					font-size: 0;
 					background-color: #c8c8c8;
 					margin-top: 3px;
 					text-shadow: none;
@@ -456,12 +456,12 @@
 
 					.disabled .morelink a {
 						color: #fff;
-						letter-spacing: 0px;
+						letter-spacing: 0;
 						font-weight: 600;
 						font-size: 14px;
 						font-family: sans-serif;
 						cursor: default;
-						text-indent: 0px;
+						text-indent: 0;
 						text-shadow: none;
 					}
 
@@ -470,7 +470,7 @@
 			.titlebox h1 a {
 				position: absolute;
 				top: 211px;
-				margin: 0px;
+				margin: 0;
 				margin-bottom: 5px;
 				margin-left: 5px;
 				font-weight: lighter;
@@ -489,7 +489,7 @@
 				padding: 3px 8px;
 				background-image: none !important;
 				outline: none !important;
-				border: 0px;
+				border: 0;
 				border-radius: 2px;
 				color: #fff !important;
 				text-transform: capitalize;
@@ -559,7 +559,7 @@
 
 			/* Subreddit description */
 			.titlebox {
-				padding: 0px 15px 15px 15px;
+				padding: 0 15px 15px 15px;
 				color: #404040;
 		
 			}
@@ -614,8 +614,8 @@
 			}
 			
 				#search input[type=text] {
-					margin: 17px 0px 0px 0px;
-					padding: 5px 0px 5px 17px;
+					margin: 17px 0 0 0;
+					padding: 5px 0 5px 17px;
 					width: 258px;
 					border: none;
 					border-top: 1px solid #d5d5d5;
@@ -628,7 +628,7 @@
 				}
 
 						#search input[type=text]:focus {
-							padding: 5px 0px 5px 17px;
+							padding: 5px 0 5px 17px;
 							width: 258px;
 							outline: none !important;
 							border: none;
@@ -639,13 +639,13 @@
 						}
 
 								#searchexpando {
-								margin: 0px 0px 5px 0px;
-								padding: 5px 5px 0px 15px;
+								margin: 0 0 5px 0;
+								padding: 5px 5px 0 15px;
 								height: 25px;
 								background-color: #f5f5f5;
-								border: 0px solid;
+								border: 0 solid;
 								border-bottom: 1px solid #DFDFDF;
-								border-radius: 0px;
+								border-radius: 0;
 								color: #3b3b3b;
 								font-size: 150%;
 								}
@@ -654,12 +654,12 @@
 									.search-page form#search label {font-size: 150%;cursor: pointer;}
 
 					#search input[type=submit] {
-						margin-left: 0px;
+						margin-left: 0;
 						height: 30px;
 						margin-top: 16px;
 						width: 42px;
 						border: 1px solid #D5D5D5;
-						border-right: 0px solid;
+						border-right: 0 solid;
 						background: rgba(0,0,0,0);
 						background-image: url(%%spritesheet%%) !important;
 						background-position: -130px -1px !important;
@@ -675,7 +675,7 @@
 
 						.search-page #search input[type=submit] {
 							margin-top: inherit;
-							border-left: 0px solid;
+							border-left: 0 solid;
 							height: 29px;
 							border-right: 1px solid #d5d5d5;
 						}
@@ -687,7 +687,7 @@
 
 			/* Sidebar mod box */
 			.sidecontentbox {
-				padding: 0px 5px 0px 15px;
+				padding: 0 5px 0 15px;
 			}
 
 			.sidecontentbox .title {
@@ -708,16 +708,16 @@
 			
 				.sidecontentbox .collapse-button {
 					background: transparent;
-					border: 0px;
-					border-radius: 0px;
+					border: 0;
+					border-radius: 0;
 					color: #262626;
 					font-size: 15px;
 				}
 			
 			.sidecontentbox .content {
-				padding: 3px 0px 5px 0px;
+				padding: 3px 0 5px 0;
 				background-color: transparent;
-				border: 0px solid;
+				border: 0 solid;
 				text-align: left;
 			}
 			
@@ -734,7 +734,7 @@
 
 			/* Mod icons */
 			.icon-menu a {background-color: transparent;}
-			.icon-menu .reddit-edit:before{background-image:url(%%spritesheet%%);background-position: 0px  -33px;}
+			.icon-menu .reddit-edit:before{background-image:url(%%spritesheet%%);background-position: 0 -33px;}
 			.icon-menu .moderator-mail:before{margin-top:-1px;height:16px;background-image:url(%%spritesheet%%);background-position: -16px -32px;}
 			.icon-menu .reddit-moderators:before{background-image:url(%%spritesheet%%);background-position: -32px -33px;}
 			.icon-menu .reddit-contributors:before{background-image:url(%%spritesheet%%);background-position: -48px -33px;}
@@ -763,8 +763,8 @@
 					color: #fff !important;
 					text-align: center;
 					text-transform: capitalize;
-					text-shadow: 0px 1px 0px #5787e1;
-					letter-spacing: 0px;
+					text-shadow: 0 1px 0 #5787e1;
+					letter-spacing: 0;
 					font-weight: bold;
 					font-size: 13px;
 					font-family: Arial, sans-serif;
@@ -801,9 +801,9 @@
 				/* Fixed Scroll Banner */
 				.titlebox h6 {
 					position: fixed;
-					top:0px;
-					right: 0px;
-					left: 0px;
+					top:0;
+					right: 0;
+					left: 0;
 					z-index: 97;
 					height: 35px;
 					background-color: #fff;
@@ -817,9 +817,9 @@
 				}
 
 					.titlebox h6 a {
-						margin: 0px 17px 0px 17px;
-						padding: 2px 0px 2px 0px;
-						border: 0px solid;
+						margin: 0 17px 0 17px;
+						padding: 2px 0 2px 0;
+						border: 0 solid;
 						color: #999;
 						font-weight: normal;
 						font-size: 22px;
@@ -835,22 +835,22 @@
 						/* reddit icon */
 						.titlebox h6 a[href*="http://www.reddit.com#top"] {
 							position: fixed;
-							left:0px;
-							top:0px;
+							left:0;
+							top:0;
 							height: 35px;
 							width: 35px;
 							background-color: #ff0;
 							background-image: url(%%spritesheet%%);
-							background-position: 0px -49px;
-							border-bottom: 0px;
+							background-position: 0 -49px;
+							border-bottom: 0;
 							text-indent: -9999px;
-							padding: 0px;
-							margin: 0px;
+							padding: 0;
+							margin: 0;
 						}
 
 							.titlebox h6 a[href*="http://www.reddit.com#top"]:hover {
 								background-position: -35px -49px;
-								border-bottom: 0px solid;
+								border-bottom: 0 solid;
 							}
 
 						.new-page .titlebox h6 a[href*="/new"], .top-page .titlebox h6 a[href*="/top"], .hot-page .titlebox h6 a[href*="/hot"]  {border-bottom:2px solid #5b92fa; color: #262626;}
@@ -866,7 +866,7 @@
 				.link, .side, .submit-page .infobar, .roundfield, .submit-page .content button,
 				.content.submit .info-notice, .stylesheet-customize-container .pretty-form, #images, .search-page .raisedbox, 
 				.search-page .searchfacets, .linefield, .search-page .searchpane, .nextprev {
-					border: 0px;
+					border: 0;
 					border-bottom: 3px solid #e5e5e5 !important;
 					background-color: #fff;
 				}
@@ -881,12 +881,12 @@
 					margin-right: 320px;
 					border: 1px solid #D0D6DD;
 					border-bottom-width: 3px;
-					border-top-width: 0px;
+					border-top-width: 0;
 				}
 
 					.link.promotedlink.promoted {
-					border-bottom: 0px !important;
-					margin-right: 0px;
+					border-bottom: 0 !important;
+					margin-right: 0;
 					}
 	
 					.link.promotedlink.promoted .thumbnail {max-height:70px !important;}
@@ -910,7 +910,7 @@
 					.link .score.dislikes {color: #6f85bf;}
 			
 				.arrow {
-					margin: 2px 0px 0px 0px;
+					margin: 2px 0 0 0;
 					margin-right: auto;
 					margin-left: auto;
 					width: 16px;
@@ -921,15 +921,15 @@
 					border: none !important;
 				}
 				
-					.arrow.up {background-position: -32px 0px;}
-					.arrow.upmod {background-position: -48px 0px;}
-					.arrow.down {background-position: 0px 0px;}
-					.arrow.downmod {background-position: -16px 0px;}
+					.arrow.up {background-position: -32px 0;}
+					.arrow.upmod {background-position: -48px 0;}
+					.arrow.down {background-position: 0 0;}
+					.arrow.downmod {background-position: -16px 0;}
 
 
 				/* Expand post */
 				.expando-button {
-					margin: -1px 5px 0px 0px !important;
+					margin: -1px 5px 0 0 !important;
 					width: 16px !important;
 					height: 16px !important;
 					background-color: transparent !important;
@@ -956,9 +956,9 @@
 					.link .usertext .md {
 						padding: 0 5px;
 						background-color: transparent;
-						border: 0px solid;
+						border: 0 solid;
 						border-top: 1px solid #e5e5e5;
-						border-radius: 0px;
+						border-radius: 0;
 						color: #404040;
 						font-weight: normal;
 						font-size: 14px;
@@ -1022,7 +1022,7 @@
 						font-size: 13px;
 					}
 
-					.nsfw-stamp acronym {;background-color: #e82e63;border-radius:0px;color:#fff;cursor: help;border-color: #e82e63;}
+					.nsfw-stamp acronym {;background-color: #e82e63;border-radius:0;color:#fff;cursor: help;border-color: #e82e63;}
 
 					.entry .buttons a[onclick*="reply"] {
 						color: #5b92fa !important;
@@ -1040,7 +1040,7 @@
 						.link.last-clicked {
 							overflow: hidden;
 							background-color: #f8f8f8;
-							border: 0px solid #d8d8d8;
+							border: 0 solid #d8d8d8;
 							border-bottom: 3px solid #e5e5e5;
 						}
 			/* Mod Report buttons */
@@ -1133,30 +1133,30 @@
 
 
 			.submit-page .infobar {
-				margin-top: 0px;
+				margin-top: 0;
 				margin-bottom: 8px;
 				padding: 10px 10px 10px 10px;
 				color: #3b3b3b;
 				text-align: center;
 				text-indent: -9999px;
-				font-size: 0px;
+				font-size: 0;
 			}
 
 				.formtabs-content .infobar:before {
 					display: block;
-					text-indent: 0px;
+					text-indent: 0;
 					font-size: 16px;
 				}
 			
-			.submit-page .tabmenu li a {margin:0px;}
-			.submit-page ul.tabmenu.formtab {padding-left: 0px;width: 500px;text-align:center; }
-			.formtabs-content {padding-top: 0px;border-top: 4px solid #5b92fa;}	
+			.submit-page .tabmenu li a {margin:0;}
+			.submit-page ul.tabmenu.formtab {padding-left: 0;width: 500px;text-align:center; }
+			.formtabs-content {padding-top: 0;border-top: 4px solid #5b92fa;}
 		
 				.submit-page .tabmenu.formtab a {
-					padding: 5px 55px 0px 55px;
+					padding: 5px 55px 0 55px;
 					width: 100px;
 					background-color: white;
-					border: 0px solid;
+					border: 0 solid;
 					color: #5b92fa;
 					text-align: center;
 					font-weight:normal;
@@ -1167,7 +1167,7 @@
 					.submit-page .tabmenu li a:hover {color: #333;}
 				
 					.submit-page .tabmenu.formtab .selected a {
-						padding: 5px 60px 0px 60px;
+						padding: 5px 60px 0 60px;
 						background-color: #5b92fa;
 						color: #fff;
 						font-size: 18px;
@@ -1203,13 +1203,13 @@
 
 			.submit-page .content button {
 				margin-bottom: 30px;
-				margin-left: 0px;
+				margin-left: 0;
 				padding: 10px 10px 10px 10px;
 				width: 522px;
 				color: #707070 !important;
 				text-align: center;
 				cursor: pointer;
-				border: 0px;
+				border: 0;
 				border-bottom: 3px solid #E5E5E5;
 			}
 
@@ -1228,11 +1228,11 @@
 					.submit-page .side h1 {display: inherit;}
 
 		.content.submit .info-notice {
-			margin: 0px 0px 4px 0px;
+			margin: 0 0 4px 0;
 			padding: 20px 10px 20px 10px;
 			color: #707070;
 			text-align: center;
-			border: 0px;
+			border: 0;
 			border-bottom: 3px solid #E5E5E5;
 		}
 
@@ -1245,7 +1245,7 @@
 				.thing.spam {border-color: #F3B9B9; background-color: #fff;margin-right: 320px;}			
 				#file {margin: 10px;}		
 				.submit-page .gray, #suggested-reddits {display: none;}
-				.submit-page form .spacer+.spacer {margin: 8px 0px;}
+				.submit-page form .spacer+.spacer {margin: 8px 0;}
 
 
 				/* Suggest Title Button */
@@ -1256,17 +1256,17 @@
 				position: relative;
 				top: -42px;
 				left: -1px;
-				border-radius: 0px;
+				border-radius: 0;
 				background-color: #F4F4F4;
-				border-bottom: 0px solid !important;
+				border-bottom: 0 solid !important;
 				box-shadow: none;
 				border-left: 1px solid #D8D8D8;
-				font-size: 0px;
+				font-size: 0;
 				background-image: url(%%spritesheet%%);
 				background-position: -112px -49px;
 				}
 
-					#url-field #suggest-title {height: 0px;}
+					#url-field #suggest-title {height: 0;}
 					#url-field button:hover {background-color: #DEDEDE;}
 
 					#url-field button:before {
@@ -1325,7 +1325,7 @@
 				.flairoptionpane ul a.title {font-size: 100% !important;}
 
 				.flairselector li {
-					padding: 3px 0px 3px 0px;
+					padding: 3px 0 3px 0;
 					width: 182px;
 				}
 
@@ -1343,12 +1343,12 @@
 
 		/* LINKFLAIRS */
 		.linkflairlabel {
-			padding: 0px 6px 1px 10px;
+			padding: 0 6px 1px 10px;
 			height: auto;
-			border-radius: 0px;
+			border-radius: 0;
 			border-top-left-radius: 16px;
 			border-bottom-left-radius: 16px;
-			border: 0px solid;
+			border: 0 solid;
 			color: #333;
 			font-weight: bold;
 			font-style: normal;
@@ -1399,7 +1399,7 @@
 			font-size: small !important;
 			font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
 			border: 1px solid #DADADA;
-			padding: 0px 3px 2px 3px;
+			padding: 0 3px 2px 3px;
 			cursor: help;
 		}
 
@@ -1407,7 +1407,7 @@
 		/* Flair-page  */
 		div.tabpane-content {
 			padding: 4px 4px 4px 4px;
-			border: 0px solid #e5e5e5;
+			border: 0 solid #e5e5e5;
 			border-bottom-width: 3px;
 			background-color: #fff;
 			width: 1080px;
@@ -1463,14 +1463,14 @@
 					} 
 
 					.tabmenu li#tab-grant.selected, .tabmenu li#tab-templates.selected, 
-					.tabmenu li#tab-link_templates.selected {margin: 7px 0px 4px 0px;}
+					.tabmenu li#tab-link_templates.selected {margin: 7px 0 4px 0;}
 
 					.tabmenu li#tab-grant.selected a, .tabmenu li#tab-grant a:hover,
 					.tabmenu li#tab-templates.selected a, .tabmenu li#tab-templates a:hover, 
 					.tabmenu li#tab-link_templates.selected a, .tabmenu li#tab-link_templates a:hover {color: #333;}
 		/* WIKI Page */
 		.wiki-page .wiki-page-content {
-		 	margin: 5px 320px 10px 0px;
+		 	margin: 5px 320px 10px 0;
 		 	padding: 5px 10px 5px 10px;
 			background-color: #fff;
 		 	border: 1px solid #d8d8d8;
@@ -1503,7 +1503,7 @@
 
 			.wiki-page .pageactions {
 				border: none;
-				border-radius: 0px;
+				border-radius: 0;
 			}
 
 				.wiki-page .pageactions .wikiaction {
@@ -1517,7 +1517,7 @@
 
 					.wiki-page .pageactions .wikiaction-current {
 						background-color: #5b92fa;
-						border-radius: 0px;
+						border-radius: 0;
 						color: #fff;
 					}
 
@@ -1544,7 +1544,7 @@
 			}
 
 				.wiki-page .wiki-page-content .discussionlink a {
-					padding-left: 0px;
+					padding-left: 0;
 				}
 
 				.wiki-page .nextprev {display: none;}
@@ -1579,8 +1579,8 @@
 		
 		.stylesheet-customize-container textarea {
 			margin: 0;
-			padding: 0px;
-			border: 0px;
+			padding: 0;
+			border: 0;
 			border: 1px solid #d8d8d8;
 			border-bottom: 1px solid #d8d8d8;
 			border-radius: 3px;
@@ -1591,7 +1591,7 @@
 			.sheets .col textarea {width: 100%;background-color: #fff;}
 				.sheets .col textarea:hover {border-color: #B1B1B1;}
 					.sheets .col textarea:focus {border-color: #5b92fa;}
-			.sheets {margin-right: 0px;}
+			.sheets {margin-right: 0;}
 		
 		#images {
 			margin-right: 320px;
@@ -1602,7 +1602,7 @@
 		}
 		
 			ul#image-preview-list {
-				margin: 15px 0px 0px 0px;
+				margin: 15px 0 0 0;
 				padding-bottom: 80px;
 				font-size: 14px;
 			}
@@ -1631,8 +1631,8 @@
 
 			.commentarea>.usertext {
 				overflow:visible;
-				margin: 0px 0px 10px 0px;
-				padding: 0px 0px 0px 0px;
+				margin: 0 0 10px 0;
+				padding: 0 0 0 0;
 			}
 			
 			a.author {
@@ -1671,7 +1671,7 @@
 			/* Comments */
 			.commentarea .menuarea {
 				display: inline;
-				margin: 0 0px 10px -320px;
+				margin: 0 0 10px -320px;
 				padding: 0;
 				color: #c0c0c0;
 				font-weight: normal;
@@ -1691,7 +1691,7 @@
 				.menuarea .spacer .drop-choices.lightdrop {
 					padding: 5px;
 					border-color: #DFDDDD;
-					box-shadow: 0px 1px 1px #C9C9C9;
+					box-shadow: 0 1px 1px #C9C9C9;
 					font-family: arial, sans-serif;
 				}
 
@@ -1773,7 +1773,7 @@
 				.comment .child,.comment .showreplies {
 					margin-top: 10px;
 					margin-left: 15px;
-					border-left: 0px solid;
+					border-left: 0 solid;
 				}
 		
 		/* H2 3 4 5 markup */
@@ -1797,7 +1797,7 @@
 		/* Footer */
 		.footer-parent {
 			margin-top: 120px;
-			padding-top: 0px;
+			padding-top: 0;
 			background-color: transparent;
 		}
 
@@ -1823,14 +1823,14 @@
 
 		/* Some login stuff */
 		.login-form-side {
-			border: 0px;
+			border: 0;
 			border-bottom: 1px solid #d8d8d8;
 			font-size: 120%;
 			margin: 10px;
 		}
 
 		.login-form-side input[type=text], .login-form-side input[type=password] {
-			margin: 10px 0px;
+			margin: 10px 0;
 			width: 265px;
 		}
 		
@@ -1840,7 +1840,7 @@
 				margin-bottom: 30px;
 				padding: 10px 10px 10px 10px;
 				background-color: white;
-				border: 0px solid;
+				border: 0 solid;
 				border-radius: 2px;
 				color: #3b3b3b;
 				font-size: 16px;
@@ -1849,8 +1849,8 @@
 		
 				.cover {
 					position: fixed;
-					top: 0px;
-					left: 0px;
+					top: 0;
+					left: 0;
 					z-index: 1000;
 					width: 100%;
 					height: 100%;
@@ -1861,8 +1861,8 @@
 		/* Search page */
 		.search-page #search {
 			position: relative;
-			top: 0px;
-			margin: 0px 150px 0px 80px;
+			top: 0;
+			margin: 0 150px 0 80px;
 			height: 50px;
 			background: none !important;
 			background-color: transparent;
@@ -1870,18 +1870,18 @@
 		}	
 
 			.search-page .searchpane {
-				margin: 5px 320px 5px 0px;
+				margin: 5px 320px 5px 0;
 				padding-left: 96px;
 				height: 120px;
 			}
 			
 				.search-page .raisedbox {
 					padding: 5px;
-					border: 0px solid;
+					border: 0 solid;
 				}
 
 				.search-page #search input[type=text] {
-					padding: 5px 0px 5px 40px;
+					padding: 5px 0 5px 40px;
 					font-size: 150%;
 				}
 
@@ -1892,7 +1892,7 @@
 				padding: 10px;
 				box-shadow:none;
 				color: #3b3b3b;
-				border: 0px solid;
+				border: 0 solid;
 				border-bottom: 3px solid #E5E5E5;
 			}
 
@@ -1904,14 +1904,14 @@
 		/* Fuckin' Reddit Enhancement Suite (RES) */
 		.res .keyHighlight {
 			background-color: transparent;
-			outline: 0px solid;
+			outline: 0 solid;
 		}
 
 			.res .RES-keyNav-activeElement, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
 				background-color: transparent !important;
 			}
 
-				.res .RES-keyNav-activeElement {outline: 1px dashed #C5C5C5 !important; border-radius: 0px !important;}
+				.res .RES-keyNav-activeElement {outline: 1px dashed #C5C5C5 !important; border-radius: 0 !important;}
 
 				.res #searchexpando {
 					padding: 10px 5px 10px 25px;
@@ -1919,29 +1919,29 @@
 				}
 
 				.res .content .RESBigEditorPop {
-					border-bottom: 0px solid !important;
+					border-bottom: 0 solid !important;
 					border: 1px solid #d8d8d8 !important;
 					width: 150px !important;
 					text-align: left !important;
 					padding: 2px;
-					margin: 0px 12px 0px 12px;
+					margin: 0 12px 0 12px;
 				}
 
 		/* Res Live Preview */
 		.RESDialogSmall {
 			border: 1px solid #DFDFDF!important;
-			border-radius: 0px!important;
+			border-radius: 0 !important;
 		}
 
 		.RESDialogSmall > h3 {
 			background-color: #f4f4f4!important;
 			border-bottom: 1px solid #DFDFDF!important;
-			border-radius: 0px!important;
+			border-radius: 0 !important;
 			color: #333!important;
 		}
 
 		.res .comment {
-			margin-top:0px !important;
+			margin-top:0 !important;
 			margin-bottom: 3px !important;
 			border: 1px solid #f8f8f8 !important;
 		}
@@ -1959,12 +1959,12 @@
 			.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #FCFCFC !important;}
 		
 		.RESshortcutside {
-			padding: 0px 0px !important;
+			padding: 0 0 !important;
 			background: none repeat-x scroll center left !important;
 			background-color: white !important;
 			background-image: none !important;
-			border: 0px solid !important;
-			border-radius: 0px !important;
+			border: 0 solid !important;
+			border-radius: 0 !important;
 			color: #5b92fa !important;
 			text-transform: capitalize !important;
 			font-weight: 500 !important;
@@ -1973,21 +1973,21 @@
 		}
 		
 			.RESshortcutside.remove {
-				padding: 0px 3px 0px 0px !important;
+				padding: 0 3px 0 0 !important;
 				background-color: white !important;
 				background-image: none !important;
-				border: 0px solid !important;
+				border: 0 solid !important;
 				color: #3b3b3b !important;
 				font-weight: lighter !important;
 			}
 		
 			.RESDashboardToggle {
-				padding: 0px 0px !important;
+				padding: 0 0 !important;
 				background: none repeat-x scroll center left !important;
 				background-color: white !important;
 				background-image: none !important;
-				border: 0px solid !important;
-				border-radius: 0px !important;
+				border: 0 solid !important;
+				border-radius: 0 !important;
 				color: #5b92fa !important;
 				text-transform: capitalize !important;
 				font-weight: 500 !important;
@@ -1996,10 +1996,10 @@
 			}
 		
 			.RESDashboardToggle.remove {
-				padding: 2px 6px 2px 0px !important;
+				padding: 2px 6px 2px 0 !important;
 				background-color: white !important;
 				background-image: none !important;
-				border: 0px solid !important;
+				border: 0 solid !important;
 				color: #3b3b3b !important;
 				font-weight: lighter !important;
 			}
@@ -2030,7 +2030,7 @@
 			width: inherit !important;
 			background-color: white !important;
 			border: 1px solid #d8d8d8 !important;
-			border-top: 0px solid !important;
+			border-top: 0 solid !important;
 			border-bottom: 3px solid #d8d8d8 !important;
 			border-radius: 2px !important;
 		}
@@ -2046,8 +2046,8 @@
 
 		.RESSubscriptionButton {
 			background-color: white !important;
-			border: 0px solid !important;
-			border-radius: 0px !important;
+			border: 0 solid !important;
+			border-radius: 0 !important;
 			color: #5b92fa !important;
 		}
 		
@@ -2055,7 +2055,7 @@
 			right: 10px;
 			top: 141px !important;
 			padding: 4px 10px 5px 2px !important;
-			border-radius: 0px !important;
+			border-radius: 0 !important;
 		}
 
 			
@@ -2067,7 +2067,7 @@
 			.res .author.submitter {
 				padding: 2px 5px !important;
 				background-color: #DD4B39!important;
-				border-radius: 0px !important;
+				border-radius: 0 !important;
 				color: #fff !important;
 			}
 
@@ -2076,7 +2076,7 @@
 			.res .author.moderator {
 				padding: 2px 5px !important;
 				background-color: #53a93f !important;
-				border-radius: 0px !important;
+				border-radius: 0 !important;
 				color: #fff !important;
 			}
 
@@ -2089,7 +2089,7 @@
 				padding: 2px 3px !important;
 				background-color: #53a93f !important;
 				border: none !important;
-				border-radius: 0px !important;
+				border-radius: 0 !important;
 
 			}
 
@@ -2232,7 +2232,7 @@
 
 	/* fucking nightmode  */
 	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
-	.res-nightmode .tabmenu li {margin: 8px 0px 0px 0px;}
+	.res-nightmode .tabmenu li {margin: 8px 0 0 0;}
 
 	/* I swear to god who thinks pink backgrounds are a good idea */
 	.res-nightmode #header-bottom-left, .res-nightmode ul.tabmenu li.selected a, .res-nightmode .redditname a.active, 
@@ -2262,10 +2262,10 @@
 
 	/* Button */
 	button:lang(nt), #search input[type='submit']:lang(nt), .wiki-page .wiki-page-content .wiki_button:lang(nt) {
-		padding: 0px 8px 0px 8px;
+		padding: 0 8px 0 8px;
 		background-color: transparent;
 		border: 1px solid #414955;
-		border-radius: 0px;
+		border-radius: 0;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		color: #e5e5e5 !important;
@@ -2273,7 +2273,7 @@
 	}
 
 		button:lang(nt):hover, #search input[type='submit']:lang(nt):hover, .wiki-page .wiki-page-content .wiki_button:lang(nt):hover {
-			padding-bottom: 0px;
+			padding-bottom: 0;
 			border-color: #414955;
 			border-width: 1px;
 			color: #fff !important;
@@ -2282,7 +2282,7 @@
 		}
 
 			button:lang(nt):active, #search input[type='submit']:lang(nt):active, .wiki-page .wiki-page-content .wiki_button:lang(nt):active {
-				padding-bottom: 0px;
+				padding-bottom: 0;
 				background-color: #1C1F26;
 				border-color: #414955;
 				border-width: 1px;
@@ -2365,7 +2365,7 @@
 			height: 43px; /* 50% of the TOTAL height of the image. */
 		}
 	
-			.pagename a:hover {background-position: 0px -43px;} /* Replace the 77 with your height */
+			.pagename a:hover {background-position: 0 -43px;} /* Replace the 77 with your height */
 
 	/* --------------------------- */
 
