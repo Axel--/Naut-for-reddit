@@ -2151,7 +2151,7 @@
 	content.submit .info-notice:lang(nt), .stylesheet-customize-container .pretty-form:lang(nt), #images:lang(nt), 
 	.search-page .raisedbox:lang(nt), .search-page .searchfacets:lang(nt), .linefield:lang(nt), 
 	.search-page .searchpane:lang(nt), .nextprev:lang(nt), .commentarea:lang(nt), .link.last-clicked:lang(nt),
-	res-nightmode .side, .res-nightmode .flairselector, .res-nightmode .linefield, .res-nightmode .icon-menu a, 
+	.res-nightmode .side, .res-nightmode .flairselector, .res-nightmode .linefield, .res-nightmode .icon-menu a,
 	.res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox, 
 	.res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle, 
 	.res-nightmode .side .usertext-body .md ol, .res-nightmode .side .usertext-body .md ol ol, 
