@@ -991,7 +991,7 @@
 
 						.redditSingleClick {transition: opacity 0.15s ease-in-out;}
 
-					.link .entry li a, .redditSingleClick {opacity: 0;}
+					.link .entry .buttons li a, .redditSingleClick {opacity: 0;}
 					.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
 
 
