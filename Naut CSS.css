@@ -172,6 +172,7 @@
 		#header {
 			height: 167px;
 			background: #2a2b2e url(%%headerimg%%) no-repeat fixed 50% 0%;
+			background-size: contain;
 			border-bottom: 0px solid;
 			overflow: visible !important;
 		}
