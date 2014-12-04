@@ -654,12 +654,12 @@
 									.search-page form#search label {font-size: 150%;cursor: pointer;}
 
 					#search input[type=submit] {
+						color: transparent;
 						margin-left: 0px;
 						height: 30px;
 						margin-top: 16px;
 						width: 42px;
 						border: 1px solid #D5D5D5;
-						border-right: 0px solid;
 						background: rgba(0,0,0,0);
 						background-image: url(%%spritesheet%%) !important;
 						background-position: -130px -1px !important;
