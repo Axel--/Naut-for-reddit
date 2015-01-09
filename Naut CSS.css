@@ -2260,6 +2260,14 @@
 
 	.res-nightmode .side:after {content: "Hello nightmode user. You're very brave."}
 
+	
+	/*Submit a new text post background color fix*/
+	.res-nightmode .sidebox {
+		background-color: #222222;
+	}
+	
+	
+	
 	/* Button */
 	button:lang(nt), #search input[type='submit']:lang(nt), .wiki-page .wiki-page-content .wiki_button:lang(nt) {
 		padding: 0px 8px 0px 8px;
@@ -2291,6 +2299,7 @@
 				color: #fff !important;
 				line-height: 28px;
 			}
+	
 
 
 
