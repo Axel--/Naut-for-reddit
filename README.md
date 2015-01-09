@@ -15,6 +15,7 @@ Step one: Setting up the sidebar
   1. Go to /r/subreddit/about/edit
   2. Paste the following in the sidebar textarea: 
     `######[Home](http://www.reddit.com#top) [hot](http://www.reddit.com/r/subreddit/hot) [new](http://www.reddit.com/r/subreddit/new/) [top](http://www.reddit.com/r/subreddit/top/)`
+	`[This subreddit is night mode compatible](#/RES_SR_Config/NightModeCompatible)` (The 'This subreddit is night mode compatible' text can be ommited)
   3. Scroll down more and under 'look and feel' click 'choose file' and upload the headerbypass.png. 
   4. Hit save!
 
