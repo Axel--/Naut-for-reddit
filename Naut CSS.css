@@ -2005,7 +2005,7 @@
 			}
 		
 			#RESShortcutsEditContainer {
-				top: 1px !important;
+				height: 18px;
 				background-color: #2d2d2d !important;
 			}
 		
@@ -2232,7 +2232,7 @@
 
 	/* fucking nightmode  */
 	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
-	.res-nightmode .tabmenu li {margin: 8px 0px 0px 0px;}
+	.res-nightmode .tabmenu li {margin: 7px 0px 0px 0px;}
 
 	/* I swear to god who thinks pink backgrounds are a good idea */
 	.res-nightmode #header-bottom-left, .res-nightmode ul.tabmenu li.selected a, .res-nightmode .redditname a.active, 
@@ -2260,6 +2260,18 @@
 
 	.res-nightmode .side:after {content: "Hello nightmode user. You're very brave."}
 
+	
+	/*Submit a new text post background color fix*/
+	.res-nightmode .sidebox {
+		background-color: #222222;
+	}
+	
+	/*Fix for having blue text in blue boxes*/
+	.res-nightmode .side h4 a, .res-nightmode .sidecontentbox a.helplink, .res-nightmode a.option.active.add.login-required{
+		color: #EBEBEB!important;
+	}
+
+	
 	/* Button */
 	button:lang(nt), #search input[type='submit']:lang(nt), .wiki-page .wiki-page-content .wiki_button:lang(nt) {
 		padding: 0px 8px 0px 8px;
@@ -2291,6 +2303,7 @@
 				color: #fff !important;
 				line-height: 28px;
 			}
+	
 
 
 
