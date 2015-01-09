@@ -2266,7 +2266,11 @@
 		background-color: #222222;
 	}
 	
-	
+	/*Fix for having blue text in blue boxes*/
+	.res-nightmode .side h4 a, .res-nightmode .sidecontentbox a.helplink, .res-nightmode a.option.active.add.login-required{
+		color: #EBEBEB!important;
+	}
+
 	
 	/* Button */
 	button:lang(nt), #search input[type='submit']:lang(nt), .wiki-page .wiki-page-content .wiki_button:lang(nt) {
