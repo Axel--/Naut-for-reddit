@@ -2232,7 +2232,7 @@
 
 	/* fucking nightmode  */
 	.morelink:lang(nt), .fancy-toggle-button .add:lang(nt), .sidecontentbox a.helplink:lang(nt) {box-shadow: none;-webkit-box-shadow:none;}
-	.res-nightmode .tabmenu li {margin: 8px 0px 0px 0px;}
+	.res-nightmode .tabmenu li {margin: 7px 0px 0px 0px;}
 
 	/* I swear to god who thinks pink backgrounds are a good idea */
 	.res-nightmode #header-bottom-left, .res-nightmode ul.tabmenu li.selected a, .res-nightmode .redditname a.active, 
