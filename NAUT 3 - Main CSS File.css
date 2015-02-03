@@ -211,6 +211,8 @@
 		 				background-color: rgba(0,0,0,0.08);
 		 			}
 
+		 			#header .pagename a:before {content: "/r/";font-style: 21px;}
+
 
 			/* Tabmenu (hot/new/top) */
 			#header-bottom-left {
@@ -881,7 +883,10 @@
 				width: 100%;
 				left: 0px;
 				right: 0px;
-				background: #66B880;
+				background-color: #3A3D4D;
+				background-image: url(%%headerimg%%);
+				background-repeat: no-repeat;
+				background-position: 50% 0%;
 				content: "";
 				text-indent: -9999px;
 				z-index: -1;
@@ -1361,6 +1366,17 @@
 						background-color: #EFF7FF;
 						border: none;
 					}
+
+						.organic-listing {  
+							background-color: white!important;  
+							padding: 0;  
+							z-index: 9999;  
+							position: relative;  
+							margin-bottom: 0px;  
+							margin-right: 316px;  
+							border: none;  
+							border-radius: 2px 2px 0px 0px; 
+						} 
 
 
 					/* Compressed post */
@@ -1862,6 +1878,11 @@
 						}
 
 							.usertext .bottom-area a.reddiquette {color: #4F8EF7;}
+
+				.gold-accent.comment-visits-box {
+					margin: 0px 0px 12px 0px;
+					border-radius: 2px;
+				}
 
 				.commentarea .sitetable {
 					margin: 0px;
@@ -2598,7 +2619,7 @@
 					height: auto;
 				}
 
-					.res #search #searchexpando label {padding: 13px;}
+					.res #search #searchexpando label {padding: 13px 0px;}
 
 					.res #searchexpando .searchexpando-submit {display: none;}
 
@@ -2611,7 +2632,7 @@
 
 				/* Gear dropdown */
 				.gearIcon {
-					background: url(%%spritesheet%%) -0px -0px;
+					background: url(%%spritesheet%%) -0px -0px !important;
 					position: relative;
 					top: 2px;
 					transition: all 0.25s ease;
