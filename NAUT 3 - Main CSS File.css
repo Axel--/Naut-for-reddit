@@ -30,6 +30,7 @@
 	body {
 		overflow-x: hidden;
 		background-color: #eeeeee;
+		min-width: 640px;
 	}
 		
 		/* General Styles - Links / Buttons / Inputs */
