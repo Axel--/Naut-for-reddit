@@ -894,7 +894,7 @@
 			}
 
 				@media only screen and (min-width : 1920px) {
-					.content:before {background-size: contain;}
+					.content:before {background-size: cover;}
 				}
 
 			.sitetable {
