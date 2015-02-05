@@ -212,7 +212,12 @@
 		 				background-color: rgba(0,0,0,0.08);
 		 			}
 
-		 			#header .pagename a:before {content: "/r/";font-style: 21px;}
+		 			#header .pagename a:before {
+		 				content: "/r/";
+		 				font-size: 18px;
+		 				font-variant: normal;
+		 				letter-spacing: 1px;
+		 			}
 
 
 			/* Tabmenu (hot/new/top) */
