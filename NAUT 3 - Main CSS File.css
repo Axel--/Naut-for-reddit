@@ -114,6 +114,7 @@
 			}
 
 				#sr-header-area .width-clip {right: 300px;}
+					body:not(.loggedin) #sr-header-area .width-clip {right: 340px;}
 
 				#sr-header-area .sr-list {margin-right: 48px;}
 
@@ -303,6 +304,8 @@
 				padding: 5px 8px 4px 2px;
 
 			}
+
+				body:not(.loggedin) #header-bottom-right {max-width: 340px;}
 				#header-bottom-right a {color: #fff;}
 					#header-bottom-right a:hover {text-decoration: underline;}
 
@@ -898,7 +901,7 @@
 				z-index: -1;
 			}
 
-				@media only screen and (min-width : 1920px) {
+				@media only screen and (min-width : 1921px) {
 					.content:before {background-size: cover;}
 				}
 
@@ -1398,7 +1401,7 @@
 					/* Flair Selector */
 					.flairselector {
 						position: fixed;
-						top: 150px !important;
+						top: 20% !important;
 						left: 50% !important;
 						margin-left: -125px;
 						padding: 32px !important;
@@ -1406,6 +1409,7 @@
 						border: none;
 						border-radius: 2px;
 						box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.64);
+						max-height: 400px;
 					}
 
 						.flairselector.drop-choices.active {border: 1px solid #e2e2e2;}
@@ -2712,6 +2716,60 @@
 								}
 
 
+	/* WIP Nightmode CSS */
+	.res-nightmode body {background-color: #171c1f;}
+
+	/* Main card color */
+	.res-nightmode .linklisting .link, .res-nightmode .side, .res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1), 
+	.res-nightmode .side .spacer > #search input, .res-nightmode .res #progressIndicator, .res-nightmode .search-page .searchpane, 
+	.res-nightmode .search-page .searchfacets, .res-nightmode .search-page .menuarea, .res-nightmode .wiki-page .wiki-page-content, 
+	.res-nightmode .wiki-page .wikititle, .res-nightmode .wiki-page .pageactions, .res-nightmode .side .titlebox .md h4 a, 
+	.res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .md code, .res-nightmode .md pre, 
+	.res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode #images, .res-nightmode .fancy-toggle-button .remove,
+	.res-nightmode .comments-page .side .linkinfo {background-color: #21282d !important;}
+
+	/* Secondary card color */
+	.res-nightmode input:not([type="submit"]), .res-nightmode textarea, .res-nightmode .titlebox .tagline:after, .res-nightmode .commentarea>.usertext,
+	.res-nightmode.res-commentBoxes .comments-page .comment, .res-nightmode.res-commentBoxes .comments-page .comment .comment .comment, 
+	.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment, 
+	.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment, 
+	.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment 
+	{background-color: #1a2126 !important;}
+	.res-nightmode .link .entry, .res-nightmode .side .titlebox .md h4 a, .res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .md hr,
+	.res-nightmode .md code, .res-nightmode .md pre {border-color: #1a2126;}
+
+
+	.res-nightmode .morelink, .res-nightmode .titlebox .fancy-toggle-button .add, .res-nightmode .morelink:after, .res-nightmode .content .infobar, .res-nightmode
+	.submit-page #newlink.submit.content .tabmenu.formtab .selected a, .res-nightmode .submit-page .infobar, .res-nightmode 
+	.submit-page #newlink.submit.content .btn, .res-nightmode .drop-choices a.choice:hover, .res-nightmode .linkflairlabel, .res-nightmode .fancy-toggle-button .remove:active
+	.expando-button:hover, .res-nightmode .top-page .content .menuarea .dropdown.lightdrop .selected, .res-nightmode .expando-button:hover, .res-nightmode .side .titlebox .md h3 a, .res-nightmode
+	.res div.RES-keyNav-activeElement, .res .res-nightmode .res div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed {background-color: #00a478}
+
+	    /* Hover color = 10% white overlay color */
+	    .res-nightmode .morelink:hover, .res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover, .res-nightmode
+	    .side .titlebox .md h3 a:hover, .res-nightmode .titlebox .fancy-toggle-button .add:hover, .res-nightmode .titlebox .fancy-toggle-button .add:hover:after
+	     {background-color: #00b987;}
+
+	    /* Active color = 10% black overlay color */
+	   .res-nightmode  .morelink:active, .res-nightmode .side .titlebox .md h3 a:active {background-color: #008a65;}
+
+
+	.res-nightmode a, .res-nightmode .link .entry .buttons li a.comments, .res-nightmode .md a, .res-nightmode .titlebox .tagline a.flairselectbtn, .res-nightmode 
+	.thing .title.loggedin.click, .res-nightmode .thing .title.click, .res-nightmode .thing .title.loggedin, .res-nightmode .thing .title, .res-nightmode 
+	body .content .sitetable .link .title a:hover, .res-nightmode .link .domain a:hover, .res-nightmode .link .entry .buttons li a:hover, .res-nightmode 
+	.link .entry .buttons li a.flairselectbtn, .res-nightmode .comment .flat-list li a[onclick*="reply"], .res-nightmode 
+	.comment .flat-list li a:hover, .res-nightmode .tagline .submitter, .res-nightmode .tagline .submitter, .res-nightmode .side:after, .res-nightmode 
+	.usertext .bottom-area a.reddiquette, .res-nightmode .side .titlebox .md h6 a
+	 {color: #00a478;}
+
+	 /* Nightmode misc fixes */
+	 .res-nightmode .share-button .option, .res-nightmode #subscribe a, .res-nightmode .share .option, .res-nightmode .tagline a, .res-nightmode .tagline .head .author, .res-nightmode .footer a, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .subredditbox li a, .res-nightmode .link .score.dislikes, .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, .res-nightmode #authorInfoToolTip h3 a, .res-nightmode .RES-keyNav-activeElement .md, .res-nightmode .help-toggle .option, .res-nightmode .morecomments a, .res-nightmode .reddiquette, .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .comment .md p a, .res-nightmode .flair, .res-nightmode .morelink:hover a {color: #fff}
+	 .res-nightmode .side .titlebox, res-nightmode .side .spacer .titlebox .redditname, .res-nightmode body .content, .res-nightmode #header-bottom-right, .res-nightmode .flair, .res-nightmode .side .spacer .titlebox .redditname {background-color: transparent;}
+	 .res .res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .usertext-body, .res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, .res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed, .res-nightmode .RES-keyNav-activeElement .noncollapsed .md, .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
+	 .res-nightmode .side .md ul {background-color: transparent !important;}
+	 .res-nightmode #sr-header-area, .res-nightmode #sr-more-link, .res-nightmode #RESConsoleTopBar, .res-nightmode .moduleHeader, .res-nightmode .allOptionsContainer, .res-nightmode .optionContainer {background-color: rgba(0,0,0,0.20);}
+	 .res-nightmode .side .spacer .titlebox .redditname {border-color: transparent;}
+
 
 	/* Experimental fadein CSS */
 	.listing-page .sitetable, .search-page .sitetable, .top-page .menuarea .spacer {
@@ -2881,9 +2939,9 @@
 /* ===============================================================================================================================
 
 	
-															/////
-									End of the basic stylesheet - add your customizations below!	
-															/////
+										/////
+				End of the basic stylesheet - add your customizations below!	
+										/////
 
 
 ==================================================================================================================================*/
