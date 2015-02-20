@@ -773,6 +773,11 @@
 						}
 
 
+					/* Hover Bubble */
+					.hover-bubble.multi-selector {
+						margin-top: -70px; 
+						margin-right: -222px; 
+					}
 
 
 
