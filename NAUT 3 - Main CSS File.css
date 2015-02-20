@@ -979,7 +979,7 @@
 										    content: " ";
 										    background-color:#ff5500;
 										    border-radius: 28px;
-										    -webkit-animation: upvote 0.3s ease-out forwards;
+										    -webkit-animation: upvote 0.35s ease-out forwards;
 										}
 
 								/* downvotes */
