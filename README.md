@@ -21,3 +21,6 @@ Installation Instructions
 Now you can customize it by either adding customization lines yourself, or by visiting the /r/Naut wiki and customizing it yourself!
 
 If you have any questions on how to customize, /r/csshelp might be better suited than me!
+
+
+##[Click here to download](https://github.com/Axel--/Naut-for-reddit/archive/master.zip)
