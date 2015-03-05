@@ -268,7 +268,7 @@
 								background-color: transparent;
 								border: 0px;
 								border-bottom: 2px solid #fff;
-								color: rgba(255,255,255,100);
+								color: rgba(255,255,255,1);
 								font-weight: bold;
 							}
 
@@ -1705,7 +1705,7 @@
 								transition: all 0.25s ease;
 							}
 
-								.top-page .content .menuarea .drop-choices.lightdrop a.choice:[href*="/?t=all"] {border-right: 0px solid;}
+								.top-page .content .menuarea .drop-choices.lightdrop a.choice[href*="/?t=all"] {border-right: 0px solid;}
 								.top-page .content .menuarea .drop-choices.lightdrop a.choice:hover {background-color: #F5F8F9;}
 
 								.top-page .content .menuarea .drop-choices.lightdrop a.choice.selected {
