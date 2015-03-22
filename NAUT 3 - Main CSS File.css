@@ -1041,9 +1041,9 @@
 
 							.thumbnail a img, .thumbnail.self, .thumbnail.default {height: 56px;}
 
-							.thumbnail.self 	{	background: url(%%spritesheet%%) -073px -80px;}
+							.thumbnail.self 	{	background: url(%%spritesheet%%) -73px -80px;}
 							.thumbnail.default 	{	background: url(%%spritesheet%%) -143px -80px;}
-							.thumbnail.nsfw 	{	background: url(%%spritesheet%%) -003px -140px;}
+							.thumbnail.nsfw 	{	background: url(%%spritesheet%%) -3px -140px;}
 
 						/* Linkflairs */
 						.linkflairlabel {
@@ -1149,35 +1149,35 @@
 								border-color: #4F8EF7;
 							}
 
-							.expando-button.selftext.collapsed 					{background-position: -032px -32px;}
-							.expando-button.selftext.collapsed:hover 			{background-position: -048px -32px;}
+							.expando-button.selftext.collapsed 					{background-position: -32px -32px;}
+							.expando-button.selftext.collapsed:hover 			{background-position: -48px -32px;}
 				
-							.expando-button.selftext.expanded 					{background-position: -064px -32px;}
-							.expando-button.selftext.expanded:hover 			{background-position: -080px -32px;}
+							.expando-button.selftext.expanded 					{background-position: -64px -32px;}
+							.expando-button.selftext.expanded:hover 			{background-position: -80px -32px;}
 				
-							.expando-button.video.collapsed 					{background-position: -096px -32px;}
+							.expando-button.video.collapsed 					{background-position: -96px -32px;}
 							.expando-button.video.collapsed:hover				{background-position: -112px -32px;}
 				
-							.expando-button.video.expanded 						{background-position: -064px -32px;}
-							.expando-button.video.expanded:hover 				{background-position: -080px -32px;}
+							.expando-button.video.expanded 						{background-position: -64px -32px;}
+							.expando-button.video.expanded:hover 				{background-position: -80px -32px;}
 
 							.expando-button.image.collapsedExpando				{background-position: -160px -32px;}
 							.expando-button.image.collapsedExpando:hover 		{background-position: -176px -32px;}
 
-							.expando-button.image.expanded						{background-position: -064px -32px;}
-							.expando-button.image.expanded:hover				{background-position: -080px -32px;}
+							.expando-button.image.expanded						{background-position: -64px -32px;}
+							.expando-button.image.expanded:hover				{background-position: -80px -32px;}
 
 							.expando-button.image.gallery.collapsedExpando		{background-position: -128px -32px;}
 							.expando-button.image.gallery.collapsedExpando:hover{background-position: -144px -32px;}
 
-							.expando-button.image.gallery.expanded				{background-position: -064px -32px;}
-							.expando-button.image.gallery.expanded:hover		{background-position: -080px -32px;}
+							.expando-button.image.gallery.expanded				{background-position: -64px -32px;}
+							.expando-button.image.gallery.expanded:hover		{background-position: -80px -32px;}
 
 							.expando-button.video-muted.collapsed				{background-position: -208px -32px;}
 							.expando-button.video-muted.collapsed:hover			{background-position: -224px -32px;}
 
-							.expando-button.video-muted.expanded				{background-position: -064px -32px;}
-							.expando-button.video-muted.expanded:hover			{background-position: -080px -32px;} 
+							.expando-button.video-muted.expanded				{background-position: -64px -32px;}
+							.expando-button.video-muted.expanded:hover			{background-position: -80px -32px;} 
 
 
 						/* Expando Text */
