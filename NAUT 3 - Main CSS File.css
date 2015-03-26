@@ -1,7 +1,7 @@
 	/*
-			Version 3.0
+			Version 3.1
 			Stylesheet by Cryptonaut
-			Last modified: 20 FEB 2015
+			Last modified: 26 MAR 2015
 			Details: This is a custom template made by /u/Cryptonaut. 
 			Find out more on /r/Naut.
 
@@ -17,9 +17,9 @@
 			V2.3 - Update 7 - Bugfixes, including the search button.
 			V3.0 - Update 8 - Complete rewrite to include easier customizing of colours, 
 							  sizes and margins, more transitions and animations and
-							  much more.
+							  much more. See /r/Naut for more
+			V3.1 - Update 9 - Many bugfixes and some changes for easier customization
 
-			V3.0 - Update 9 - Complete UI revamp. See /r/Naut for more.
 
 			-------------------------------------------------------------------------- */
 
@@ -30,7 +30,7 @@
 		body {
 			overflow-x: hidden;
 			background-color: #eeeeee;
-			min-width: 640px;
+			min-width: 420px;
 		}
 			
 			/* General Styles - Links / Buttons / Inputs */
@@ -39,9 +39,12 @@
 				transition: color 0.15s ease;
 			}
 
+			::focus {outline: none !important;}
+
 			input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number],
 			.linefield textarea, .linefield input[type=text], .linefield input[type=password],
-			.pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number] {
+			.pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number],
+			.login-form-side input[type=text], .login-form-side input[type=password] {
 				box-shadow: none!important;
 				background-color: #fff;
 				border: 1px solid #e5e5e5;
@@ -49,50 +52,46 @@
 				transition: all 0.15s ease!important;
 			}
 
-				input:hover, textarea:hover {
+				input:hover, textarea:hover, .roundfield textarea:hover, .roundfield input[type=text]:hover, .roundfield input[type=url]:hover, .roundfield input[type=password]:hover, .roundfield input[type=number]:hover,
+				.linefield textarea:hover, .linefield input[type=text]:hover, .linefield input[type=password]:hover,
+				.pretty-form input[type=text]:hover, .pretty-form textarea:hover, .pretty-form input[type=password]:hover, .pretty-form input[type=number]:hover,
+				.login-form-side input[type=text]:hover, .login-form-side input[type=password]:hover {
 					border-color: #C5C5C5;
 				}
 
-					input:focus, textarea:focus {
+					input:active, textarea:active, .roundfield textarea:active, .roundfield input[type=text]:active, .roundfield input[type=url]:active, .roundfield input[type=password]:active, .roundfield input[type=number]:active,
+					.linefield textarea:active, .linefield input[type=text]:active, .linefield input[type=password]:active,
+					.pretty-form input[type=text]:active, .pretty-form textarea:active, .pretty-form input[type=password]:active, .pretty-form input[type=number]:active,
+					.login-form-side input[type=text]:active, .login-form-side input[type=password]:active {
 						outline: none!important;
 						border-color: #4F8EF7;
 						color: #4D5763;
 					}
 
 			.btn, button {
-				margin: 4px 8px 4px 0px;
-				padding: 1px 12px 2px 12px;
-				background-color: #fff;
-				border: 1px solid #d4d4d4;
+				margin: 4px 16px 4px 0px;
+				padding: 2px 18px;
+				background-color: #516AE8;
+				border: none;
 				border-radius: 2px;
-				-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-				-ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-				-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-				box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-				color: #737373;
-				text-transform: capitalize;
+				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
+				color: #fff !important;
+				text-transform: uppercase;
 				font-weight: bold;
-				line-height: 26px;
 				cursor: default;
-				transition: all 0.15s ease;
-				height: 29px;
+				transition: all 0.25s ease;
+				height: 32px;
+				font-size: 12px;
 			}
 
 				.btn:hover, button:hover {
-					-moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.27);
-					-ms-box-shadow: 0 1px 0 0 rgba(0,0,0,0.27);
-					-webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.27);
-					box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.27);
-					color: #4D5763;
+					box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.34);
+					background-color: #5A72EE;
 				}
 
 					.btn:active, button:active {
-						-moz-box-shadow: inset 0 2px 0 #d6d6d6;
-						-ms-box-shadow: inset 0 2px 0 #d6d6d6;
-						-webkit-box-shadow: inset 0 2px 0 #D6D6D6;
-						box-shadow: inset 0 2px 0 #D6D6D6;
-						background-color: #E5E5E5;
-						color: #999;
+						box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+						background-color: #4059DB;
 					}
 
 					.btn:focus, button:focus {outline: none;}
@@ -268,7 +267,7 @@
 								background-color: transparent;
 								border: 0px;
 								border-bottom: 2px solid #fff;
-								color: rgba(255,255,255,100);
+								color: rgba(255,255,255,1);
 								font-weight: bold;
 							}
 
@@ -455,6 +454,7 @@
 
 							#search input[type=text]:focus {
 								border-radius: 2px 2px 0px 0px;
+								outline: none;
 							}
 
 							#search input[type=text]:focus:hover {box-shadow: 0px 1px 5px rgba(0,0,0,0.24) !important;}
@@ -775,8 +775,7 @@
 
 					/* Hover Bubble */
 					.hover-bubble.multi-selector {
-						margin-top: -76px;
-						margin-right: -200px;
+						margin-top: -60px;
 					}
 
 
@@ -929,6 +928,7 @@
 
 					.link {
 						margin: 0px;
+						padding: 0;
 						background-color: #fff;
 					}
 
@@ -1036,14 +1036,13 @@
 							max-width: 64px;
 							max-height: 56px;
 							margin: 16px 16px 0px 0px;
-							background-color: #ddd;
 						}
 
 							.thumbnail a img, .thumbnail.self, .thumbnail.default {height: 56px;}
 
-							.thumbnail.self 	{	background: url(%%spritesheet%%) -073px -80px;}
+							.thumbnail.self 	{	background: url(%%spritesheet%%) -73px -80px;}
 							.thumbnail.default 	{	background: url(%%spritesheet%%) -143px -80px;}
-							.thumbnail.nsfw 	{	background: url(%%spritesheet%%) -003px -140px;}
+							.thumbnail.nsfw 	{	background: url(%%spritesheet%%) -03px -140px;}
 
 						/* Linkflairs */
 						.linkflairlabel {
@@ -1149,35 +1148,35 @@
 								border-color: #4F8EF7;
 							}
 
-							.expando-button.selftext.collapsed 					{background-position: -032px -32px;}
-							.expando-button.selftext.collapsed:hover 			{background-position: -048px -32px;}
+							.expando-button.selftext.collapsed 					{background-position: -32px -32px;}
+							.expando-button.selftext.collapsed:hover 			{background-position: -48px -32px;}
 				
-							.expando-button.selftext.expanded 					{background-position: -064px -32px;}
-							.expando-button.selftext.expanded:hover 			{background-position: -080px -32px;}
+							.expando-button.selftext.expanded 					{background-position: -64px -32px;}
+							.expando-button.selftext.expanded:hover 			{background-position: -80px -32px;}
 				
-							.expando-button.video.collapsed 					{background-position: -096px -32px;}
-							.expando-button.video.collapsed:hover				{background-position: -112px -32px;}
+							.expando-button.video.collapsed 					{background-position: -96px -32px;}
+							.expando-button.video.collapsed:hover				{background-position: -12px -32px;}
 				
-							.expando-button.video.expanded 						{background-position: -064px -32px;}
-							.expando-button.video.expanded:hover 				{background-position: -080px -32px;}
+							.expando-button.video.expanded 						{background-position: -64px -32px;}
+							.expando-button.video.expanded:hover 				{background-position: -80px -32px;}
 
 							.expando-button.image.collapsedExpando				{background-position: -160px -32px;}
 							.expando-button.image.collapsedExpando:hover 		{background-position: -176px -32px;}
 
-							.expando-button.image.expanded						{background-position: -064px -32px;}
-							.expando-button.image.expanded:hover				{background-position: -080px -32px;}
+							.expando-button.image.expanded						{background-position: -64px -32px;}
+							.expando-button.image.expanded:hover				{background-position: -80px -32px;}
 
 							.expando-button.image.gallery.collapsedExpando		{background-position: -128px -32px;}
 							.expando-button.image.gallery.collapsedExpando:hover{background-position: -144px -32px;}
 
-							.expando-button.image.gallery.expanded				{background-position: -064px -32px;}
-							.expando-button.image.gallery.expanded:hover		{background-position: -080px -32px;}
+							.expando-button.image.gallery.expanded				{background-position: -64px -32px;}
+							.expando-button.image.gallery.expanded:hover		{background-position: -80px -32px;}
 
 							.expando-button.video-muted.collapsed				{background-position: -208px -32px;}
 							.expando-button.video-muted.collapsed:hover			{background-position: -224px -32px;}
 
-							.expando-button.video-muted.expanded				{background-position: -064px -32px;}
-							.expando-button.video-muted.expanded:hover			{background-position: -080px -32px;} 
+							.expando-button.video-muted.expanded				{background-position: -64px -32px;}
+							.expando-button.video-muted.expanded:hover			{background-position: -80px -32px;} 
 
 
 						/* Expando Text */
@@ -1194,7 +1193,7 @@
 
 
 						/* Submitted X ago by.. */
-						.link .entry .tagline {
+						.entry .tagline {
 							margin-top: 4px;
 							color: #b3b3b3;
 							font-size: 12px;
@@ -1244,7 +1243,7 @@
 						/* Comment / Share / Report */
 						.link .flat-list {margin-top: 3px;}
 
-							.link .entry .buttons li a {
+							.entry .buttons li a {
 								padding: 0 1px;
 								color: #b3b3b3;
 								font-weight: normal;
@@ -1284,8 +1283,7 @@
 								.action-form {
 									position: fixed;
 									top: 35%;
-									left: 50%;
-									margin-left: -150px;
+									left: 40%;
 									margin: 0;
 									padding: 24px;
 									background-color: #fff;
@@ -1388,11 +1386,25 @@
 							.thing.stickied .domain {display: none;}
 
 						/* Ad */
+						.content .spacer {margin: 0;}
+
 						.link.promotedlink.promoted {
 							margin-right: 0;
 							background-color: #EFF7FF;
 							border: none;
+							padding: 0;
 						}
+
+							.organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
+								padding-top: 0;
+								padding-bottom: 0;
+							}
+
+							.link.promotedlink.promoted .thumbnail {
+								max-height: inherit;
+								max-width: inherit;
+								margin-top: 8px;
+							}
 
 							.organic-listing {  
 								background-color: white!important;  
@@ -1404,6 +1416,17 @@
 								border: none;  
 								border-radius: 2px 2px 0px 0px; 
 							} 
+
+								.organic-listing .help {
+									margin-bottom: 16px;
+									margin-right: 16px;
+								}
+
+								.organic-listing .sponsored-tagline {
+									margin-bottom: 16px;
+									margin-right: 16px;
+									color: #B3B3B3;
+								}
 
 
 						/* Compressed post */
@@ -1705,7 +1728,7 @@
 								transition: all 0.25s ease;
 							}
 
-								.top-page .content .menuarea .drop-choices.lightdrop a.choice:[href*="/?t=all"] {border-right: 0px solid;}
+								.top-page .content .menuarea .drop-choices.lightdrop a.choice[href*="/?t=all"] {border-right: 0px solid;}
 								.top-page .content .menuarea .drop-choices.lightdrop a.choice:hover {background-color: #F5F8F9;}
 
 								.top-page .content .menuarea .drop-choices.lightdrop a.choice.selected {
@@ -1888,6 +1911,8 @@
 						box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
 						overflow: visible;
 					}
+
+						.usertext button {margin: 4px 16px 8px 0px;}
 
 						.commentarea .usertext-edit {
 
@@ -2077,6 +2102,7 @@
 									.comment .flat-list li a {
 										color: #b3b3b3;
 										font-weight: normal;
+										font-size: 10px;
 									}
 
 										.comment .flat-list li a:hover {
@@ -2193,7 +2219,9 @@
 
 						.submit-page .infobar:before {
 							font-size: 14px;
-							content: "Please submit insightful content that allows for discussion!";}
+							content: "Please submit insightful content that allows for discussion!";
+							display: inline-block;
+						}
 
 					.content.submit .info-notice {
 						background-color: #fff;
@@ -2648,7 +2676,7 @@
 						height: auto;
 					}
 
-						.res #search #searchexpando label {padding: 13px 0px;}
+						.res #search #searchexpando label {padding-top: 13px; padding-bottom: 13px;}
 
 						.res #searchexpando .searchexpando-submit {display: none;}
 
@@ -2736,9 +2764,69 @@
 
 
 	
+		/* Sidebar on low-res screens */
+		@media (max-device-width: 640px), (max-width: 640px){
+
+		.content {margin-top: 144px;}
+
+		.link, .commentarea, .stylesheet-customize-container .pretty-form, .sitetable, #images, .organic-listing {
+		    margin-right: 0px;
+		}
+
+		.subscriber .morelink a:after {
+		    display:none;
+		}
+
+		.side {
+		    -webkit-transition:all 0.5s ease-in-out;
+		    transition:all 0.5s ease-in-out;
+		    position: fixed;
+		    padding-top: 0px;
+		    z-index: 5000;
+		    right: -350px;
+		    margin: 0;
+		    overflow-y: scroll;
+		    width: 345px;
+		    height: 100%;
+		}
+
+			.side .usertext {margin-top: 114px;}
+			.side .content:before {display: none;}
+
+		.side:after {
+			transition: all 0.15s ease;
+			background-color: #FFF;
+			content: "≡";
+			border-radius: 1px;
+			box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+			position: fixed;
+			padding: 0px 12px;
+			display: block;
+			right: 0px;
+			color: #1F2225;
+			z-index: 98;
+			width: 36px;
+			font-size: 24px;
+			height: 36px;
+			line-height: 36px;
+			top: 24px;
+		}
+
+			.side:hover {
+			    right: 0px;
+			}
+	
+			.side:hover:after {
+			    opacity: 0;
+			}
+
+		}
+
+
 
 		/* Experimental fadein CSS */
-		.listing-page .sitetable, .search-page .sitetable, .top-page .menuarea .spacer {
+		.listing-page .sitetable, .search-page .sitetable, .top-page .menuarea .spacer,
+		.organic-listing {
 			animation-name: fadein;
 			animation-duration: 0.75s;
 			animation-iteration-count: 1;
@@ -2898,10 +2986,6 @@
 			   98% 	{opacity: 0;}
 			   100% {transform:scale(1.5,1.5);			-webkit-transform:scale(1.5,1.5); opacity: 0;}
 			}
-
-
-
-
 /* ===============================================================================================================================
 
 	
