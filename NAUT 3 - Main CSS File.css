@@ -629,6 +629,7 @@
 
 					.login-form-side input[type=text], .login-form-side input[type=password] {width: 128px;}
 
+				.login-form-side button.btn {margin-right: -3px;}
 
 					
 				/* Redditname + Subscibers & Here right now */
