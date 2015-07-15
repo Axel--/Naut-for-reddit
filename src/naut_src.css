@@ -2053,6 +2053,7 @@
 											padding: 1px 4px;
 											border-radius: 1px;
 											background-color: #4F8EF7 !important;
+											color: #fff !important;
 											box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 											transition: all 0.15s ease;
 										}
@@ -2593,7 +2594,7 @@
 
 				/* Bunch of RES (Reddit Enhancement Suite) Fixes */
 				.res .link .tagline a.voteWeight {background-color: transparent !important;}
-				.res .thing .tagline .author.moderator {background-color: #65B354 !important;padding: 1px 4px;border-radius: 1px;}
+				.res .thing .tagline .author.moderator {background-color: #65B354 !important;color: #fff !important;padding: 1px 4px;border-radius: 1px;}
 
 				.res .srSep {color: rgba(255,255,255,0.45);}
 				.res #RESShortcutsViewport {margin-right:381px;}
