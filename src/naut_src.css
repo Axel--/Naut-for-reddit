@@ -1569,7 +1569,7 @@
 								.flairselector .error:after {
 									display: block; 
 									color: #b3b3b3;
-									content: "Go to /r/.../about/flairs.";
+									content: "Go to /r/.../about/flair.";
 								}
 
 							.flairselector img {
