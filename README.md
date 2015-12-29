@@ -11,7 +11,7 @@ Installation Instructions
 
 'Subreddit' should be changed to your subreddit name.
 
-  1. Go to /r/subreddit/about/stylesheet
+  1. Go to /r/*your_subreddit*/about/stylesheet
   2. Paste the CSS from the Naut 4 Main CSS File.css file into the css textarea.
   3. Upload the images from the /images/ folder. (Don't rename them!)
   4. Hit save!
