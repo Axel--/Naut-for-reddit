@@ -1,11 +1,11 @@
-		/*
-				Version 4.0
-				Stylesheet by Cryptonaut
-				Last modified: 21 December 2015
-				Details: This is a custom template made by /u/Cryptonaut. 
-				Find out more on /r/Naut.
-
-				-------------------------------------------------------------------------- */
+/*
+		Version 4.0
+		Stylesheet by Cryptonaut
+		With the help of LackingAGoodName and RenegadeAI
+		Last modified: 30 January 2016
+		Details: This is a custom template made by /u/Cryptonaut, /u/LackingAGoodName, and /u/RenegadeAI. 
+		Find out more on /r/Naut.
+--------------------------------------------------------------------------------------------------------- */
 
 	*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
 
@@ -945,7 +945,7 @@
 
 
 					/* Compressed post */
-					.link.compressed {margin: 0;}
+					.link.compressed {margin: 0; padding: 0}
 
 						.link.compressed .entry {padding: 11px 32px 9px 0px;}
 						.link.compressed .title {margin: 0;}
@@ -2599,12 +2599,12 @@
 				 	.wiki-page .wiki-page-content em {color: #98abba;}
 
 			/* Subreddit Settings Page + Flair Page + Stylesheet Page */
-			.linefield {
+			.linefield,
+			.linefield.mobile {
 				background-color: #fff;
 				color: #98abba;
 				margin: 0 0 16px 0;
 				width: 528px;
-				padding: 8px 0;
 			}
 
 				.linefield .title {
@@ -3145,14 +3145,12 @@
 		   100% {transform:scale(1.5,1.5);			-webkit-transform:scale(1.5,1.5); opacity: 0;}
 		}
 
+		/* Rules Page */
+		.subreddit-rule-form .c-form-group .label,
+		.subreddit-rule-form .c-form-group .text-counter {
+			color: gray;
+		}
 
-	/* ===============================================================================================================================
-
-		
-											/////
+/* ===============================================================================================================================
 					End of basic Naut. Add your customizations or any addons below here!
-											/////
-
-
-	==================================================================================================================================*/
-
+==================================================================================================================================*/
