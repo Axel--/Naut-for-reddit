@@ -949,6 +949,7 @@
 
 						.link.compressed .entry {padding: 11px 32px 9px 0px;}
 						.link.compressed .title {margin: 0;}
+						.link.compressed .score {margin: auto;}
 						body>.content .link.compressed .midcol {
 							height: auto;
 							margin: 8px 0px 0px 4px;
