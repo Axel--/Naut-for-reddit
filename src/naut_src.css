@@ -1,7 +1,7 @@
 		/*
 				Version 4.0
 				Stylesheet by Cryptonaut
-				Last modified: 21 December 2015
+				Last modified: 5 March 2016
 				Details: This is a custom template made by /u/Cryptonaut. 
 				Find out more on /r/Naut.
 
@@ -945,13 +945,14 @@
 
 
 					/* Compressed post */
-					.link.compressed {margin: 0;}
+					.link.compressed { margin-bottom: 0; padding-top: 0; padding-bottom: 0 }
 
-						.link.compressed .entry {padding: 11px 32px 9px 0px;}
-						.link.compressed .title {margin: 0;}
+                                                .link.compressed .score { margin: 0 3px 0 0 }
+						.link.compressed .entry {padding: 9px 32px 9px 0px;}
+						.link.compressed .title {margin: 0 }
 						body>.content .link.compressed .midcol {
 							height: auto;
-							margin: 8px 0px 0px 4px;
+							margin: 8px 4px 0px 0px;
 						}
 
 					/* Flair Selector */
@@ -1327,6 +1328,7 @@
 								text-decoration: none;
 								background-color: rgba(0,0,0,0.05);
 							}
+
 		/* Sidebar */
 		.side {
 			margin: 282px 16px 108px 0px;
