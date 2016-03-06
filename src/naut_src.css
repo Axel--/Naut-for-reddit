@@ -1,7 +1,7 @@
 		/*
 				Version 4.0
 				Stylesheet by Cryptonaut
-				Last modified: 5 March 2016
+				Last modified: 21 December 2015
 				Details: This is a custom template made by /u/Cryptonaut. 
 				Find out more on /r/Naut.
 
@@ -680,18 +680,20 @@
 							.link .entry .tagline .userattrs a.moderator {background-color: #27b062;}
 							
 
-
+                                                .RESUserTagImage::after { display: none }
 						.RESUserTagImage {
-							height: 10px !important;
-							background-image: url(%%spritesheet%%) !important;
-							background-position: -32px -101px !important;
-							opacity: 0.25 !important;
-							margin-left: 2px !important;
+                                                        vertical-align: top;
+							height: 10px;
+                                                        width: 16px;
+							background-image: url(%%spritesheet%%);
+							background-position: -32px -101px;
+							opacity: 0.25;
+							margin-left: 2px;
 							transition: opacity 0.15s ease;
-							margin-top: 1px !important;
+							margin-top: 2px;
 						}
 
-							.RESUserTagImage:hover {opacity: 1 !important;}
+							.RESUserTagImage:hover {opacity: 1;}
 
 
 					/* Comment / Share / Report */
@@ -961,14 +963,14 @@
 						top: 20% !important;
 						left: 50% !important;
 						margin-left: -125px;
-						padding: 32px !important;
+						padding: 16px !important;
 						width: 250px !important;
 						border: none;
 						border-radius: 2px;
 						box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
 					}
 
-						.flairselector.drop-choices.active {border: 1px solid #e2e2e2;}
+						.flairselector.drop-choices.active {border: none;}
 
 						.flairselector h2 {
 							margin-bottom: 4px;
@@ -1046,6 +1048,19 @@
 										.flairselector form .flairselection .flairremove a:first-letter {text-transform: capitalize;}
 		
 										.flairselector form .flairselection .flairremove a:hover {text-decoration: underline !important;}
+                                                                .flairselector .customizer {
+                                                                    display: block;
+                                                                    margin: 8px 0;
+                                                                    width: 100%;
+                                                                }
+
+                                                                .flairselector .customizer input[type='text'] { width: 100% }
+
+                                                                .flairselector form button {
+                                                                    display: block;
+                                                                    float: right;
+                                                                    margin: 0;
+                                                                }
 
 						.flairselector .error {text-align: left;}
 							.flairselector .error:first-letter {text-transform: capitalize;}
@@ -1106,7 +1121,7 @@
 							}
 
 								.res .commentarea .thing {
-									padding: 16px 16px 0px 14px !important;
+									padding: 14px 16px 8px 8px !important;
 								}
 
 									.res .commentarea .thing.collapsed {padding-bottom: 16px !important;}
@@ -2118,6 +2133,9 @@
 										padding: 0;
 									}
 
+                                                                        /* Spam comment */
+                                                                        .comment.spam > .child { padding-left: 0; margin-left: 16px }
+
 
 								/* Reply / Share / report */
 								.comment .flat-list li a {
@@ -2820,6 +2838,7 @@
 					color: rgba(255, 255, 255, 0.45)!important;
 					top: 1px !important;
 				}
+                                .res #RESShortcuts { color: #E0E0E0 }
 
 			/* Pinheader */
 			.pinHeader-sub #sr-header-area, .pinHeader-subanduser #sr-header-area {background-image: url(%%headerimg%%);background-position: 50% 0%;}
@@ -2897,7 +2916,7 @@
 				margin-right: 0px !important;
 			}
 
-				.res .commentarea .thing {border: none !important;}
+				.res .commentarea .thing {border: none !important; border-radius: 2px !important; }
 
 			.res .titlebox .tagline {margin-top: 6px;}
 
