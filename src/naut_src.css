@@ -1,7 +1,7 @@
 		/*
 				Version 4.0
 				Stylesheet by Cryptonaut
-				Last modified: 5 March 2016
+				Last modified: 14 March 2016
 				Details: This is a custom template made by /u/Cryptonaut. 
 				Find out more on /r/Naut.
 
@@ -518,12 +518,14 @@
 						margin: 0 16px 0 0;
 					}
 
-						.thumbnail img {
-							min-height: 56px;
-							min-width: 80px;
-							max-width: none;
-							max-height: 56px;
-						}
+                        .thumbnail img {
+                            min-height: 56px;
+                            min-width: 80px;
+                            max-width: none;
+                            position: relative;
+                            transform: translateY(-50%);
+                            top: 50%;
+                        }
 
 						.stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
 
