@@ -1,7 +1,8 @@
 		/*
 				Version 4.0
 				Stylesheet by Cryptonaut
-				Last modified: 14 March 2016
+				Assisted by RenegadeAI & LackingAGoodName
+				Last modified: 4 April 2016
 				Details: This is a custom template made by /u/Cryptonaut. 
 				Find out more on /r/Naut.
 
@@ -669,14 +670,14 @@
 						.link .entry .tagline .userattrs {visibility: hidden;}
 						.link .entry .tagline .userattrs a {
 							visibility: visible;
-							font-size: 10px;
-							padding: 1px 3px 1px 2px;
-							margin-left: 2px;
-							background-color: #f00;
-							color: #fff !important;
-							position: relative;
-							top: -1px;
 							cursor: help;
+							display: inline-block;
+							background-color: red;
+							color: #fff;
+							line-height: 14px;
+							padding: 0 3px;
+							border-radius: 2px;
+							font-size: 11px;
 						}
 
 							.link .entry .tagline .userattrs a.moderator {background-color: #27b062;}
@@ -1745,6 +1746,7 @@
 					margin: 1.5em 0em;
 					font-size: 12px;
 					line-height: 42px;
+					text-align: center;
 
 					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
 					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
@@ -1772,6 +1774,7 @@
 					margin: 1.5em 0em;
 					font-size: 12px;
 					line-height: 42px;
+					text-align: center;
 
 					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
 					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
@@ -1964,7 +1967,13 @@
 					border: 1px solid #d8e0e5;
 					color: #292f34;
 				}
-
+				
+				/* Gilding */
+				.gilded-icon:before {
+					background: url(%%gilded%%);
+					height: 16px;
+					width: 16px;
+				}
 
 				/* Comments */
 				.commentarea .sitetable {
@@ -3169,12 +3178,10 @@
 		}
 
 
-	/* ===============================================================================================================================
-
+	/* ==============================================================================================================================
 		
 											/////
 					End of basic Naut. Add your customizations or any addons below here!
 											/////
-
 
 	==================================================================================================================================*/
