@@ -2,12 +2,11 @@
 				Version 4.0
 				Stylesheet by Cryptonaut
 				Assisted by RenegadeAI & LackingAGoodName
-				Last modified: 5 April 2016
+				Last modified: 6 April 2016
 				Details: This is a custom template made by /u/Cryptonaut
 				Find out more on /r/Naut
 
 				-------------------------------------------------------------------------- */
-
 	*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
 
 	body {
@@ -2719,8 +2718,9 @@
 				#images {
 					padding: 8px 0;
 					background-color: #fff;
-					height: 800px;
 					position: relative;
+					overflow: auto;
+					height: inherit;
 				}
 
 					#images #image-upload {
@@ -3180,8 +3180,6 @@
 		   98% 	{opacity: 0;}
 		   100% {transform:scale(1.5,1.5);			-webkit-transform:scale(1.5,1.5); opacity: 0;}
 		}
-
-
 	/* ==============================================================================================================================
 		
 											/////
