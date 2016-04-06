@@ -2,9 +2,9 @@
 				Version 4.0
 				Stylesheet by Cryptonaut
 				Assisted by RenegadeAI & LackingAGoodName
-				Last modified: 4 April 2016
-				Details: This is a custom template made by /u/Cryptonaut. 
-				Find out more on /r/Naut.
+				Last modified: 5 April 2016
+				Details: This is a custom template made by /u/Cryptonaut
+				Find out more on /r/Naut
 
 				-------------------------------------------------------------------------- */
 
@@ -1934,6 +1934,10 @@
 					}
 
 						.commentarea .menuarea .toggle a:hover, .help-hoverable:hover {color: #24a0ed;}
+						
+						.help-hoverable {
+							font-size: x-small;
+						}
 
 				.commentarea>.usertext {
 					background-color: #FAFAFA !important;
@@ -2630,7 +2634,7 @@
 				 	.wiki-page .wiki-page-content em {color: #98abba;}
 
 			/* Subreddit Settings Page + Flair Page + Stylesheet Page */
-			.linefield {
+			.linefield, .linefield.mobile {
 				background-color: #fff;
 				color: #98abba;
 				margin: 0 0 16px 0;
