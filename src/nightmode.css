@@ -9,8 +9,8 @@
 .res-nightmode .icon-menu a,
 .res-nightmode .side .titlebox form.flairtoggle,
 .res-nightmode .side .titlebox h1.redditname:before {
-  background: #444;
-  border-color: #444; 
+  background: #444 !important;
+  border-color: #444 !important; 
 }
 .res-nightmode .side .linkinfo .score,
 .res-nightmode .titlebox:before,
@@ -23,7 +23,8 @@
   background: #444;
   border-color: #444;
 }
-.res-nightmode #sr-header-area[id] {
+.res-nightmode #sr-header-area[id],
+.res-nightmode .commentarea > .usertext textarea:not(:focus) {
   background: #333;
   border-color: #333;
 }
@@ -43,10 +44,11 @@
   background-position: -0 -100px!important;
 }
 .res-nightmode .link .entry .tagline a {
-  color: rgb(130, 130, 130);
+  color: #828282;
 }
 
 /* Buttons */
+.res-nightmode button,
 .res-nightmode .morelink,
 .res-nightmode .morelink a,
 .res-nightmode .sidebox.create .morelink a,
