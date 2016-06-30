@@ -2,7 +2,7 @@
 				Version 4.0
 				Stylesheet by Cryptonaut
 				Assisted by RenegadeAI & LackingAGoodName
-				Last modified: 6 April 2016
+				Last modified: 29 June 2016
 				Details: This is a custom template made by /u/Cryptonaut
 				Find out more on /r/Naut
 
@@ -388,7 +388,7 @@
 
 
 					.listing-page .tabmenu li > a[href$="/controversial/"], .wiki-page .tabmenu li > a[href$="/controversial/"],
-					.listing-page .tabmenu li > a[href$="/promoted/"], .wiki-page .tabmenu li > a[href$="/promoted/"]
+					.listing-page .tabmenu li > a[href$="/ads/"], .wiki-page .tabmenu li > a[href$="/ads/"]
 					{display:none!important;}
 
 
@@ -1519,32 +1519,25 @@
 
 						#search input[type=text]:focus:hover {box-shadow: 0px 1px 5px rgba(0,0,0,0.24) !important;}
 
-						#search input[type="text"]:-moz-placeholder {font-size: 0;}
-						#search input[type="text"]::-webkit-input-placeholder {font-size: 0;}
-						#search input[type="text"]:-ms-input-placeholder {font-size: 0;}
-
-						#search input[type="text"]:-moz-placeholder::after {
-						    font-size: 14px;
-						    content: "Search reddit";
-						    position: relative;
-						    top: 1px;
+						#search input[type="text"]:-moz-placeholder {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            top: 1px;
+                            position: relative;
 						}
-
-						#search input[type="text"]::-webkit-input-placeholder::after {
-						    font-size: 14px;
-						    content: "Search reddit";
-						    position: relative;
-						    top: 1px;
-						}
-
-						#search input[type="text"]:-ms-input-placeholder::after {
-						    font-size: 14px;
-						    content: "Search reddit";
-						    position: relative;
-						    top: 1px;
-						}
-
-
+                        #search input[type="text"]::-webkit-input-placeholder {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            top: 1px;
+                            position: relative;
+                        }
+						#search input[type="text"]:-ms-input-placeholder {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            top: 1px;
+                            position: relative;
+                        }
+                        
 						#search input[type=text]::-webkit-input-placeholder {color:#B3B3B3;}
 						#search input[type=text]:-moz-placeholder {color:#B3B3B3;}
 						#search input[type=text]::-moz-placeholder {color:#B3B3B3;} 
@@ -1630,8 +1623,8 @@
 					letter-spacing: 0px;
 				}
 
-					.sidebox.submit.submit-text .morelink a:after {font-size: 14px; content:"Submit Text";}
-					.sidebox.submit.submit-link .morelink a:after {font-size: 14px; content:"Submit Link";}
+					.sidebox.submit.submit-text .morelink a:before {font-size: 14px; content:"Submit Text";}
+					.sidebox.submit.submit-link .morelink a:before {font-size: 14px; content:"Submit Link";}
 
 				.side .sidebox.submit-text .morelink:before, .side .sidebox.submit-link .morelink:after {
 					content: "N/A";
@@ -1954,7 +1947,7 @@
 
 						.commentarea .usertext-edit textarea {
 							position: relative;
-							z-index: 999;
+							z-index: 0;
 							width: 100%;
 						}
 
@@ -2304,6 +2297,10 @@
 						text-transform: capitalize;
 					}
 
+                    textarea.title {
+                        text-transform: none !important;
+                    }
+
 					.submit-page #url-field button {
 						background-color: #c3cfd6;
 
@@ -2349,6 +2346,31 @@
 
 
 			.submit-page .footer-parent {display: none;}
+
+            #newlink-with-image-upload .file-upload-button:active {
+                background-color: #0066b2;
+                box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
+            }
+
+            #newlink-with-image-upload .file-upload-button:hover {
+                background-color: #158be2;
+                box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+            }
+
+            #newlink-with-image-upload .file-upload-button {
+                position: absolute;
+                top: 84px;
+                left: 45px;
+                background-color: #0079d3;
+                width: 170px;
+                height: 35px;
+                border-radius: 2px;
+                line-height: 36px !important;
+                border: none;
+                padding: 0px 0px !important;
+                box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
+                transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+            }
 
 
 			/* Search Page */
@@ -2638,7 +2660,6 @@
 				color: #98abba;
 				margin: 0 0 16px 0;
 				width: 528px;
-				padding: 8px 0;
 			}
 
 				.linefield .title {
@@ -2713,6 +2734,10 @@
 					box-shadow: none;
 					padding: 0;
 				}
+
+                pre {
+                    overflow: hidden;
+                }
 
 
 				#images {
@@ -3180,6 +3205,7 @@
 		   98% 	{opacity: 0;}
 		   100% {transform:scale(1.5,1.5);			-webkit-transform:scale(1.5,1.5); opacity: 0;}
 		}
+
 	/* ==============================================================================================================================
 		
 											/////
