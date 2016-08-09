@@ -141,6 +141,10 @@
                             margin-top: -2px;
                         }
 
+                .sr-bar .separator {
+                    color: transparent !important;
+                }
+
                 #sr-header-area .dropdown.srdrop .selected {
                     margin: 0px 12px 0px 8px;
                     padding: 0px;
@@ -149,29 +153,52 @@
 
                     #sr-header-area .dropdown.srdrop .selected:hover {text-decoration: underline;}
 
+                    #sr-header-area .dropdown.srdrop {
+                        padding-left: 8px;
+                    }
+
+                    #sr-header-area .selected.title {
+                        width: 12px;
+                        visibility: hidden;
+                    }
+
                     #sr-header-area .dropdown.srdrop .selected:after {
-                        position: relative;
-                        content: "▼";
-                        margin-left: 4px;
-                        font-size: 10px;
+                        content: "≡";
+                        display: inline-block;
+                        font-size: 19px;
+                        margin-left: -81px;
+                        margin-top: -2px;
+                        visibility: visible;
                     }
 
 
                     /* My Subreddits Dropdown */
                     #sr-header-area .drop-choices.srdrop {
-                        background-color: #fff;
-                        border: none;
-                        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+                            border-radius: 2px;
+                            box-shadow: 0 1px 4px rgba(0,0,0,.24);
+                            opacity: 0;
+                            top: 14px !important;
+                            transition: all .2s cubic-bezier(.4,0,.2,1);
+                            visibility: hidden;
+                            border: none;
                     }
 
+                            #sr-header-area .drop-choices.srdrop.inuse {
+                                opacity: 1;
+                                top: 23px !important;
+                                visibility: visible;
+                            }
+
                         #sr-header-area .drop-choices a.choice {
-                            border-bottom: 1px solid #edeeee;
-                            color: #4D5763;
-                            padding: 2px;
+                            border: 0;
+                            color: #777;
+                            padding: 3px 12px;
+                            transition: none;
                         }
 
                             #sr-header-area .drop-choices a.choice:hover {
-                                background-color: #f1f1f1;
+                                background: #EEE;
+                                color: #222;
                             }
 
 
@@ -1769,7 +1796,7 @@
                             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                         }
 
-                .side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4 {
+                .side .titlebox .md h4 a {
                     padding: 0 16px;
                     background-color: #FFF;
                     border: none;
@@ -1786,11 +1813,11 @@
                     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
                 }
 
-                    .side .titlebox h4 a:hover, .wiki-page .wiki-page-content .md.wiki h4:hover {
+                    .side .titlebox h4 a:hover {
                         box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
                     }
 
-                        .side .titlebox h4 a:active, .wiki-page .wiki-page-content .md.wiki h4:active {
+                        .side .titlebox h4 a:active {
                             background-color: #f4f6f7;
                             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                         }
@@ -1799,7 +1826,6 @@
                 .md hr {border: solid 1px #e5e5e5;}
 
 
-            .titlebox .bottom {display: none;}
 
 
             /* Mod Box */
@@ -1816,9 +1842,10 @@
                         color: #4D5763;
                     }
 
-                    .side #moderation_tools .title .collapse-button {
+                    .side #moderation_tools .title .collapse-button,  {
                         color: #4D5763;
                         vertical-align: middle;
+                        text-align: center;
                         border-radius: 1px;
                         border: 1px solid #d8d8d8;
                     }
@@ -1946,7 +1973,7 @@
                         }
 
                 .commentarea>.usertext {
-                    background-color: #FAFAFA !important;
+                    background-color: #FAFAFA;
                     margin: -58px 0 16px 0;
                     padding: 64px 16px 16px 16px !important;
                     overflow: visible;
@@ -2335,6 +2362,11 @@
                     margin-bottom: 0px;
                 }
 
+                #items-required {
+                    padding-bottom: 0px !important;
+                    padding-top: 15px;
+                }
+
                 .submit-page #newlink.submit.content .btn {
                     width: 100%;
                     height: auto;
@@ -2344,14 +2376,9 @@
                     font-family: Lato, arial, sans-serif;
                     font-size: 17px;
                     padding: 16px;
-                    text-align: left;
+                    text-align: center;
                     margin-bottom: 48px;
                 }
-
-                    .submit-page #newlink.submit.content .btn:after {
-                        content: " your post to Reddit.";
-                        text-transform: none;
-                    }
 
                     .submit-page #newlink.submit.content .btn:hover {
                         box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.48);
@@ -2655,6 +2682,7 @@
                 color: #98abba;
                 margin: 0 0 16px 0;
                 width: 528px;
+                border: none;
             }
 
                 .linefield .title {
@@ -3097,7 +3125,7 @@
 
 
                     /* Shadows and cards */
-                    body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox, .commentarea>.usertext,
+                    body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
                     .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main,
                     .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
                         background-color: #fff;
