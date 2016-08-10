@@ -3134,7 +3134,101 @@
                         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
                     }
 
+/* --- Reddit Enhancement Suite Fixes --- */
 
+    /* Nightmode */
+    
+        /*Arrows*/
+        .res-nightmode .arrow{background-image:url(%%spritesheet%%)!important}
+        .res-nightmode .arrow{background-image:url(%%spritesheet-dark%%)!important}	
+        .res-nightmode .arrow.up {background-position: 0px -80px!important}
+        .res-nightmode .arrow.upmod {background-position: -32px -80px!important}
+        .res-nightmode .arrow.down{background-position:-64px -80px!important}
+        .res-nightmode .arrow.downmod{background-position:-0 -100px!important}
+        
+        /*LinkFlair Icons*/
+        
+            /* Defaults */
+            .res-nightmode .thumbnail.default{background:url(%%spritesheet-dark%%) -188px -48px}
+            .res-nightmode .thumbnail.self{background:url(%%spritesheet-dark%%) -108px -104px}
+            .res-nightmode .stickied .thumbnail{background:url(%%spritesheet-dark%%) -108px -48px}
+            .res-nightmode .over18.link .thumbnail{background:url(%%spritesheet-dark%%) -188px -104px!important}
+            .res-nightmode a.thumbnail[href*="reddit.com"]{background:url(%%spritesheet-dark%%) -188px -160px}
+            .res-nightmode .linkflair-mod .thumbnail.self{background:url(%%spritesheet-dark%%) -108px -48px!important}
+        
+          
+          
+        	
+        /* Custom Nightmode Colors */
+    
+            /* Background Color */
+            .res-nightmode body{background-color:#25282c!important}
+            
+        
+            /* Transparent */    
+            .res-nightmode .side, .res-nightmode .tabmenu li a, .res-nightmode .side .usertext-body .md ol, .res-nightmode .side .usertext-body .md ol ol, .res-nightmode .side .usertext-body .md ol ol li, .res-nightmode .side .md ul, .res-nightmode #header-bottom-right, .res-nightmode .flair, .res-nightmode .linkflairlabel, .res-nightmode .side .sidecontentbox .content, .res-nightmode .icon-menu a, .res-nightmode #userbarToggle, .res-nightmode #progressIndicator, .res-nightmode body .content, .res-nightmode .voteWeight {background-color: transparent!important;}
+    
+    
+            /* Black (Various Transparencies) */
+            .res-nightmode #header .tabmenu:before{background-color:rgba(0,0,0,0.24)!important}
+
+            .res-nightmode #sr-header-area{background-color:rgba(0,0,0,0.08)!important}
+        
+            .res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .commentarea > .usertext, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo {background-color: rgba(0,0,0,0.8)!important; box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4)!important}
+            
+            .res-nightmode .submit-page button {border: 0px none #000!important}
+        
+            /* Dark Gray */
+            .res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input {background-color: #212223!important}
+
+
+            /* Medium Gray */
+            .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd{color: #606469 !important;}
+            
+            .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover {background-color: #606469 !important;}
+
+
+            /* Off White (uses Original Naut Blackground Colour - #eaeaea) */
+            .res-nightmode .link .entry .tagline a, .res-nightmode .hover-bubble, .res-nightmode body .content textarea:focus, .res-nightmode .md strong, .res-nightmode .search-result-body, .res-nightmode .linkflairlabel, .res-nightmode .search-page #search input, .res-nightmode #previoussearch p, .res-nightmode dt, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode .pretty-form, .res-nightmode .comments-page .side .linkinfo .score, .res-nightmode .titlebox:before, .res-nightmode .submit-page .roundfield .title, .res-nightmode .RESDropdownList li, .res-nightmode .RESDropdownList li a {color: #eaeaea!important}
+            
+            
+            /* Pure White (aka #ffffff) */
+            .res-nightmode .hover-bubble {border: 1px solid #fff !important;}
+            
+            .res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a, .res-nightmode .submit_text.enabled.roundfield .md, .res-nightmode .sidebox.create .morelink a, .res-nightmode body .content input[type="text"]:hover, .res-nightmode .submit-page #url-field button, .res-nightmode .side *, .res-nightmode .submit-page #url-field button, .res-nightmode .submit-page #newlink.submit.content .btn {color: #fff!important}
+            
+            .res #userbarToggle {color: rgba(255,255,255,0.45)!important;}
+
+
+            /* FR Red Color #ef4949 */
+            .res-nightmode .submit-page #url-field button, .res-nightmode .submit-page #newlink.submit.content .btn, .res-nightmode .sidebox.create .morelink {background-color: #ef4949!important}
+
+            
+            /* Text Forms & Boxes */
+            .res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type="text"], .res-nightmode body .content input[type="password"], .res-nightmode body .content input[type="url"] {background-color: #000!important; border: 1px solid #c3cfd6!important; color: #eaeaea!important;}
+            .res-nightmode .side .spacer input {background-color: #000!important;color: #eaeaea!important;}
+            .res-nightmode #search input[type="text"] {
+                padding: 0 55px 0 16px;
+                border-radius: 2px; width: 100%; 
+                height: 40px;
+                line-height: 30px;
+                background-color: rgba(0,0,0,0.7)}
+
+            .res-nightmode #search #searchexpando {
+                height: 40px;
+                line-height: 30px;
+                border: 0px 1px 1px 1px solid #000}
+                
+            .res-nightmode #search #searchexpando label {padding: 10px 8px 10px 8px;}
+
+            .res-nightmode #previoussearch #moresearchinfo, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode #search #searchexpando {background-color: #212223!important}
+
+        /* Moderator & Various Fixes */
+            .res .thing .tagline .author {border-radius:2px!important}
+            .res-nightmode .titlebox form.toggle, .res-nightmode .leavemoderator {color: gray!important;background: none!important}
+            
+            .res-nightmode body.mod-toolbox .tb-general-button, .res-nightmode body.mod-toolbox li a.tb-general-button, .res-nightmode body.mod-toolbox .tb-bracket-button {background-color: transparent; color: gray; font-size: 9px !important; border-width: 1px 1px 1px 2px; border-color: #gray; padding: 1px 4px !important; border-radius: 0px 2px 2px 0px;}
+            .res-nightmode .RESUserTagImage {background-image: url(%%spritesheet-dark%%);background-position: -32px -101px;}
 
     /* Experimental Toast Animation */
     #mail.havemail:before {
