@@ -3177,6 +3177,7 @@
             .res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .commentarea > .usertext, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo {background-color: rgba(0,0,0,0.8)!important; box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4)!important}
             
             .res-nightmode .submit-page button {border: 0px none #000!important}
+            .res-nightmode .side .titlebox h1.redditname:before {background-color: #000;}
         
             /* Dark Gray */
             .res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input {background-color: #212223!important}
