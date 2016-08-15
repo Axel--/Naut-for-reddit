@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 26 July 2016
+                Last modified: 14 August 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -153,23 +153,14 @@
 
                     #sr-header-area .dropdown.srdrop .selected:hover {text-decoration: underline;}
 
-                    #sr-header-area .dropdown.srdrop {
-                        padding-left: 8px;
-                    }
-
-                    #sr-header-area .selected.title {
-                        width: 12px;
-                        visibility: hidden;
-                    }
-
                     #sr-header-area .dropdown.srdrop .selected:after {
-                        content: "≡";
                         display: inline-block;
-                        font-size: 19px;
-                        margin-left: -81px;
-                        margin-top: -2px;
-                        visibility: visible;
+                        content: "▼";
+                        margin-left: 4px;
+                        font-size: 10px;
                     }
+
+                    #sr-header-area .dropdown.srdrop .selected:hover:after { text-decoration: none }
 
 
                     /* My Subreddits Dropdown */
