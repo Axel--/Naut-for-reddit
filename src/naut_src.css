@@ -8,11 +8,11 @@
 
                 -------------------------------------------------------------------------- */
 
-    *, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+    *, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; }
 
     body {
         overflow-x: hidden;
-        background-color: #eee;
+        background: #eee;
         min-width: 920px;
     }
 
@@ -24,13 +24,13 @@
 
 
         ::-moz-selection {
-            background-color: #0079d3;
+            background: #0079d3;
             text-shadow: none;
             color: #fff;
         }
 
         ::selection {
-            background-color: #0079d3;
+            background: #0079d3;
             text-shadow: none;
             color: #fff;
         }
@@ -39,7 +39,7 @@
 
         body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password],
          .side .spacer input, body .content input[type=url] {
-            background-color: #fff;
+            background: #fff;
             border: 1px solid #c3cfd6;
             color: #738491;
             box-shadow: none;
@@ -61,7 +61,7 @@
         body .btn, body button, .c-btn-primary {
             margin: 4px 16px 4px 0px;
             padding: 2px 18px;
-            background-color: #0079d3;
+            background: #0079d3;
             border: none;
             border-radius: 2px;
             color: #fff;
@@ -72,18 +72,18 @@
             font-size: 12px;
 
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-            transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+            transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
         }
 
             .btn:hover, button:hover, .c-btn-primary:hover {
                 color: #fff;
-                background-color: #158be2;
+                background: #158be2;
                 box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
             }
 
                 .btn:active, button:active, .c-btn-primary:active {
                     color: #fff;
-                    background-color: #0066b2;
+                    background: #0066b2;
                     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                 }
 
@@ -95,18 +95,14 @@
             margin: 0px;
             height: 196px;
             border: none;
-            background-color: #30333A;
-            background-image: url(%%headerimg%%);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover;
+            background: url(%%headerimg%%) 50% 50% / cover no-repeat;
             z-index: 1;
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
         }
 
             /* Subreddits Bar */
             #sr-header-area {
-                background-color: rgba(0,0,0,0.08);
+                background: rgba(0,0,0,0.08);
                 border: none;
                 transition: all 0.15s ease;
                 height: 24px;
@@ -118,7 +114,7 @@
                 #sr-header-area .sr-list {margin-right: 48px;}
 
                 #sr-header-area .sr-bar a, #sr-more-link, #sr-header-area .separator, #sr-header-area .dropdown.srdrop .selected {
-                    background-color: transparent;
+                    background: none;
                     color: rgba(255,255,255,0.4);
                     transition: all 0.15s ease;
                 }
@@ -129,7 +125,7 @@
                     #sr-header-area:hover .dropdown.srdrop .selected {color: rgba(255,255,255,0.8);}
 
                     #sr-header-area .sr-bar a:hover, #sr-more-link:hover, #sr-header-area .dropdown.srdrop .selected:hover {
-                        background-color: transparent;
+                        background: none;
                         border: none;
                         transition: all 0.15s ease;
                     }
@@ -202,7 +198,7 @@
                 width: auto;
                 max-width: 300px;
                 height: 24px;
-                background-color: transparent;
+                background: none;
                 font-size: 11px;
                 padding: 5px 8px 4px 2px;
 
@@ -216,10 +212,7 @@
                     margin-left: -16px;
                     width: 16px;
                     height: 16px;
-                    background-image: url(%%spritesheet%%);
-                    background-repeat: no-repeat;
-                    background-position: -48px -32px;
-                    background-size: inherit;
+                    background-image: url(%%spritesheet%%) -48px -32px no-repeat;
                 }
 
                 .user .userkarma {
@@ -256,7 +249,7 @@
                         }
 
                         .message-count {
-                            background-color: #f50;
+                            background: #f50;
                             position: relative;
                             top: -1px;
                             color: #fff !important;
@@ -267,7 +260,7 @@
                             padding: 16px 24px;
                             bottom: 24px;
                             z-index: 100;
-                            background-color: #EA4848;
+                            background: #EA4848 url(%%spritesheet%%) 269px -120px no-repeat;
                             border-radius: 2px;
                             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
                             color: #fff;
@@ -276,15 +269,11 @@
                             left: 32px;
                             content: "You have new messages!";
                             text-indent: 0px;
-                            font-size: 14px;
-                            font-family: arial, sans-serif;
+                            font: 14px arial, sans-serif;
                             line-height: 1;
                             -webkit-transform:translateY(112px);
                             transform:translateY(112px);
-                            transition: background-color 0.25s ease, box-shadow 0.25s ease;
-                            background-image: url(%%spritesheet%%);
-                            background-position: 269px -120px;
-                            background-repeat: no-repeat;
+                            transition: background 0.25s ease, box-shadow 0.25s ease;
                         }
 
                             #mail.havemail:hover:before {
@@ -331,8 +320,7 @@
                 width: 0px;
                 padding-left: 42px;
                 height: 42px;
-                background-image: url(%%spritesheet%%);
-                background-position: -80px -00px;
+                background: url(%%spritesheet%%) -80px -0;
                 margin: 0 8px 0 0;
                 vertical-align: top;
                 font-size: 0px;
@@ -377,7 +365,7 @@
                         position: absolute;
                         left: -16px;
                         right: -384px;
-                        background-color: rgba(0,0,0,0.24);
+                        background: rgba(0,0,0,0.24);
                         height: 42px;
                         z-index: -1;
                     }
@@ -549,9 +537,9 @@
 
                         .stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
 
-                        .thumbnail.default          {background: url(%%spritesheet%%) -176px -048px;}
-                        .thumbnail.self             {background: url(%%spritesheet%%) -096px -104px;}
-                        .stickied .thumbnail        {background: url(%%spritesheet%%) -096px -048px;}
+                        .thumbnail.default          {background: url(%%spritesheet%%) -176px -48px;}
+                        .thumbnail.self             {background: url(%%spritesheet%%) -96px -104px;}
+                        .stickied .thumbnail        {background: url(%%spritesheet%%) -96px -48px;}
                         .over18.link .thumbnail     {background: url(%%spritesheet%%) -176px -104px !important;}
                             .over18.link .thumbnail img {display: none;}
 
@@ -626,7 +614,7 @@
                             border-color: #0079d3;
                         }
 
-                        .expando-button.selftext.collapsed                  {background-position: -00px -48px!important;}
+                        .expando-button.selftext.collapsed                  {background-position: 0 -48px!important;}
                         .expando-button.selftext.collapsed:hover            {background-position: -16px -48px!important;}
 
                         .expando-button.selftext.expanded                   {background-position: -32px -48px!important;}
@@ -644,7 +632,7 @@
                         .expando-button.image.expanded                      {background-position: -32px -48px!important;}
                         .expando-button.image.expanded:hover                {background-position: -48px -48px!important;}
 
-                        .expando-button.image.gallery.collapsedExpando      {background-position: -0px -64px!important;}
+                        .expando-button.image.gallery.collapsedExpando      {background-position: 0 -64px!important;}
                         .expando-button.image.gallery.collapsedExpando:hover{background-position: -16px -64px!important;}
 
                         .expando-button.image.gallery.expanded              {background-position: -32px -48px!important;}
@@ -699,7 +687,7 @@
                             font-size: 11px;
                         }
 
-                            .link .entry .tagline .userattrs a.moderator {background-color: #27b062;}
+                            .link .entry .tagline .userattrs a.moderator {background: #27b062;}
 
 
                                                 .RESUserTagImage::after { display: none }
@@ -749,8 +737,7 @@
                                     position:relative;
                                     top: -1px;
                                     padding: 2px 3px;
-                                    background-color: #ea4876;
-                                    border-color: #ea4876;
+                                    background: #ea4876;
                                     border-radius: 0px;
                                     color:#fff;
                                     cursor: help;
@@ -776,7 +763,7 @@
                                 left: 40%;
                                 margin: 0;
                                 padding: 24px;
-                                background-color: #fff;
+                                background: #fff;
                                 z-index: 100;
                                 box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
                                 border: none;
@@ -830,20 +817,16 @@
                         border-radius: 1px;
                         border: 0px solid;
                         color: #fff;
-                        font-weight: bold;
-                        font-style: normal;
-                        font-variant: normal;
-                        font-size: 13px;
-                        font-family: Arial, sans-serif;
+                        font: normal normal bold 13px Arial, sans-serif;
                         cursor: default;
                         vertical-align: middle;
                         position: relative;
                         top: -2px;
-                        background-color: #738491;
+                        background: #738491;
                     }
 
                         .linkflair-mod .linkflairlabel {
-                            background-color: #27b062;
+                            background: #27b062;
                             color: #fff;
                         }
 
@@ -1391,8 +1374,7 @@
             /* Start Subreddit Box */
             .side:before {
                 height: 192px;
-                background-image: url(%%sidebarimg%%);
-                background-color: #DBDBDB;
+                background: url(%%sidebarimg%%);
                 content: "";
                 display: block;
                 position: absolute;
@@ -1888,9 +1870,7 @@
                 padding: 10px 0px;
                 color: #24A0ED;
                 content: "This subreddit uses the /r/Naut theme.";
-                text-transform: none;
-                font-size: 16px;
-                font-family: Lato, arial, sans-serif;
+                font: 16px Lato,arial,sans-serif;
                 position: absolute;
                 width: 320px;
                 border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2056,8 +2036,7 @@
 
                             .comment .entry .tagline {
                                 color: #98abba;
-                                font-size: 12px;
-                                font-family: Arial, sans-serif;
+                                font: 12px Arial sans-serif;
                             }
 
                                 .comment .expand {
@@ -2245,9 +2224,7 @@
                         .read-next .read-next-button {
                             background-color: rgb(0, 121, 211);
                             color: rgb(255, 255, 255);
-                            font-family: monospace;
-                            line-height: 16px;
-                            font-size: 10px;
+                            font: 10px/16px monospace;
                             height: 16px;
                             width: 16px;
                         }
@@ -2347,7 +2324,7 @@
                 .submit-page .infobar {display: none !important;}
 
                 .content.submit .info-notice {
-                    background-color: #edf1f3;
+                    background: #edf1f3;
                     padding: 16px;
                     border: none;
                     margin-bottom: 0px;
@@ -2364,10 +2341,8 @@
                     margin-top: 16px;
                     cursor: pointer;
                     text-transform: capitalize;
-                    font-family: Lato, arial, sans-serif;
-                    font-size: 17px;
+                    font: 17px Lato, arial, sans-serif;
                     padding: 16px;
-                    text-align: center;
                     margin-bottom: 48px;
                 }
 
@@ -2483,8 +2458,7 @@
                         .combined-search-page .search-result-group .search-header-label {
                             text-transform: capitalize;
                             color: #738491;
-                            font-family: Lato, Arial, sans-serif;
-                            font-size: 18px;
+                            font: 18px Lato, Arial, sans-serif;
                             padding-bottom: 2px;
                         }
 
@@ -2613,8 +2587,7 @@
                 padding: 9px 16px 10px 16px;
                 border-radius: 2px;
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
-                font-size: 16px;
-                font-family: arial, sans-serif;
+                font: 16px arial, sans-serif;
                 text-transform: capitalize;
                 margin: 0;
             }
@@ -2775,8 +2748,8 @@
                 color: #fff;
                 left: 0px;
                 bottom: 0px;
-                background-color: #2E2F31;
-                content: "Hey! There's a FAQ if you just scroll down a little.";
+                background: #2E2F31;
+                content: "Hey! There's an FAQ if you just scroll down a little.";
                 font-size: 18px;
                 z-index: 100;
             }
@@ -2789,11 +2762,7 @@
                 left: 0px;
                 bottom: -1200px;
                 z-index: 100;
-                background-color: #fff;
-
-                background-image: url(%%faq%%);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
+                background: url(%%faq%%) 50% 50% no-repeat;
             }
 
 
@@ -2806,10 +2775,8 @@
             .flair {
                 border: none;
                 border-radius: 0px;
-                font-size: 12px;
-                font-family: arial, sans-serif;
-                font-weight: normal;
-                background-color: transparent;
+                font-family: normal 12px arial, sans-serif;
+                background: transparent;
                 color: #98abba;
                 padding-left: 0px;
                 margin-right: inherit;
@@ -2857,17 +2824,14 @@
                 height: 800px;
                 margin-top: 192px;
                 padding: 528px 0 64px 0;
-                background-image: url(%%footer%%);
-                background-repeat: no-repeat;
-                background-position: 50% 0%;
-                background-size: cover;
+                background: url(%%footer%%) 50% 0 / cover no-repeat;
 
             }
 
             .footer {
                 border: 0px solid;
                 border-radius: 2px;
-                background-color: rgba(43, 51, 58, 0.64);
+                background: rgba(43, 51, 58, 0.64);
                 padding: 16px;
                 max-width: 640px;
             }
@@ -2953,8 +2917,7 @@
             .res .content .RESBigEditorPop {
                 background-color: rgba(0, 0, 0, 0);
                 line-height: inherit;
-                font-size: 11px;
-                font-family: verdana,arial,sans-serif;
+                font: 11px verdana,arial,sans-serif;
                 box-shadow: none;
                 font-weight: normal;
                 color: #4D5763;
@@ -3119,7 +3082,7 @@
                     body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
                     .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main,
                     .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
-                        background-color: #fff;
+                        background: #fff;
                         padding: 16px;
                         border-radius: 2px;
                         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
