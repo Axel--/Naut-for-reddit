@@ -2850,7 +2850,7 @@
                 .res a.beta-link {top: 4px;}
 
                 .res #header-bottom-right .user .userkarma {display: none;}
-                .res #header-bottom-right .user {font-size: 0px;}
+                .res #header-bottom-right .user {font-size: 0 !important;}
                 .res #header-bottom-right .user a {font-size: 11px}
 
                 .res #sr-header-area a.RESShortcutsCurrentSub, .res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {color: #fff !important;border-bottom: 2px solid #fff;}
