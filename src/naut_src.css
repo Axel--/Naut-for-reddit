@@ -977,7 +977,7 @@
 
                         .flairselector h2 {
                             margin-bottom: 4px;
-                            background-color: none;
+                            background: none;
                             color: #24a0ed;
                             text-align: left;
                             text-transform: capitalize;
