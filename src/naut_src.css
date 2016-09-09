@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 14 August 2016
+                Last modified: 9 September 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -60,17 +60,17 @@
 
         body .btn, body button, .c-btn-primary {
             margin: 4px 16px 4px 0px;
-            padding: 2px 18px;
+            padding: 0 16px;
             background: #0079d3;
             border: none;
             border-radius: 2px;
             color: #fff;
             text-transform: uppercase;
             font-weight: bold;
-            cursor: default;
-            height: 32px;
-            font-size: 12px;
-
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            font-family: Lato,arial,sans-serif;
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
             transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
         }
@@ -1856,7 +1856,7 @@
             .comments-page .link .usertext .md {margin-bottom: 0px;}
 
                 .commentarea .panestack-title {
-                    margin: 10px 0 0 0px;
+                    margin: 20px 0 0 0;
                     border-bottom: 0;
                     padding-left: 16px;
                 }
@@ -1864,7 +1864,7 @@
                     .commentarea .panestack-title .title {color:  #4D5763;}
 
 
-                .commentarea .menuarea {margin: 0 0 0 0px;padding-left: 16px;}
+                .commentarea .menuarea {margin: 0 0 20px 0;padding-left: 16px;}
 
                     .commentarea .menuarea span.dropdown-title.lightdrop {color: #98abba;}
                     .commentarea .menuarea span.dropdown-title.lightdrop:first-letter {text-transform: capitalize;}
@@ -1940,10 +1940,10 @@
                             .usertext .bottom-area a.reddiquette {color: #24a0ed;}
 
                 .gold-accent.comment-visits-box {
-                    margin: 0px 0px 12px 0px;
+                    margin: 0px 0px 16px 0px;
                     border-radius: 2px;
-                    background: #edf1f3;
-                    border: 1px solid #d8e0e5;
+                    background: #CFD8DC;
+                    border: none;
                     color: #292f34;
                 }
 
@@ -1963,7 +1963,7 @@
                 }
 
                     .commentarea .thing {
-                        margin: 0 0 12px 0;
+                        margin: 0 0 16px 0;
                         padding: 8px 16px 8px 0;
                     }
 
@@ -3050,6 +3050,8 @@
                         border-radius: 2px;
                         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
                     }
+
+                    .commentarea>.sitetable>.comment {padding-left: 10px}
 
 
 
