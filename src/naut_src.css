@@ -1206,26 +1206,27 @@
 
                 /* Sorting Menu (Top links today/this week/ever) */
                 .top-page .menuarea {
-                    margin: 16px 0 24px 0;
-                    padding: 0;
+                    margin: -8px -16px 0;
+                    padding: 0 20px;
                     border: none;
                     color: #738491;
                     overflow: visible;
+                    line-height: 36px;
+                    border-bottom: 1px solid rgba(0,0,0,0.14);
                 }
 
                     .dropdown.lightdrop .selected {
+                        display: inline-block;
                         color: #292f34;
                         text-decoration: none;
                         cursor: pointer;
-                        padding: 8px 12px;
-                        border: 1px solid #edf1f3;
-                        border-radius: 2px;
+                        padding: 0 16px;
                         background-image: none;
                     }
 
                         .dropdown.lightdrop .selected:hover {background-color: rgba(0,0,0,0.05);}
                         .dropdown.lightdrop .selected:after {content: " ▼";}
-                        .drop-choices.lightdrop {margin-top: 8px;}
+                        .drop-choices.lightdrop {margin-top: 11px;}
 
                     /* RES Popup */
                     .guider {
@@ -1482,6 +1483,11 @@
                 .hover-bubble.anchor-right:before {
                     right: -19px;
                     border-left-color: #CCCCCC;
+                }
+
+                .titlebox .bottom {
+                    padding-top: 10px;
+                    border-color: rgba(0,0,0,0.14);
                 }
 
 
@@ -1868,7 +1874,8 @@
                         .drop-choices.lightdrop {
                             border: none;
                             z-index: 1001;
-                            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+                            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                            border-radius: 2px;
                         }
 
                             .drop-choices a.choice {
