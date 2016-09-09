@@ -1801,25 +1801,6 @@
 
                 .icon-menu a {background: none;}
 
-
-            /* Ads */
-            #ad-frame, #ad_main {
-                width: 320px;
-                height: 290px;
-                padding: 10px 0 0 10px !important;
-
-            }
-
-            .sponsorshipbox {
-                max-width: 320px;
-                padding: 0 0 0 0 !important;
-            }
-
-                #ad_sponsorship {
-                    margin: 10px 0 8px 10px;
-                    height: 120px;
-                }
-
             /* Create Community */
                 .sidebox.create .morelink {
                     position: relative;
@@ -3044,7 +3025,7 @@
                     /* Shadows and cards */
                     body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, :not(.child)>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
                     .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main,
-                    .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
+                    .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, #ad_main_top {
                         background: #fff;
                         padding: 16px;
                         border-radius: 2px;
@@ -3052,6 +3033,20 @@
                     }
 
                     .commentarea>.sitetable>.comment, #bottom-comments>.sitetable>.comment {padding-left: 10px}
+
+
+                    /* Ads */
+                    #ad-frame, #ad_main, #ad_main_top {box-sizing:initial;padding:10px;}
+
+                    .sponsorshipbox {
+                        max-width: 320px;
+                        padding: 0 0 0 0 !important;
+                    }
+
+                        #ad_sponsorship {
+                            margin: 10px 0 8px 10px;
+                            height: 120px;
+                        }
 
 
 
