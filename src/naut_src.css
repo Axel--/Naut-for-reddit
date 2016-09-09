@@ -8,11 +8,11 @@
 
                 -------------------------------------------------------------------------- */
 
-    *, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+    *, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; }
 
     body {
         overflow-x: hidden;
-        background-color: #eee;
+        background: #eee;
         min-width: 920px;
     }
 
@@ -24,13 +24,13 @@
 
 
         ::-moz-selection {
-            background-color: #0079d3;
+            background: #0079d3;
             text-shadow: none;
             color: #fff;
         }
 
         ::selection {
-            background-color: #0079d3;
+            background: #0079d3;
             text-shadow: none;
             color: #fff;
         }
@@ -39,7 +39,7 @@
 
         body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password],
          .side .spacer input, body .content input[type=url] {
-            background-color: #fff;
+            background: #fff;
             border: 1px solid #c3cfd6;
             color: #738491;
             box-shadow: none;
@@ -61,7 +61,7 @@
         body .btn, body button, .c-btn-primary {
             margin: 4px 16px 4px 0px;
             padding: 2px 18px;
-            background-color: #0079d3;
+            background: #0079d3;
             border: none;
             border-radius: 2px;
             color: #fff;
@@ -72,18 +72,18 @@
             font-size: 12px;
 
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-            transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+            transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
         }
 
             .btn:hover, button:hover, .c-btn-primary:hover {
                 color: #fff;
-                background-color: #158be2;
+                background: #158be2;
                 box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
             }
 
                 .btn:active, button:active, .c-btn-primary:active {
                     color: #fff;
-                    background-color: #0066b2;
+                    background: #0066b2;
                     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                 }
 
@@ -95,18 +95,14 @@
             margin: 0px;
             height: 196px;
             border: none;
-            background-color: #30333A;
-            background-image: url(%%headerimg%%);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover;
+            background: url(%%headerimg%%) 50% 50% / cover no-repeat;
             z-index: 1;
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
         }
 
             /* Subreddits Bar */
             #sr-header-area {
-                background-color: rgba(0,0,0,0.08);
+                background: rgba(0,0,0,0.08);
                 border: none;
                 transition: all 0.15s ease;
                 height: 24px;
@@ -118,7 +114,7 @@
                 #sr-header-area .sr-list {margin-right: 48px;}
 
                 #sr-header-area .sr-bar a, #sr-more-link, #sr-header-area .separator, #sr-header-area .dropdown.srdrop .selected {
-                    background-color: transparent;
+                    background: none;
                     color: rgba(255,255,255,0.4);
                     transition: all 0.15s ease;
                 }
@@ -129,7 +125,7 @@
                     #sr-header-area:hover .dropdown.srdrop .selected {color: rgba(255,255,255,0.8);}
 
                     #sr-header-area .sr-bar a:hover, #sr-more-link:hover, #sr-header-area .dropdown.srdrop .selected:hover {
-                        background-color: transparent;
+                        background: none;
                         border: none;
                         transition: all 0.15s ease;
                     }
@@ -202,7 +198,7 @@
                 width: auto;
                 max-width: 300px;
                 height: 24px;
-                background-color: transparent;
+                background: none;
                 font-size: 11px;
                 padding: 5px 8px 4px 2px;
 
@@ -216,10 +212,7 @@
                     margin-left: -16px;
                     width: 16px;
                     height: 16px;
-                    background-image: url(%%spritesheet%%);
-                    background-repeat: no-repeat;
-                    background-position: -48px -32px;
-                    background-size: inherit;
+                    background: url(%%spritesheet%%) -48px -32px no-repeat;
                 }
 
                 .user .userkarma {
@@ -256,7 +249,7 @@
                         }
 
                         .message-count {
-                            background-color: #f50;
+                            background: #f50;
                             position: relative;
                             top: -1px;
                             color: #fff !important;
@@ -267,7 +260,7 @@
                             padding: 16px 24px;
                             bottom: 24px;
                             z-index: 100;
-                            background-color: #EA4848;
+                            background: #EA4848 url(%%spritesheet%%) 269px -120px no-repeat;
                             border-radius: 2px;
                             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
                             color: #fff;
@@ -276,15 +269,11 @@
                             left: 32px;
                             content: "You have new messages!";
                             text-indent: 0px;
-                            font-size: 14px;
-                            font-family: arial, sans-serif;
+                            font: 14px arial, sans-serif;
                             line-height: 1;
                             -webkit-transform:translateY(112px);
                             transform:translateY(112px);
-                            transition: background-color 0.25s ease, box-shadow 0.25s ease;
-                            background-image: url(%%spritesheet%%);
-                            background-position: 269px -120px;
-                            background-repeat: no-repeat;
+                            transition: background 0.25s ease, box-shadow 0.25s ease;
                         }
 
                             #mail.havemail:hover:before {
@@ -331,8 +320,7 @@
                 width: 0px;
                 padding-left: 42px;
                 height: 42px;
-                background-image: url(%%spritesheet%%);
-                background-position: -80px -00px;
+                background: url(%%spritesheet%%) -80px -0;
                 margin: 0 8px 0 0;
                 vertical-align: top;
                 font-size: 0px;
@@ -347,10 +335,7 @@
                     display: inline-block;
                     line-height: 42px;
                     color: #fff;
-                    font-size: 42px;
-                    font-weight: bold;
-                    font-family: Lato, arial, sans-serif;
-                    font-variant: normal;
+                    font: normal 700 42px/42px Lato,arial,sans-serif;
                     text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
                 }
 
@@ -377,7 +362,7 @@
                         position: absolute;
                         left: -16px;
                         right: -384px;
-                        background-color: rgba(0,0,0,0.24);
+                        background: rgba(0,0,0,0.24);
                         height: 42px;
                         z-index: -1;
                     }
@@ -388,12 +373,9 @@
                         margin: 0 16px;
                         padding: 0;
                         text-transform: uppercase;
-                        font-weight: normal;
-                        font-size: 14px;
-                        font-family: Lato, arial, sans-serif;
+                        font: 400 14px/32px Lato,arial,sans-serif;
                         color: rgba(255,255,255,0.7);
                         display: inline-block;
-                        line-height: 32px;
                     }
 
                         #header .tabmenu li a:hover {color: #fff;}
@@ -416,7 +398,7 @@
         /* Body Content - Frontpage */
         body >.content {
             margin: 16px 352px 64px 16px;
-            padding: 0px 0px;
+            padding: 0px;
             padding-top: 8px !important;
         }
 
@@ -448,9 +430,8 @@
                         .link .score.dislikes {color: #5c5bd7;}
 
                     .arrow {
-                        margin: 0px 0px 0px 0px;
+                        margin: 0px;
                         background-image: url(%%spritesheet%%) !important;
-                        background-color: transparent;
                         width: 33px;
                         border-radius: 2px;
                         transition: background-color 0.25s ease;
@@ -480,7 +461,7 @@
                                     opacity: 1;
                                     z-index:100;
                                     content: " ";
-                                    background-color:#ff5500;
+                                    background:#ff5500;
                                     border-radius: 28px;
                                     animation: upvote 0.35s ease-out forwards;
                                     -webkit-animation: upvote 0.35s ease-out forwards;
@@ -504,11 +485,9 @@
                                 visibility: hidden;
                                 position: absolute;
                                 z-index: 1000;
-                                margin-top: -6px;
-                                margin-left: 32px;
+                                margin: -6px 0 0 32px;
                                 padding: 12px;
-                                background-color: rgba(79, 77, 192, 0.0);
-                                border: none;
+                                background: rgba(79, 77, 192, 0.0);
                                 border-radius: 2px;
                                 color: rgba(255, 255, 255, 0);
                                 content: "For content that does not contribute to any discussion.";
@@ -522,7 +501,7 @@
 
                                 .arrow.down:hover:after {
                                     visibility: visible;
-                                    background-color: rgba(79, 77, 192, 0.9);
+                                    background: rgba(79, 77, 192, 0.9);
                                     color: #FFF;
                                     margin-left: 48px;
                                 }
@@ -549,9 +528,9 @@
 
                         .stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
 
-                        .thumbnail.default          {background: url(%%spritesheet%%) -176px -048px;}
-                        .thumbnail.self             {background: url(%%spritesheet%%) -096px -104px;}
-                        .stickied .thumbnail        {background: url(%%spritesheet%%) -096px -048px;}
+                        .thumbnail.default          {background: url(%%spritesheet%%) -176px -48px;}
+                        .thumbnail.self             {background: url(%%spritesheet%%) -96px -104px;}
+                        .stickied .thumbnail        {background: url(%%spritesheet%%) -96px -48px;}
                         .over18.link .thumbnail     {background: url(%%spritesheet%%) -176px -104px !important;}
                             .over18.link .thumbnail img {display: none;}
 
@@ -570,9 +549,8 @@
 
                     /* Submission Title */
                     .link .title {
-                        margin: 0px 0px 0px 0px;
-                        font-size: 13.5pt;
-                        font-family: Arial, sans-serif;
+                        margin: 0px;
+                        font: 13.5pt Arial,sans-serif;
                         transition: all 0.15s ease;
                         overflow: visible;
                     }
@@ -626,7 +604,7 @@
                             border-color: #0079d3;
                         }
 
-                        .expando-button.selftext.collapsed                  {background-position: -00px -48px!important;}
+                        .expando-button.selftext.collapsed                  {background-position: 0 -48px!important;}
                         .expando-button.selftext.collapsed:hover            {background-position: -16px -48px!important;}
 
                         .expando-button.selftext.expanded                   {background-position: -32px -48px!important;}
@@ -644,7 +622,7 @@
                         .expando-button.image.expanded                      {background-position: -32px -48px!important;}
                         .expando-button.image.expanded:hover                {background-position: -48px -48px!important;}
 
-                        .expando-button.image.gallery.collapsedExpando      {background-position: -0px -64px!important;}
+                        .expando-button.image.gallery.collapsedExpando      {background-position: 0 -64px!important;}
                         .expando-button.image.gallery.collapsedExpando:hover{background-position: -16px -64px!important;}
 
                         .expando-button.image.gallery.expanded              {background-position: -32px -48px!important;}
@@ -675,8 +653,7 @@
                     .entry .tagline {
                         margin-top: 3px;
                         color: #98abba;
-                        font-size: 12px;
-                        font-family: arial, sans-serif;
+                        font: 12px arial,sans-serif;
                     }
 
                         .link .entry .tagline a {color: #292f34;}
@@ -691,7 +668,7 @@
                             visibility: visible;
                             cursor: help;
                             display: inline-block;
-                            background-color: red;
+                            background: red;
                             color: #fff !important;
                             line-height: 14px;
                             padding: 0 3px;
@@ -699,7 +676,7 @@
                             font-size: 11px;
                         }
 
-                            .link .entry .tagline .userattrs a.moderator {background-color: #27b062;}
+                            .link .entry .tagline .userattrs a.moderator {background: #27b062;}
 
 
                                                 .RESUserTagImage::after { display: none }
@@ -730,8 +707,7 @@
                             padding: 0 1px;
                             color: #98abba;
                             font-weight: normal;
-                            font-size: 13px;
-                            font-family: Arial, sans-serif;
+                            font: 13px Arial,sans-serif;
                             transition: all 0.15s ease;
                         }
 
@@ -749,8 +725,7 @@
                                     position:relative;
                                     top: -1px;
                                     padding: 2px 3px;
-                                    background-color: #ea4876;
-                                    border-color: #ea4876;
+                                    background: #ea4876;
                                     border-radius: 0px;
                                     color:#fff;
                                     cursor: help;
@@ -776,7 +751,7 @@
                                 left: 40%;
                                 margin: 0;
                                 padding: 24px;
-                                background-color: #fff;
+                                background: #fff;
                                 z-index: 100;
                                 box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
                                 border: none;
@@ -817,9 +792,7 @@
                                 .link .entry .buttons li .redditSingleClick {
                                     padding: 0 1px;
                                     color: #98abba;
-                                    font-weight: normal;
-                                    font-size: 13px;
-                                    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+                                    font: normal 13px Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
                                     transition: all 0.15s ease;
                                 }
 
@@ -830,20 +803,16 @@
                         border-radius: 1px;
                         border: 0px solid;
                         color: #fff;
-                        font-weight: bold;
-                        font-style: normal;
-                        font-variant: normal;
-                        font-size: 13px;
-                        font-family: Arial, sans-serif;
+                        font: normal normal bold 13px Arial, sans-serif;
                         cursor: default;
                         vertical-align: middle;
                         position: relative;
                         top: -2px;
-                        background-color: #738491;
+                        background: #738491;
                     }
 
                         .linkflair-mod .linkflairlabel {
-                            background-color: #27b062;
+                            background: #27b062;
                             color: #fff;
                         }
 
@@ -873,17 +842,17 @@
                                                 text-transform: uppercase;
                     }
 
-                        a.pretty-button.negative {background-color: #fb797e;border-color: #fb797e;}
-                            a.pretty-button.negative:hover {background-color: #EF5350;}
-                                                        a.pretty-button.negative.pressed {background-color: #B71C1C;}
+                        a.pretty-button.negative {background: #fb797e;}
+                            a.pretty-button.negative:hover {background: #EF5350;}
+                                                        a.pretty-button.negative.pressed {background: #B71C1C;}
 
-                        a.pretty-button.neutral {background-color: #BDBDBD; color: #212121}
-                            a.pretty-button.neutral:hover {background-color: #E0E0E0;}
-                                                        a.pretty-button.neutral.pressed {background-color: #9E9E9E}
+                        a.pretty-button.neutral {background: #BDBDBD; color: #212121}
+                            a.pretty-button.neutral:hover {background: #E0E0E0;}
+                                                        a.pretty-button.neutral.pressed {background: #9E9E9E}
 
-                        a.pretty-button.positive {background-color: #4CAF50;}
-                            a.pretty-button.positive:hover {background-color: #43A047;}
-                                                        a.pretty-button.positive.pressed {background-color: #1B5E20;}
+                        a.pretty-button.positive {background: #4CAF50;}
+                            a.pretty-button.positive:hover {background: #43A047;}
+                                                        a.pretty-button.positive.pressed {background: #1B5E20;}
 
 
                         a.pretty-button.positive.pressed, a.pretty-button.neutral.pressed, a.pretty-button.negative.pressed {background-image: none;}
@@ -901,7 +870,7 @@
 
                     ul.report-reasons {
                         border-radius: 2px;
-                        background-color: #FAFAFA;
+                        background: #FAFAFA;
                         border: none;
                         padding: 8px;
                         font-size: 12px;
@@ -913,7 +882,7 @@
                         left: -16px;
                         margin-right: -32px;
                         padding-left: 16px;
-                        background-color: rgba(0,0,0,0.04);
+                        background: rgba(0,0,0,0.04);
                         border: none;
                     }
 
@@ -953,7 +922,7 @@
                             }
 
                         .organic-listing {
-                            background-color: white!important;
+                            background: #fff!important;
                             padding: 0;
                             position: relative;
                             margin-bottom: 0px;
@@ -962,7 +931,7 @@
                         }
                             .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
                                 padding: 16px;
-                                background-color: transparent;
+                                background: transparent;
                                 border: 1px solid #edf1f3;
                                 border-radius: 3px;
                             }
@@ -1008,7 +977,7 @@
 
                         .flairselector h2 {
                             margin-bottom: 4px;
-                            background-color: transparent;
+                            background: none;
                             color: #24a0ed;
                             text-align: left;
                             text-transform: capitalize;
@@ -1325,7 +1294,7 @@
 
 
                     /* Locked Post */
-                    .reddit-infobar.with-icon.locked-infobar {background-color:#27B062 }
+                    .reddit-infobar.with-icon.locked-infobar {background:#27B062 }
                         .reddit-infobar.with-icon.locked-infobar .md {color: #fff;}
 
                     .reddit-infobar.with-icon.locked-infobar p:after {content: " Sort comments by new to find out more."}
@@ -1382,7 +1351,7 @@
         .side {
             margin: 282px 16px 108px 0px;
             padding: 0;
-            background-color: transparent;
+            background: none;
             width: 320px;
         }
 
@@ -1391,8 +1360,7 @@
             /* Start Subreddit Box */
             .side:before {
                 height: 192px;
-                background-image: url(%%sidebarimg%%);
-                background-color: #DBDBDB;
+                background: url(%%sidebarimg%%);
                 content: "";
                 display: block;
                 position: absolute;
@@ -1413,7 +1381,7 @@
                     height: 76px;
                     margin-top: -16px;
                     margin-left: -16px;
-                    background-color: #fff;
+                    background: #fff;
                     border-radius: 0px 0px 2px 2px;
                     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
                 }
@@ -1448,8 +1416,7 @@
                         height: 9px;
                         display: inline-block;
                         margin-right: 8px;
-                        background-image: url(%%spritesheet%%);
-                        background-position: -64px -36px;
+                        background: url(%%spritesheet%%) -64px -36px;
                     }
 
                     .titlebox .users-online .number:after {content: " currently online";}
@@ -1477,7 +1444,7 @@
                         text-transform: capitalize;
 
                         box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-                        transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), padding 0.2s ease, margin 0.2s ease;
+                        transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), padding 0.2s ease, margin 0.2s ease;
                     }
 
                         .titlebox .fancy-toggle-button .active:hover {box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);}
@@ -1485,13 +1452,13 @@
 
                         /* Subscribe */
                         .titlebox .fancy-toggle-button .active.add {
-                            background-color: #27b062;
+                            background: #27b062;
                             color: #fff;
                         }
 
-                            .titlebox .fancy-toggle-button .active.add:hover {background-color: #36bb6f;}
+                            .titlebox .fancy-toggle-button .active.add:hover {background: #36bb6f;}
                             .titlebox .fancy-toggle-button .active.add:active {
-                                background-color: #189b51;
+                                background: #189b51;
                                 padding-left: 24px;
                                 margin-left: -13px;
                                 text-align: center;
@@ -1500,14 +1467,14 @@
 
                         /* Unsubscribe */
                         .titlebox .fancy-toggle-button .active.remove {
-                            background-color: rgba(0,0,0,0.24);
+                            background: rgba(0,0,0,0.24);
                             color: #fff;
                             margin-left: -14px;
                             box-shadow: none;
                         }
 
-                            .titlebox .fancy-toggle-button .active.remove:hover {background-color:rgba(0,0,0,0.32);}
-                            .titlebox .fancy-toggle-button .active.remove:active {background-color: rgba(0,0,0,0.4);}
+                            .titlebox .fancy-toggle-button .active.remove:hover {background:rgba(0,0,0,0.32);}
+                            .titlebox .fancy-toggle-button .active.remove:active {background: rgba(0,0,0,0.4);}
 
 
 
@@ -1534,11 +1501,11 @@
                     width: 320px;
                     height: 42px;
                     line-height: 41px;
-                    background-color: #fff;
+                    background: #fff;
 
 
                     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
-                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
                 }
 
                     #search input[type=text]:hover {
@@ -1579,25 +1546,19 @@
                             height: 32px;
                             width: 32px;
                             margin-left: -38px;
-                            background-image: url(%%spritesheet%%);
-                            background-position: -64px -96px;
-                            background-repeat: no-repeat;
+                            background: url(%%spritesheet%%) -64px -96px no-repeat;
                             border:none !important;
                             border-radius: 16px;
-                            background-color: rgba(0,0,0,0.00);
-                            transition: background-color .2s cubic-bezier(.4,0,.2,1);
+                            transition: background .2s cubic-bezier(.4,0,.2,1);
                         }
 
                             #search input[type=submit]:hover {
-                                background-image: url(%%spritesheet%%);
-                                background-position: -64px -96px;
-                                background-repeat: no-repeat;
-                                background-color: rgba(158,158,158,.2);
+                                background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -96px no-repeat;
                             }
 
                 /* Expando */
                 #search #searchexpando {
-                    background-color: #edf1f3;
+                    background: #edf1f3;
                     border: none;
                     border-radius: 0px 0px 2px 2px;
                     margin: 0;
@@ -1612,7 +1573,7 @@
                         cursor: pointer;
                         transition: all 0.1s ease;
                     }
-                            #search #searchexpando label:active {background-color: rgba(0,0,0,0.06);}
+                            #search #searchexpando label:active {background: rgba(0,0,0,0.06);}
 
                     #search #searchexpando p {display: none !important;}
 
@@ -1621,8 +1582,7 @@
             .morelink {
                 position: absolute;
                 top: 442px;
-                background-color: #0079d3;
-                background-image: none !important;
+                background: #0079d3;
                 width: 152px;
                 height: 36px;
                 border-radius: 2px;
@@ -1632,16 +1592,16 @@
                 padding: 0px 0px;
 
                 box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-                transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+                transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
             }
 
                 .morelink:hover {
-                    background-color: #158be2;
+                    background: #158be2;
                     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2)
                 }
 
                     .morelink:active {
-                        background-color: #0066b2;
+                        background: #0066b2;
                         box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                     }
 
@@ -1666,7 +1626,7 @@
                     width: 152px;
                     color: rgba(0,0,0,0.32);
                     border-radius: 2px;
-                    background-color: rgba(0,0,0,0.08);
+                    background: rgba(0,0,0,0.08);
                     font-weight: normal;
                     z-index: -1;
                 }
@@ -1676,7 +1636,7 @@
                 /* Restricted button */
                 .disabled .morelink {
                     box-shadow: none !important;
-                    background-color: rgba(0,0,0,0.08);
+                    background: rgba(0,0,0,0.08);
                     width: 320px;
 
                 }
@@ -1709,10 +1669,8 @@
                 .titlebox:before {
                     content: "Subreddit Info";
                     display: block;
-                    font-size: 18px;
-                    line-height: 24px;
                     color: #292f34;
-                    font-family: verdana, arial, helvetica, sans-serif;
+                    font: 18px/24px verdana,arial,helvetica,sans-serif;
                     margin: 8px 0px;
                 }
 
@@ -1724,7 +1682,7 @@
                     .titlebox .tagline:after {
                         content: "";
                         height: 2px;
-                        background-color: #f2f2f2;
+                        background: #f2f2f2;
                         display: block;
                         margin-top: 16px;
                     }
@@ -1743,19 +1701,17 @@
 
             /* Sidebar Description */
             .side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
-                font-family: Lato, arial, sans-serif;
                 color: #292f34;
-                line-height: 1.45;
-                font-size: 13px;
+                font: 13px/1.45 Lato,arial,sans-serif;
             }
 
                 .side .titlebox .md h1 {
                     line-height: 18px;
-                    margin: 0.5em 0 0 0 !important;
+                    margin: 0.5em 0 0 !important;
                 }
 
                 .side .titlebox .md h2 {
-                    margin: 16px 0px 2px 0px;
+                    margin: 16px 0px 2px;
                 }
 
                 /* Buttonstyle H3 */
@@ -1763,34 +1719,31 @@
                     padding: 0 16px;
                     width: 100%;
                     border-radius: 2px;
-                    background-color: #0079d3;
-                    font-family: verdana,arial,sans-serif;
+                    background: #0079d3;
+                    font: 12px/42px verdana,arial,sans-serif;
                     color: #fff;
                     display: block;
                     margin: 1.5em 0em;
-                    font-size: 12px;
-                    line-height: 42px;
                     text-align: center;
 
                     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
                 }
 
 
                     .side .titlebox .md h3 a:hover {
-                        background-color: #158be2;
+                        background: #158be2;
                         box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2)
                     }
 
                         .side .titlebox .md h3 a:active {
-                            background-color: #0066b2;
+                            background: #0066b2;
                             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                         }
 
                 .side .titlebox .md h4 a {
                     padding: 0 16px;
-                    background-color: #FFF;
-                    border: none;
+                    background: #FFF;
                     border-radius: 2px;
                     color: #24a0ed;
                     font-weight: bold;
@@ -1801,7 +1754,7 @@
                     text-align: center;
 
                     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+                    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
                 }
 
                     .side .titlebox h4 a:hover {
@@ -1809,7 +1762,7 @@
                     }
 
                         .side .titlebox h4 a:active {
-                            background-color: #f4f6f7;
+                            background: #f4f6f7;
                             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
                         }
 
@@ -1846,7 +1799,7 @@
                     padding: 8px 0px;
                 }
 
-                .icon-menu a {background-color: transparent;}
+                .icon-menu a {background: none;}
 
 
             /* Ads */
@@ -1872,7 +1825,7 @@
                     position: relative;
                     top: 0px;
                     width: 100%;
-                    background-color: #fff;
+                    background: #fff;
                 }
 
                     .sidebox.create .morelink a {font-size: 14px;color: #24a0ed;}
@@ -1888,9 +1841,7 @@
                 padding: 10px 0px;
                 color: #24A0ED;
                 content: "This subreddit uses the /r/Naut theme.";
-                text-transform: none;
-                font-size: 16px;
-                font-family: Lato, arial, sans-serif;
+                font: 16px Lato,arial,sans-serif;
                 position: absolute;
                 width: 320px;
                 border: 1px solid rgba(0, 0, 0, 0.06);
@@ -1964,9 +1915,9 @@
                         }
 
                 .commentarea>.usertext {
-                    background-color: #FAFAFA;
+                    background: #FAFAFA;
                     margin: -58px 0 16px 0;
-                    padding: 64px 16px 16px 16px !important;
+                    padding: 64px 16px 16px !important;
                     overflow: visible;
                 }
 
@@ -1991,15 +1942,14 @@
                 .gold-accent.comment-visits-box {
                     margin: 0px 0px 12px 0px;
                     border-radius: 2px;
-                    background-color: #edf1f3;
+                    background: #edf1f3;
                     border: 1px solid #d8e0e5;
                     color: #292f34;
                 }
 
                 /* Gilding */
                 .gilded-icon:before {
-                    background: url(%%spritesheet%%);
-                                        background-position: -112px -160px;
+                    background: url(%%spritesheet%%) -112px -160px;
                     height: 16px;
                     width: 16px;
                 }
@@ -2056,12 +2006,11 @@
 
                             .comment .entry .tagline {
                                 color: #98abba;
-                                font-size: 12px;
-                                font-family: Arial, sans-serif;
+                                font: 12px Arial, sans-serif;
                             }
 
                                 .comment .expand {
-                                    background-color: transparent;
+                                    background: none;
                                     transition: all 0.15s ease;
                                     color: #98abba;
                                 }
@@ -2070,7 +2019,7 @@
                                     .comment .expand:hover {
                                         color: #98abba;
                                         text-decoration: none;
-                                        background-color: #edf1f3;
+                                        background: #edf1f3;
                                     }
 
                                     .comment.collapsed a.expand:after {
@@ -2078,17 +2027,17 @@
                                         position: absolute;
                                         display: block;
                                         width: calc(100% - 368px);
-                                        background-color: rgba(0,0,0,0.00);
+                                        background: rgba(0,0,0,0.00);
                                         left: 16px;
                                         margin-top: -34px;
                                         height: 50px;
                                         border-radius: 2px;
                                         color: transparent;
-                                        transition: background-color .2s cubic-bezier(.4,0,.2,1);
+                                        transition: background .2s cubic-bezier(.4,0,.2,1);
                                     }
 
                                         .comment.collapsed a.expand:hover:after {
-                                            background-color: rgba(0,0,0,0.04);
+                                            background: rgba(0,0,0,0.04);
                                         }
 
                                 .comment .author {
@@ -2211,7 +2160,7 @@
                         top: 494px;
                         padding: 16px;
                         width: 320px;
-                        background-color: #fff;
+                        background: #fff;
                         border-radius: 2px;
                         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
                         border: none;
@@ -2245,9 +2194,7 @@
                         .read-next .read-next-button {
                             background-color: rgb(0, 121, 211);
                             color: rgb(255, 255, 255);
-                            font-family: monospace;
-                            line-height: 16px;
-                            font-size: 10px;
+                            font: 10px/16px monospace;
                             height: 16px;
                             width: 16px;
                         }
@@ -2290,7 +2237,7 @@
                     position: relative;
                     padding: 0;
                     border: none;
-                    background-color: #0079D3;
+                    background: #0079D3;
                     border-radius: 2px;
                     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
                 }
@@ -2311,7 +2258,7 @@
 
                         .submit-page #newlink.submit.content .tabmenu.formtab .selected a {
                             font-size: 16px;
-                            background-color: transparent;
+                            background: none;
                             color: #fff;
                             border-bottom: 4px solid;
                         }
@@ -2323,7 +2270,6 @@
                 .submit-page .roundfield {
                     padding: 16px;
                     width: 524px;
-                    background-color: #fff;
                     border:none;
                 }
 
@@ -2333,12 +2279,12 @@
                     }
 
                     .submit-page #url-field button {
-                        background-color: #c3cfd6;
+                        background: #c3cfd6;
 
                     }
 
                     .submit_text.enabled.roundfield {
-                        background-color: #0079D3;
+                        background: #0079D3;
                     }
 
                         .submit_text.enabled.roundfield .md {color: #fff;}
@@ -2347,7 +2293,7 @@
                 .submit-page .infobar {display: none !important;}
 
                 .content.submit .info-notice {
-                    background-color: #edf1f3;
+                    background: #edf1f3;
                     padding: 16px;
                     border: none;
                     margin-bottom: 0px;
@@ -2364,10 +2310,8 @@
                     margin-top: 16px;
                     cursor: pointer;
                     text-transform: capitalize;
-                    font-family: Lato, arial, sans-serif;
-                    font-size: 17px;
+                    font: 17px Lato, arial, sans-serif;
                     padding: 16px;
-                    text-align: center;
                     margin-bottom: 48px;
                 }
 
@@ -2420,11 +2364,8 @@
                         height: 32px;
                         margin: 0;
                         padding: 0;
-                        background-color: transparent;
-                        background-image: url(%%spritesheet%%);
-                        background-position: -64px -96px;
+                        background: url(%%spritesheet%%) -64px -96px;
                         box-shadow: none;
-                        border: none;
                         border-radius: 50%;
                         transition: background-color .2s cubic-bezier(.4,0,.2,1);
                     }
@@ -2452,9 +2393,7 @@
                     top: 8px;
                     width: 22px;
                     height: 24px;
-                    background-image: url(%%spritesheet%%);
-                    background-repeat: no-repeat;
-                    background-position: -49px -168px;
+                    background: url(%%spritesheet%%) -49px -168px no-repeat;
                     overflow: hidden;
                     font-size: 0px;
                 }
@@ -2483,8 +2422,7 @@
                         .combined-search-page .search-result-group .search-header-label {
                             text-transform: capitalize;
                             color: #738491;
-                            font-family: Lato, Arial, sans-serif;
-                            font-size: 18px;
+                            font: 18px Lato, Arial, sans-serif;
                             padding-bottom: 2px;
                         }
 
@@ -2553,14 +2491,14 @@
                             .combined-search-page .search-result-subreddit .search-subscribe-button .add,
                             .combined-search-page .search-result-subreddit .search-subscribe-button .add:active
                              {
-                                background-color: #0079d3;
+                                background: #0079d3;
                                 border: none;
                                 border-radius: 2px;
                             }
 
                             .combined-search-page .search-result-subreddit .search-subscribe-button .remove,
                             .combined-search-page .search-result-subreddit .search-subscribe-button .remove:active {
-                                background-color: transparent;
+                                background: transparent;
                                 border: 1px solid #98abba;
                                 color: #738491;
                             }
@@ -2586,7 +2524,7 @@
                     border-radius: 2px;
                     padding: 16px;
                     margin: 0;
-                    background-color: #fff;
+                    background: #fff;
                     border-radius: 0px 0px 2px 2px;
                     max-width: none;
                 }
@@ -2609,18 +2547,17 @@
 
             /* Wiki Page */
             .wiki-page .wikititle {
-                background-color: #fff;
-                padding: 9px 16px 10px 16px;
+                background: #fff;
+                padding: 9px 16px 10px;
                 border-radius: 2px;
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
-                font-size: 16px;
-                font-family: arial, sans-serif;
+                font: 16px arial, sans-serif;
                 text-transform: capitalize;
                 margin: 0;
             }
 
             .wiki-page .pageactions {
-                background-color: #fff;
+                background: #fff;
                 margin-left: 16px;
                 border-radius: 2px;
                 padding: 0px 16px;
@@ -2630,23 +2567,23 @@
 
                 .wiki-page .pageactions .wikiaction {
                     margin: 0;
-                    background-color: transparent;
+                    background: transparent;
                     border-radius: 0px;
-                    padding: 10px 16px 11px 16px;
+                    padding: 10px 16px 11px;
                     color: #98abba;
                 }
 
                     .wiki-page .pageactions .wikiaction-current {
-                        padding: 10px 16px 9px 16px;
+                        padding: 10px 16px 9px;
                         border-bottom: 2px solid #24a0ed;
                         color: #24a0ed;
                     }
 
-                        .wiki-page .pageactions .wikiaction:hover, .wiki-page .pageactions .wikiaction-current:hover {background-color: rgba(0,0,0,0.05);}
+                        .wiki-page .pageactions .wikiaction:hover, .wiki-page .pageactions .wikiaction-current:hover {background: rgba(0,0,0,0.05);}
 
             .wiki-page .wiki-page-content {
                 margin: 16px 0px 16px 0px;
-                background-color: #fff;
+                background: #fff;
                 padding: 8px 0;
             }
 
@@ -2669,7 +2606,7 @@
 
             /* Subreddit Settings Page + Flair Page + Stylesheet Page */
             .linefield, .linefield.mobile {
-                background-color: #fff;
+                background: #fff;
                 color: #98abba;
                 margin: 0 0 16px 0;
                 width: 528px;
@@ -2702,15 +2639,14 @@
                 }
 
                     .tabmenu li a {
-                        background-color: transparent;
+                        background: none;
                         color: #292f34;
-                        border: none;
                         font-size: 14px;
                     }
 
                     .tabmenu li.selected a {
                         color: #24a0ed;
-                        background-color: transparent;
+                        background: none;
                         border: none;
                     }
 
@@ -2743,7 +2679,7 @@
                 .stylesheet-customize-container h2 {display: none;}
 
                 .sheets .btn.right {
-                    background-color: transparent;
+                    background: transparent;
                     border: none;
                     box-shadow: none;
                     padding: 0;
@@ -2756,14 +2692,14 @@
 
                 #images {
                     padding: 8px 0;
-                    background-color: #fff;
+                    background: #fff;
                     position: relative;
                     overflow: auto;
                     height: inherit;
                 }
 
                     #images #image-upload {
-                        margin: 0em 0em 4em 0em;
+                        margin: 0em 0em 4em;
                     }
 
 
@@ -2775,8 +2711,8 @@
                 color: #fff;
                 left: 0px;
                 bottom: 0px;
-                background-color: #2E2F31;
-                content: "Hey! There's a FAQ if you just scroll down a little.";
+                background: #2E2F31;
+                content: "Hey! There's an FAQ if you just scroll down a little.";
                 font-size: 18px;
                 z-index: 100;
             }
@@ -2789,11 +2725,7 @@
                 left: 0px;
                 bottom: -1200px;
                 z-index: 100;
-                background-color: #fff;
-
-                background-image: url(%%faq%%);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
+                background: url(%%faq%%) 50% 50% no-repeat;
             }
 
 
@@ -2806,10 +2738,8 @@
             .flair {
                 border: none;
                 border-radius: 0px;
-                font-size: 12px;
-                font-family: arial, sans-serif;
-                font-weight: normal;
-                background-color: transparent;
+                font: normal 12px arial, sans-serif;
+                background: transparent;
                 color: #98abba;
                 padding-left: 0px;
                 margin-right: inherit;
@@ -2830,7 +2760,7 @@
 
             /* Comments (/r/.../comments) */
             .listing-page .comment {
-                background-color: #fff;
+                background: #fff;
                 margin-left: 0px;
                 padding: 12px 0;
             }
@@ -2857,17 +2787,14 @@
                 height: 800px;
                 margin-top: 192px;
                 padding: 528px 0 64px 0;
-                background-image: url(%%footer%%);
-                background-repeat: no-repeat;
-                background-position: 50% 0%;
-                background-size: cover;
+                background: url(%%footer%%) 50% 0 / cover no-repeat;
 
             }
 
             .footer {
                 border: 0px solid;
                 border-radius: 2px;
-                background-color: rgba(43, 51, 58, 0.64);
+                background: rgba(43, 51, 58, 0.64);
                 padding: 16px;
                 max-width: 640px;
             }
@@ -2923,7 +2850,7 @@
                 .res a.beta-link {top: 4px;}
 
                 .res #header-bottom-right .user .userkarma {display: none;}
-                .res #header-bottom-right .user {font-size: 0px;}
+                .res #header-bottom-right .user {font-size: 0 !important;}
                 .res #header-bottom-right .user a {font-size: 11px}
 
                 .res #sr-header-area a.RESShortcutsCurrentSub, .res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {color: #fff !important;border-bottom: 2px solid #fff;}
@@ -2953,8 +2880,7 @@
             .res .content .RESBigEditorPop {
                 background-color: rgba(0, 0, 0, 0);
                 line-height: inherit;
-                font-size: 11px;
-                font-family: verdana,arial,sans-serif;
+                font: 11px verdana,arial,sans-serif;
                 box-shadow: none;
                 font-weight: normal;
                 color: #4D5763;
@@ -3119,7 +3045,7 @@
                     body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
                     .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main,
                     .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
-                        background-color: #fff;
+                        background: #fff;
                         padding: 16px;
                         border-radius: 2px;
                         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
