@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 9 September 2016
+                Last modified: 12 September 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -918,7 +918,7 @@
                                 max-width: none;
                                 min-width: 0px;
                                 min-height: 0px;
-
+                                transform: none;
                             }
 
                         .organic-listing {
@@ -1205,7 +1205,7 @@
                             #userTaggerToolTip input[type=submit] {bottom: 10px !important;}
 
                 /* Sorting Menu (Top links today/this week/ever) */
-                .top-page .menuarea {
+                .content > .menuarea {
                     margin: -8px -16px 0;
                     padding: 0 20px;
                     border: none;
@@ -3030,7 +3030,7 @@
 
 
                     /* Shadows and cards */
-                    body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, :not(.child)>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
+                    body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #bottom-comments:not(.child)>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox,
                     .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main,
                     .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, #ad_main_top {
                         background: #fff;
