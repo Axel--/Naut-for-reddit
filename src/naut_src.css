@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 12 September 2016
+                Last modified: 22 September 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -535,8 +535,8 @@
                             .over18.link .thumbnail img {display: none;}
 
 
-                        a.thumbnail[href*="reddit.com"]     {background: url(%%spritesheet%%) -176px -160px;}
-                            a.thumbnail[href*="reddit.com"] img {display: none;}
+                        a.thumbnail[data-href-url*="reddit.com"]     {background: url(%%spritesheet%%) -176px -160px;}
+                            a.thumbnail[data-href-url*="reddit.com"] img {display: none;}
 
 
                 /* Inner Post Area */
