@@ -663,9 +663,8 @@
                         .link .entry .tagline a:hover {color: #24a0ed;text-decoration: none;}
                         .link .entry .tagline a.author {margin-right: inherit;}
 
-                        .tagline .userattrs {visibility: hidden;}
+                        .tagline .userattrs {font-size:0;}
                         .tagline .userattrs > * {
-                            visibility: visible;
                             cursor: help;
                             display: inline-block;
                             color: #fff !important;
