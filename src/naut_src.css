@@ -663,19 +663,24 @@
                         .link .entry .tagline a:hover {color: #24a0ed;text-decoration: none;}
                         .link .entry .tagline a.author {margin-right: inherit;}
 
-                        .link .entry .tagline .userattrs {visibility: hidden;}
-                        .link .entry .tagline .userattrs a {
+                        .tagline .userattrs {visibility: hidden;}
+                        .tagline .userattrs > * {
                             visibility: visible;
                             cursor: help;
                             display: inline-block;
                             color: #fff !important;
-                            line-height: 14px;
+                            line-height: 13px;
                             padding: 0 3px;
                             border-radius: 2px;
-                            font-size: 11px;
+                            font-size: 10px;
+                            font-weight: 700;
                         }
 
-                            .link .entry .tagline .userattrs a.moderator {background: #27b062;}
+                        .tagline .userattrs > *:hover {text-decoration: none}
+
+                            .tagline .userattrs .moderator {background: #27b062;}
+                            .tagline .userattrs .admin {background: #F44336;}
+                            .tagline .userattrs .submitter {background: #24a0ed;}
 
 
                                                 .RESUserTagImage::after { display: none }
@@ -2038,14 +2043,9 @@
                                         text-decoration: none;
                                     }
 
-                                    .tagline .moderator, .green {
+                                    .green {
                                         color: #27b062 !important;
                                         font-weight: bold;
-                                    }
-
-                                    .tagline .submitter {
-                                        font-weight: bold;
-                                        color: #24a0ed;
                                     }
 
 
