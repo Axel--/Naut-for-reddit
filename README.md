@@ -16,9 +16,9 @@ Installation Instructions
   3. Upload the images from the /images/ folder. (Don't rename them!)
   4. Hit save!
 
-Now you can customize it by either adding customization lines yourself, or by visiting the /r/Naut wiki and customizing it yourself!
+Now you can customize it by either adding customization lines yourself, or by visiting the [/r/Naut wiki](https://www.reddit.com/r/naut/wiki/index) and customizing it yourself!
 
-If you have any questions on how to customize, /r/CSSHelp might be better suited than /r/Naut!
+If you have any questions on how to customize, [/r/CSSHelp](https://www.reddit.com/r/csshelp) might be better suited than [/r/Naut](https://www.reddit.com/r/Naut)!
 
 
 ##[Click here to download](https://github.com/Axel--/Naut-for-reddit/archive/master.zip)
