@@ -1650,6 +1650,12 @@
 
             .morelink .nub {display: none;}
 
+            .submit.mod-override .morelink a:after {
+                position: relative;
+                margin: 10px 10px 10px 0;
+                float: right;
+            }
+
 
             /* Login form */
             .login-form-side {
