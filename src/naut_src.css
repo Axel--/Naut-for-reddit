@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 22 September 2016
+                Last modified: 11 October 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -393,18 +393,15 @@
                     .listing-page .tabmenu li > a[href$="/ads/"], .wiki-page .tabmenu li > a[href$="/ads/"]
                     {display:none!important;}
 
-
-
         /* Body Content - Frontpage */
-        body >.content {
+        body[class] > .content, body.listing-page[class]>.content {
             margin: 16px 352px 64px 16px;
             padding: 0px;
-            padding-top: 8px !important;
         }
 
             .link {
                 margin: 0px;
-                padding: 16px 0;
+                padding: 16px;
                 position: relative;
             }
 
@@ -673,6 +670,7 @@
                             border-radius: 2px;
                             font-size: 10px;
                             font-weight: 700;
+                            margin-left: 4px;
                         }
 
                         .tagline .userattrs > *:hover {text-decoration: none}
@@ -882,9 +880,6 @@
 
                     /* Last Clicked */
                     .link.last-clicked {
-                        left: -16px;
-                        margin-right: -32px;
-                        padding-left: 16px;
                         background: rgba(0,0,0,0.04);
                         border: none;
                     }
@@ -902,7 +897,7 @@
 
 
                     /* Sticky Comment */
-                    .stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {color: #27b062!important}
+                    .stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {color: #27b062}
 
                     /* Ad */
                     .content .spacer {margin: 0;}
@@ -1841,14 +1836,15 @@
 
 
             /* Comments Page */
-            body.comments-page > .content {margin-top: 8px;}
+            .commentarea { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;}
 
             .comments-page .link .usertext .md {margin-bottom: 0px;}
 
                 .commentarea .panestack-title {
-                    margin: 20px 0 0 0;
+                    margin: 0;
                     border-bottom: 0;
                     padding-left: 16px;
+                    margin-top: 16px;
                 }
 
                     .commentarea .panestack-title .title {color:  #4D5763;}
@@ -1863,11 +1859,12 @@
                         cursor: pointer;
                         text-decoration: none;
                         background-image: none;
-                        padding-right: 0px;
                         font-weight: normal;
                         color: #98abba;
                         border: none;
-                        padding-left: 0px;
+                        padding: 0 4px;
+                        border-radius: 2px;
+                        margin-right: 4px;
                     }
 
                         .commentarea .menuarea .dropdown.lightdrop .selected:hover {color: #4F8EF7;}
@@ -1881,7 +1878,7 @@
                             border-radius: 2px;
                         }
 
-                            .drop-choices a.choice {
+                            .drop-choices a.choice:not(:last-of-type) {
                                 padding: 12px 24px 12px 12px;
                                 transition: all 0.1s ease;
                                 border-bottom: 1px solid #edf1f3;
@@ -1907,12 +1904,15 @@
 
                 .commentarea>.usertext {
                     background: #FAFAFA;
-                    margin: -58px 0 16px 0;
-                    padding: 64px 16px 16px !important;
+                    margin: 0;
+                    padding: 16px;
                     overflow: visible;
+                    -webkit-order: -1;
+                    -ms-flex-order: -1;
+                    order: -1;
                 }
 
-                    .usertext button {margin: 4px 16px 8px 0px;}
+                    .usertext button {margin: 0 16px 0 0;}
 
                     .commentarea .usertext-edit {
                         width: 100%;
@@ -1930,12 +1930,34 @@
                         .usertext .bottom-area {width: 504px;}
                             .usertext .bottom-area a.reddiquette {color: #24a0ed;}
 
+                    .commentarea .usertext-edit .md {margin: 0 0 16px 0;}
+
                 .gold-accent.comment-visits-box {
                     margin: 0px 0px 16px 0px;
+                    padding: 0 8px;
+                    line-height: 36px;
                     border-radius: 2px;
                     background: #CFD8DC;
                     border: none;
                     color: #292f34;
+                    max-width: initial;
+                }
+
+                .gold-accent.comment-visits-box select {
+                    margin: 8px 0 8px 6px;
+                }
+
+                .reddit-infobar.gold-accent {
+                    background: #FFD54F;
+                    margin: 16px 16px 0 16px;
+                    border: none;
+                    border-radius: 2px;
+                    padding: 0 8px;
+                }
+
+                .reddit-infobar.gold-accent p {
+                    line-height: 36px;
+                    margin: 0;
                 }
 
                 /* Gilding */
@@ -1960,8 +1982,8 @@
 
                         .commentarea .child .thing {
                             box-shadow: none;
-                            padding: 4px;
-                            margin: 12px 0 0 0;
+                            padding: 8px 8px 8px 2px;
+                            margin: 8px 0 0;
                         }
 
                         .commentarea .comment .midcol {
@@ -1978,6 +2000,7 @@
                         .comment .child, .comment .showreplies {
                             border-left: 1px solid #edf1f3;
                             margin-top: 0px;
+                            margin-left: 20px;
                         }
 
                         /* Vote arrows */
@@ -2746,9 +2769,8 @@
 
             /* Comments (/r/.../comments) */
             .listing-page .comment {
-                background: #fff;
                 margin-left: 0px;
-                padding: 12px 0;
+                padding: 16px 16px 16px 8px;
             }
 
                 .listing-page .comment .midcol {
@@ -2941,7 +2963,7 @@
 
                 .res h1.hover.redditname {overflow: visible !important;}
 
-                .res .commentarea .panestack-title {margin-top: 0px;padding-top: 12px;}
+                .res .commentarea .panestack-title {margin-top: 0px;padding-top: 12px;padding-bottom: 8px;}
 
                 .res .comment.collapsed a.expand:after {display: none;}
 
