@@ -929,9 +929,7 @@
                         }
                             .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
                                 padding: 16px;
-                                background: transparent;
-                                border: 1px solid #edf1f3;
-                                border-radius: 3px;
+                                background: #E1F5FE;
                             }
 
                             .organic-listing .help {
@@ -3075,12 +3073,11 @@
 
                     .sponsorshipbox {
                         max-width: 320px;
-                        padding: 0 0 0 0 !important;
+                        padding: 0;
                     }
 
                         #ad_sponsorship {
-                            margin: 10px 0 8px 10px;
-                            height: 120px;
+                            margin: 10px;
                         }
 
 
