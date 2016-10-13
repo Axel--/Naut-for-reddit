@@ -2236,7 +2236,7 @@
                 }
 
 
-            .submit-page .content {margin: 32px auto 0px auto;}
+            .submit-page[class] .content {margin: 32px auto 0px auto;}
 
             .submit-page .side, .submit-page .content h1, #suggested-reddits {display: none;}
 
