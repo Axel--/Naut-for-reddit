@@ -1,8 +1,8 @@
         /*
                 Version 4.0
                 Stylesheet by Cryptonaut
-                Assisted by RenegadeAI & LackingAGoodName
-                Last modified: 12 October 2016
+                Assisted by /u/RenegadeAI & /u/LackingAGoodName
+                Last modified: 13 October 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -58,7 +58,7 @@
                     color: #292f34;
                 }
 
-        body .btn, body button, .c-btn-primary {
+        body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_button {
             margin: 4px 16px 4px 0px;
             padding: 0 16px;
             background: #0079d3;
@@ -75,13 +75,13 @@
             transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
         }
 
-            .btn:hover, button:hover, .c-btn-primary:hover {
+            .btn:hover, button:hover, .c-btn-primary:hover, .wiki-page .wiki-page-content .wiki_button {
                 color: #fff;
                 background: #158be2;
                 box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
             }
 
-                .btn:active, button:active, .c-btn-primary:active {
+                .btn:active, button:active, .c-btn-primary:active, .wiki-page .wiki-page-content .wiki_button {
                     color: #fff;
                     background: #0066b2;
                     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
@@ -175,6 +175,10 @@
                                 top: 23px !important;
                                 visibility: visible;
                             }
+							
+							#sr-header-area .drop-choices.srdrop.inuse a:first-child {
+								border-radius: 2px 2px 0 0;
+							}
 
                         #sr-header-area .drop-choices a.choice {
                             border: 0;
@@ -578,7 +582,7 @@
                                 text-decoration: none;
                             }
 
-                    .approval-checkmark {cursor: default;}
+                    .approval-checkmark {cursor: default; margin-left: 4px;}
 
                     /* Expando Button */
                     .expando-button, .expando-button.image, .expando-button.video-muted {
@@ -740,6 +744,19 @@
                             }
 
                                 .link .entry li .comments:hover {text-decoration: none;}
+								
+					.post-sharing .c-close {padding: 15px;}
+					
+					.post-sharing, .subreddit-report-form {
+						border: none;
+						margin: 15px 5px 5px 5px;
+						box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+					}
+					
+					.gold-payment .close-button {
+						box-shadow: none;
+						margin: 11px -9px 6px 8px;
+					}
 
 
                             /* Save Category popup */
@@ -877,6 +894,8 @@
                         font-size: 12px;
                         margin-top: 4px;
                     }
+					
+					b {padding-left: 5px;}
 
                     /* Last Clicked */
                     .link.last-clicked {
@@ -1653,6 +1672,7 @@
                 position: relative;
                 margin: 10px 10px 10px 0;
                 float: right;
+				margin-left: -16px;
             }
 
 
@@ -1824,6 +1844,10 @@
             /* Recently viewed links */
             .gadget .midcol {width: 38px;}
             .gadget .reddit-entry .linkflairlabel { display: none; }
+			.gadget .right {text-transform: uppercase;}
+			
+			/* Account Activity */
+			.account-activity-box a {text-transform: uppercase;}
 
             /* Credits */
             .side:after {
@@ -2175,6 +2199,7 @@
                         top: 494px;
                         padding: 16px;
                         width: 320px;
+						height: 98px;
                         background: #fff;
                         border-radius: 2px;
                         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
@@ -2186,10 +2211,38 @@
                             .comments-page .side .linkinfo .date:first-letter{text-transform: capitalize;}
 
                         .comments-page .side .linkinfo .score {color: #292f34;}
+						
+						.comments-page .side .linkinfo .score {
+							margin-top: 8px;
+						}
+
+						.linkinfo .score .number {
+							font-size: 14px;
+						}
+
+						.linkinfo .score .word {
+							font-size: 14px;
+						}
+						
+						.comments-page .side .linkinfo .shortlink {
+							font-size: 90%;
+							margin-top: -2px;
+							visibility: hidden;
+						}
+						
+						.comments-page .side .linkinfo .shortlink input {
+							background-color: #FAFAFA;
+							border: none;
+							border-radius: 0 0 2px 2px;
+							margin: 0 -16px;
+							padding: 10px 16px;
+							visibility: visible;
+							width: 320px;
+						}
 
                     .res.comments-page .side {margin-top: 414px;}
 
-                /* That new blog-like next-post thing */
+                /* Next Post / Preview */
                 .read-next {
                     width: 320px;
                     height: 128px;
@@ -2425,7 +2478,7 @@
                     .combined-search-page .search-result-group {
                         max-width: none;
                         min-width: 0px;
-                        padding: 0;
+                        padding: 16px;
                     }
 
 
@@ -2434,6 +2487,7 @@
                         line-height: 38px;
                         margin: 0;
                         border: none;
+						padding-left: 16px;
                     }
                         .combined-search-page .search-result-group .search-header-label {
                             text-transform: capitalize;
@@ -2567,7 +2621,6 @@
                 border-radius: 2px;
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
                 font: 16px arial, sans-serif;
-                text-transform: capitalize;
                 margin: 0;
             }
 
@@ -2619,7 +2672,7 @@
 
                     .wiki-page .wiki-page-content em {color: #98abba;}
 
-            /* Subreddit Settings Page + Flair Page + Stylesheet Page */
+            /* Subreddit Settings Page + Flair Page + Stylesheet Page + Rules Page */
             .linefield, .linefield.mobile {
                 background: #fff;
                 color: #98abba;
@@ -2716,7 +2769,37 @@
                     #images #image-upload {
                         margin: 0em 0em 4em;
                     }
-
+					
+				.subreddit-rules-page .subreddit-rule-buttons button, .subreddit-rules-page .subreddit-rule-add-form-buttons button, .subreddit-rules-page .form-buttons button, .subreddit-rule-delete-confirmation button {
+					padding: 0 16px;
+					background: #0079d3;
+					border: none;
+					border-radius: 2px;
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: 700;
+					height: 36px;
+					font-size: 14px;
+					font-family: Lato,arial,sans-serif;
+					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
+					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+				}
+				
+					.subreddit-rules-page .subreddit-rule-buttons button:hover, .subreddit-rules-page .subreddit-rule-add-form-buttons button:hover, .subreddit-rules-page .form-buttons button:hover, .subreddit-rule-delete-confirmation button:hover {
+						color: #fff;
+						background: #158be2;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+					}
+					
+					.subreddit-rules-page .subreddit-rule-buttons button:active, .subreddit-rules-page .subreddit-rule-add-form-buttons button:active, .subreddit-rules-page .form-buttons button:active, .subreddit-rule-delete-confirmation button:active {
+						color: #fff;
+						background: #0066b2;
+						box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
+					}
+					
+				.subreddit-rule-item:hover {
+					background-color: transparent;
+				}
 
             /* FAQ */
             #images:before {
