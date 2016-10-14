@@ -1298,7 +1298,7 @@
 
                     .commentarea .infobar {
                         line-height: 18px;
-                        margin: 8px 0 16px 0;
+                        margin: 0 0 16px 0;
                     }
 
                         .commentarea .infobar a {color: rgba(0,0,0,0.64);font-weight: bold;}
@@ -1886,6 +1886,7 @@
 
 
                 .commentarea .menuarea {margin: 0 0 20px 0;padding-left: 16px;}
+                .comment-permalink-page .commentarea .menuarea { margin: 20px 0; }
 
                     .commentarea .menuarea span.dropdown-title.lightdrop {color: #98abba;}
                     .commentarea .menuarea span.dropdown-title.lightdrop:first-letter {text-transform: capitalize;}
