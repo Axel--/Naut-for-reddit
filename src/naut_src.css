@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by /u/RenegadeAI & /u/LackingAGoodName
-                Last modified: 13 October 2016
+                Last modified: 14 October 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -527,17 +527,22 @@
                             top: 50%;
                         }
 
-                        .stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
+                        .thumbnail.default, .thumbnail.self, .thumbnail.nsfw, .thumbnail.image {
+                            width: 56px;
+                            height: 56px;
+                            margin: 0 28px 0 12px;
+                            border-radius: 28px;
+                        }
 
-                        .thumbnail.default          {background: url(%%spritesheet%%) -176px -48px;}
-                        .thumbnail.self             {background: url(%%spritesheet%%) -96px -104px;}
-                        .stickied .thumbnail        {background: url(%%spritesheet%%) -96px -48px;}
-                        .over18.link .thumbnail     {background: url(%%spritesheet%%) -176px -104px !important;}
-                            .over18.link .thumbnail img {display: none;}
+                        .thumbnail.default   {background: #d2dbe0 url(%%spritesheet%%) -152px -48px;}
+                        .thumbnail.self      {background: #d2dbe0 url(%%spritesheet%%) -96px -48px;}
+                        .thumbnail.image     {background: #d2dbe0 url(%%spritesheet%%) -208px -48px;}
+                        .thumbnail.nsfw      {background: #e85881 url(%%spritesheet%%) -96px -104px;}
 
+                        .thumbnail[data-href-url*="reddit.com"] {background: #24a0ed url(%%spritesheet%%) -152px -104px;}
+                            .thumbnail[data-href-url*="reddit.com"] img {display: none;}
 
-                        a.thumbnail[data-href-url*="reddit.com"]     {background: url(%%spritesheet%%) -176px -160px;}
-                            a.thumbnail[data-href-url*="reddit.com"] img {display: none;}
+                        .stickied .thumbnail {background-color: #2db747;}
 
 
                 /* Inner Post Area */
@@ -2572,9 +2577,14 @@
 
                             .combined-search-page .search-result .search-comments {color: #24a0ed;}
 
-                            .combined-search-page .search-result.has-thumbnail>.thumbnail {
-                                margin-left: 0px;
+                            .search-result.has-thumbnail>.thumbnail {
                                 margin-right: 16px;
+                                flex: 0 0 80px;
+                            }
+
+                            .search-result.has-thumbnail>.thumbnail.self, .search-result.has-thumbnail>.thumbnail.default, .search-result.has-thumbnail>.thumbnail.nsfw, .search-result.has-thumbnail>.thumbnail.image {
+                                margin-right: 28px;
+                                flex: 0 0 56px;
                             }
 
 
