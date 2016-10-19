@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by /u/RenegadeAI & /u/LackingAGoodName
-                Last modified: 14 October 2016
+                Last modified: 18 October 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -527,7 +527,7 @@
                             top: 50%;
                         }
 
-                        .thumbnail.default, .thumbnail.self, .thumbnail.nsfw, .thumbnail.image {
+                        .thumbnail.default, .thumbnail.self, .thumbnail.nsfw, .thumbnail.image, .thumbnail[data-href-url*="reddit.com"] {
                             width: 56px;
                             height: 56px;
                             margin: 0 28px 0 12px;
@@ -839,8 +839,7 @@
                             color: #fff;
                         }
 
-                            .linkflair-mod a {color: #27b062!important;}
-                            .linkflair-mod .thumbnail.default, .linkflair-mod .thumbnail.self {background: url(%%spritesheet%%) -96px -48px !important;}
+                            .linkflair-mod .thumbnail.default, .linkflair-mod .thumbnail.self {background: #27b062 url(%%spritesheet%%) -208px -104px;}
 
 
 
