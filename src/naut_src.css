@@ -1237,16 +1237,42 @@
 
                     .dropdown.lightdrop .selected {
                         display: inline-block;
-                        color: #292f34;
+                        color: #9E9E9E;
                         text-decoration: none;
                         cursor: pointer;
-                        padding: 0 16px;
-                        background-image: none;
+                        padding: 0 4px;
+                        background: 0;
                     }
 
-                        .dropdown.lightdrop .selected:hover {background-color: rgba(0,0,0,0.05);}
+                        .dropdown.lightdrop .selected { z-index: 2; }
+
                         .dropdown.lightdrop .selected:after {content: " ▼";}
-                        .drop-choices.lightdrop {margin-top: 11px;}
+
+                        .dropdown.lightdrop .selected:hover { color: #4F8EF7; }
+
+                        .drop-choices.lightdrop {
+                            border: none;
+                            z-index: 1;
+                            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                            border-radius: 2px;
+                            margin: -22px -20px 0;
+                            padding: 32px 0 8px 0;
+                            min-width: 156px;
+                        }
+
+                            .drop-choices.lightdrop:before {
+                                display: block;
+                                content: '';
+                                border-bottom: 1px solid rgba(0,0,0,.14);
+                            }
+
+                            .drop-choices a.choice {
+                                padding: 8px 24px;
+                                transition: all 0.1s ease;
+                                color: #212121;
+                            }
+
+                                .drop-choices a.choice:hover { background-color: #eee; }
 
                     /* RES Popup */
                     .guider {
@@ -1892,40 +1918,8 @@
                     .commentarea .menuarea span.dropdown-title.lightdrop:first-letter {text-transform: capitalize;}
 
                     .commentarea .menuarea .dropdown.lightdrop .selected {
-                        cursor: pointer;
-                        text-decoration: none;
-                        background-image: none;
                         font-weight: normal;
-                        color: #98abba;
-                        border: none;
-                        padding: 0 4px;
-                        border-radius: 2px;
-                        margin-right: 4px;
                     }
-
-                        .commentarea .menuarea .dropdown.lightdrop .selected:hover {color: #4F8EF7;}
-                        .commentarea .menuarea .dropdown.lightdrop .selected:after {content: "▼"}
-
-
-                        .drop-choices.lightdrop {
-                            border: none;
-                            z-index: 1001;
-                            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                            border-radius: 2px;
-                        }
-
-                            .drop-choices a.choice:not(:last-of-type) {
-                                padding: 12px 24px 12px 12px;
-                                transition: all 0.1s ease;
-                                border-bottom: 1px solid #edf1f3;
-                            }
-
-                                .drop-choices form:last-of-type a.choice {border-bottom: none;}
-
-                                .drop-choices a.choice:hover {
-                                    background-color: #0079d3;
-                                    color: #fff;
-                                }
 
                     .commentarea .menuarea .toggle a, .help-hoverable {
                         color: #98abba;
@@ -2503,13 +2497,6 @@
                         }
 
                             .combined-search-page .search-result-group .search-menu {margin-right: 16px;}
-
-                        .combined-search-page .search-result-group .search-menu .dropdown.lightdrop .selected {
-                            color: #738491;
-                            text-decoration: none;
-                            cursor: pointer;
-                            display: inline-block;
-                        }
 
                     /* Subreddits */
                     .combined-search-page .content > div:nth-of-type(2) {
