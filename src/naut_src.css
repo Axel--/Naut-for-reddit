@@ -219,6 +219,14 @@
                     background: url(%%spritesheet%%) -48px -32px no-repeat;
                 }
 
+                .user a {
+                    max-width: 120px;
+                    overflow: hidden;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    vertical-align: middle;
+                }
+
                 .user .userkarma {
                     font-weight: normal;
                     color: rgba(255,255,255,0.4);
