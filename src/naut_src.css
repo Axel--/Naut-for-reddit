@@ -2,7 +2,7 @@
                 Version 4.0
                 Stylesheet by Cryptonaut
                 Assisted by /u/RenegadeAI & /u/LackingAGoodName
-                Last modified: 18 October 2016
+                Last modified: 16 November 2016
                 Details: This is a custom template made by /u/Cryptonaut
                 Find out more on /r/Naut
 
@@ -2794,7 +2794,7 @@
 				}
 
             /* FAQ */
-            #images:before {
+            .stylesheet-customize-container:before {
                 position: fixed;
                 width: 100%;
                 padding: 16px;
@@ -2807,22 +2807,15 @@
                 z-index: 100;
             }
 
-            #images:after {
+            .stylesheet-customize-container:after {
+                display: block;
                 content: "";
-                position: absolute;
                 width: 100%;
                 height: 800px;
-                left: 0px;
-                bottom: -1200px;
                 z-index: 100;
+                margin-top: 40px;
                 background: url(%%faq%%) 50% 50% no-repeat;
             }
-
-
-
-
-
-
 
             /* Flairs */
             .flair {
