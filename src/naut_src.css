@@ -2759,8 +2759,12 @@
                 }
 
                     #images #image-upload {
-                        margin: 0em 0em 4em;
+                        margin: 0em 0em 16px;
                     }
+
+                ul.image-preview-list { margin: 16px 0 0 0 }
+
+                ul.image-preview-list li { width: 33.33% }
 
 				.subreddit-rules-page .subreddit-rule-buttons button, .subreddit-rules-page .subreddit-rule-add-form-buttons button, .subreddit-rules-page .form-buttons button, .subreddit-rule-delete-confirmation button {
 					padding: 0 16px;
