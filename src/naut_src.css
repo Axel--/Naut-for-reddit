@@ -687,6 +687,7 @@
                             .tagline .userattrs .moderator {background: #27b062;}
                             .tagline .userattrs .admin {background: #F44336;}
                             .tagline .userattrs .submitter {background: #24a0ed;}
+                            .tagline .userattrs .friend {background: #ff4500;}
 
 
                                                 .RESUserTagImage::after { display: none }
