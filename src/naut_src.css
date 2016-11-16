@@ -1642,12 +1642,10 @@
 
             /* Submit Button */
             .morelink {
-                position: absolute;
-                top: 442px;
                 background: #0079d3;
-                width: 152px;
                 height: 36px;
                 border-radius: 2px;
+                font-size: 14px;
                 line-height: 36px;
                 border: none;
                 text-align: center;
@@ -1673,14 +1671,13 @@
                 .morelink a {
                     color: #fff;
                     font-weight: normal;
-                    font-size: 0px;
                     letter-spacing: 0px;
                 }
 
-                    .sidebox.submit.submit-text .morelink a:before {font-size: 14px; content:"Submit Text";}
-                    .sidebox.submit.submit-link .morelink a:before {font-size: 14px; content:"Submit Link";}
+                    .submit-text .morelink a:before {font-size: 14px; content:"Submit Text";}
+                    .submit-link .morelink a:before {font-size: 14px; content:"Submit Link";}
 
-                .side .sidebox.submit-text .morelink:before, .side .sidebox.submit-link .morelink:after {
+                .submit-text .morelink:before, .submit-link .morelink:after {
                     content: "N/A";
                     position: absolute;
                     left: -168px;
@@ -1693,7 +1690,7 @@
                     z-index: -1;
                 }
 
-                    .side .sidebox.submit-link .morelink:after {left: 168px;}
+                    .submit-link .morelink:after {left: 168px;}
 
                 /* Restricted button */
                 .disabled .morelink {
@@ -1704,8 +1701,6 @@
                 }
                     .disabled .morelink a {color: rgba(0,0,0,0.32);font-size: 14px;}
 
-
-
             .morelink .nub {display: none;}
 
             .submit.mod-override .morelink a:after {
@@ -1715,6 +1710,23 @@
 				margin-left: -16px;
             }
 
+            /* Submit Links */
+
+            .submit .morelink {
+                position: absolute;
+                top: 442px;
+                font-size: 0px;
+                width: 152px;
+            }
+
+            /* Wiki talk submit */
+
+            .wiki-page .wiki-page-content .discussionlink {
+                margin: 16px 0 0 0;
+                padding: 0;
+            }
+
+            .wiki-page .wiki-page-content .discussionlink a { padding: 0 16px }
 
             /* Login form */
             .login-form-side {
@@ -1871,10 +1883,7 @@
                 .icon-menu a {background: none;}
 
             /* Create Community */
-                .sidebox.create .morelink {
-                    position: relative;
-                    top: 0px;
-                    width: 100%;
+                .create .morelink {
                     background: #fff;
                 }
 
