@@ -1,0 +1,10 @@
+/* Addon: Large Header */
+#header{height:294px}
+#header-bottom-left,body:not(.search-page) .side:before{top:198px}
+body:not(.search-page) .side .titlebox h1.redditname{top:406px}
+body:not(.search-page) .titlebox span.subscribers{top:432px}
+body:not(.search-page) .titlebox .fancy-toggle-button{top:412px}
+#search{top:482px}
+body:not(.search-page) .morelink{top:540px}
+.comments-page .side .linkinfo{top:592px}
+/* End Addon */

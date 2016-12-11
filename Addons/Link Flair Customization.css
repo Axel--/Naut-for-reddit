@@ -1,0 +1,22 @@
+/* --- Addon: Linkflair Example --- */
+.linkflair-example .linkflairlabel {
+    background-color: #7767DA;
+}
+
+.linkflair-example .thumbnail.self {
+    background: url(%%examplethumbnail%%) 0px 0px;/* 80px x 56px */
+}
+
+/* The comments page of a submission with a linkflair has an additional body class named "post-linkflair-..."
+	Through this class you can style pages that only have that linkflair. This is very cool to use when you have
+	special posts, such as AMA's. */
+
+/* You can use a different header or subreddit info image for example: */
+.post-linkflair-example #header {
+    background-image: url(%%exampleheaderimg%%);
+}
+
+.post-linkflair-example .side:before {
+    background-image: url(%%examplesidebarimg);
+}
+/* --- End Addon --- */

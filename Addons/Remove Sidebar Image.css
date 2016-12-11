@@ -1,0 +1,17 @@
+/* Addon: Remove Sidebar Image */
+.side::before {
+    content: none;
+}
+
+#search,
+.morelink,
+.side .titlebox h1.redditname,
+.subscribers,
+.titlebox .fancy-toggle-button {
+    margin-top: -80px;
+}
+
+.side {
+    margin-top: 202px;
+}
+/* End Addon */

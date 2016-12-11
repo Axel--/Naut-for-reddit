@@ -1,0 +1,9 @@
+/* Addon: Infobox ReColor */
+.side .titlebox h1.redditname:before {
+    background-color: #769278;
+}
+
+.side .titlebox h1.redditname a, .titlebox span.subscribers {
+    color: #fff;
+}
+/* End Addon */

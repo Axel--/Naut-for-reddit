@@ -1,0 +1,22 @@
+/* Addon: Custom Subreddit Title */
+/* This is the one in the header */
+#header .pagename a {
+    height: 42px;
+    width: 320px;
+    background-image: url(%%title%%);
+    background-repeat: no-repeat;
+    background-size: auto 42px;
+    text-indent: -9999px;
+}
+
+/* This is the one in the sidebar */
+.side .titlebox h1.redditname a {
+    display: block;
+    height: 22px;
+    width: 176px;
+    background-image: url(%%title%%);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    text-indent: -9999px;
+}
+/* End Addon */

@@ -1,0 +1,19 @@
+/* Addon: Content Overlap Header */
+#header {
+    background-image: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+    #header .tabmenu:before {
+        display: none;
+    }
+
+body {
+    background: #eee url(%%headerimg%%) no-repeat 50% 0%;
+}
+
+#header .tabmenu li a, #header .tabmenu li.selected a {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/* End Addon */

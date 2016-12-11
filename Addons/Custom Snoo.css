@@ -1,0 +1,9 @@
+/* Addon: Custom Snoo */
+#header-img.default-header, #header-img {
+    background: url(%%snoo%%) no-repeat 0px 0px;
+}
+
+    #header-img.default-header:hover, #header-img:hover {
+        background-position: 0px 0px;
+    }
+/* End Addon */

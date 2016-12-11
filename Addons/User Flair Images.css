@@ -1,0 +1,22 @@
+/* Addon: User Flair Images */
+.flair:before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-left: 4px;
+    content: "";
+    background-image: url(%%userflairs%%);
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    vertical-align: top;
+    position: relative;
+    top: -1px;
+}
+
+/* The "one", "two", etc.. are the names you fill in in the "css" input field on the /r/.../about/flair page. */
+.flair-one:before{background-position:0 -0}
+.flair-two:before{background-position:0 -16px}
+.flair-three:before{background-position:0 -32px}
+.flair-four:before{background-position:0 -48px}}
+/* End Addon */
