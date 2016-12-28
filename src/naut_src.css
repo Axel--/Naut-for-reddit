@@ -70,7 +70,7 @@
             height: 36px;
             line-height: 36px;
             font-size: 14px;
-            font-family: Lato,arial,sans-serif;
+            font-family: Lato, Arial, sans-serif;
             box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
             transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
         }
@@ -281,7 +281,7 @@
                             left: 32px;
                             content: "You have new messages!";
                             text-indent: 0px;
-                            font: 14px arial, sans-serif;
+                            font: 14px Lato, Arial, sans-serif;
                             line-height: 1;
                             -webkit-transform:translateY(112px);
                             transform:translateY(112px);
@@ -347,7 +347,7 @@
                     display: inline-block;
                     line-height: 42px;
                     color: #fff;
-                    font: normal 700 42px/42px Lato,arial,sans-serif;
+                    font: normal 700 42px/42px Lato, Arial, sans-serif;
                     text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
                 }
 
@@ -385,7 +385,7 @@
                         margin: 0 16px;
                         padding: 0;
                         text-transform: uppercase;
-                        font: 400 14px/32px Lato,arial,sans-serif;
+                        font: 400 14px/32px Lato, Arial, sans-serif;
                         color: rgba(255,255,255,0.7);
                         display: inline-block;
                     }
@@ -564,7 +564,7 @@
                     /* Submission Title */
                     .link .title {
                         margin: 0px;
-                        font: 13.5pt Arial,sans-serif;
+                        font: 13.5pt Lato, Arial, sans-serif;
                         transition: all 0.15s ease;
                         overflow: visible;
                     }
@@ -667,7 +667,7 @@
                     .entry .tagline {
                         margin-top: 3px;
                         color: #98abba;
-                        font: 12px arial,sans-serif;
+                        font: 12px Lato, Arial, sans-serif;
                     }
 
                         .link .entry .tagline a {color: #292f34;}
@@ -726,7 +726,7 @@
                             padding: 0 1px;
                             color: #98abba;
                             font-weight: normal;
-                            font: 13px Arial,sans-serif;
+                            font: 13px Lato, Arial, sans-serif;
                             transition: all 0.15s ease;
                         }
 
@@ -824,7 +824,7 @@
                                 .link .entry .buttons li .redditSingleClick {
                                     padding: 0 1px;
                                     color: #98abba;
-                                    font: normal 13px Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+                                    font: normal 13px Lato, Arial, sans-serif;
                                     transition: all 0.15s ease;
                                 }
 
@@ -835,7 +835,7 @@
                         border-radius: 1px;
                         border: 0px solid;
                         color: #fff;
-                        font: normal normal bold 13px Arial, sans-serif;
+                        font: normal normal bold 13px Lato, Arial, sans-serif;
                         cursor: default;
                         vertical-align: middle;
                         position: relative;
@@ -1448,7 +1448,7 @@
                     position: absolute;
                     top: 308px;
                     z-index: 100;
-                    font-family: Lato, arial,verdana,helvetica,sans-serif;
+                    font-family: Lato, Arial, sans-serif;
                 }
 
                     .side .titlebox h1.redditname a {color: #333;}
@@ -1751,7 +1751,7 @@
                     content: "Subreddit Info";
                     display: block;
                     color: #292f34;
-                    font: 18px/24px verdana,arial,helvetica,sans-serif;
+                    font: 18px/24px Lato, Arial, sans-serif;
                     margin: 8px 0px;
                 }
 
@@ -1783,7 +1783,7 @@
             /* Sidebar Description */
             .side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
                 color: #292f34;
-                font: 13px/1.45 Lato,arial,sans-serif;
+                font: 13px/1.45 Lato, Arial, sans-serif;
             }
 
                 .side .titlebox .md h1 {
@@ -1801,7 +1801,7 @@
                     width: 100%;
                     border-radius: 2px;
                     background: #0079d3;
-                    font: 12px/42px verdana,arial,sans-serif;
+                    font: 12px/42px Lato, Arial, sans-serif;
                     color: #fff;
                     display: block;
                     margin: 1.5em 0em;
@@ -1905,7 +1905,7 @@
                 padding: 10px 0px;
                 color: #24A0ED;
                 content: "This subreddit uses the /r/Naut theme.";
-                font: 16px Lato,arial,sans-serif;
+                font: 16px Lato, Arial, sans-serif;
                 position: absolute;
                 width: 320px;
                 border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2068,7 +2068,7 @@
 
                             .comment .entry .tagline {
                                 color: #98abba;
-                                font: 12px Arial, sans-serif;
+                                font: 12px Lato, Arial, sans-serif;
                             }
 
                                 .comment .expand {
@@ -2396,7 +2396,7 @@
                     margin-top: 16px;
                     cursor: pointer;
                     text-transform: capitalize;
-                    font: 17px Lato, arial, sans-serif;
+                    font: 17px Lato, Arial, sans-serif;
                     padding: 16px;
                     margin-bottom: 48px;
                 }
@@ -2631,7 +2631,7 @@
                 padding: 9px 16px 10px;
                 border-radius: 2px;
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
-                font: 16px arial, sans-serif;
+                font: 16px Lato, Arial, sans-serif;
                 margin: 0;
             }
 
@@ -2795,7 +2795,7 @@
 					font-weight: 700;
 					height: 36px;
 					font-size: 14px;
-					font-family: Lato,arial,sans-serif;
+					font-family: Lato, Arial, sans-serif;
 					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
 				}
@@ -2844,7 +2844,7 @@
             .flair {
                 border: none;
                 border-radius: 0px;
-                font: normal 12px arial, sans-serif;
+                font: normal 12px Lato, Arial, sans-serif;
                 background: transparent;
                 color: #98abba;
                 padding-left: 0px;
@@ -2985,7 +2985,7 @@
             .res .content .RESBigEditorPop {
                 background-color: rgba(0, 0, 0, 0);
                 line-height: inherit;
-                font: 11px verdana,arial,sans-serif;
+                font: 11px Lato, Arial, sans-serif;
                 box-shadow: none;
                 font-weight: normal;
                 color: #4D5763;
