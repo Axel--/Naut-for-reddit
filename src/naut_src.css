@@ -1477,7 +1477,7 @@
                     }
 
                     .titlebox .users-online .number:after {content: " currently online";}
-                    .titlelebox .word {display: none;}
+                    .titlebox .word {display: none;}
                     .titlebox .users-online, .titlebox .number {cursor: text;}
 
 
