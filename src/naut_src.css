@@ -3023,17 +3023,8 @@ body #newlink-with-image-upload .file-upload-button {
     padding-right: 16px;
 }
 
-/* Search Page */
-.search-page #header .pagename a {
-    display: none;
-}
-
-.search-page #header {
-    height: 156px;
-}
-
 .search-page #header-bottom-left {
-    top: 56px;
+    top: 78px;
 }
 
 .search-page .searchpane {
@@ -3049,19 +3040,15 @@ body #newlink-with-image-upload .file-upload-button {
 
 .search-page #search {
     position: absolute;
-    top: -128px;
-    left: 60px;
-    padding: 0;
+    top: -146px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
     .search-page #search input[type=text] {
         min-width: 320px;
         width: 320px;
     }
-
-.combined-search-page .search-result-listing + .search-result-listing .contents {
-    padding: 0;
-}
 
 .combined-search-page .search-submit-button {
     position: relative;
