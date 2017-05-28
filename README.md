@@ -21,4 +21,4 @@ Now you can customize it by either adding customization lines yourself, or by vi
 If you have any questions on how to customize, [/r/CSSHelp](https://www.reddit.com/r/csshelp) might be better suited than [/r/Naut](https://www.reddit.com/r/Naut)!
 
 
-##[Click here to download](https://github.com/Axel--/Naut-for-reddit/archive/master.zip)
+## [Click here to download](https://github.com/Axel--/Naut-for-reddit/releases/latest)
