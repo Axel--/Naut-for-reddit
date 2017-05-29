@@ -1,0 +1,77 @@
+.res-nightmode.listing-page > .content,
+.res-nightmode.comments-page .link,
+.res-nightmode .res .commentarea>.usertext,
+.res-nightmode .account-activity-box,
+.res-nightmode .side .linkinfo,
+.res-nightmode .side .titlebox,
+.res-nightmode .sidecontentbox,
+.res-nightmode body .content,
+.res-nightmode .icon-menu a,
+.res-nightmode .side .titlebox form.flairtoggle,
+.res-nightmode .side .titlebox h1.redditname:before {
+  background: #444 !important;
+  border-color: #444 !important; 
+}
+.res-nightmode .side .linkinfo .score,
+.res-nightmode .titlebox:before,
+.res-nightmode .titlebox .md *,
+.res-nightmode .content textarea:focus,
+.res-nightmode .side .titlebox h1.redditname a {
+  color: #ccc;
+}
+.res-nightmode.res input[type=text] {
+  background: #444;
+  border-color: #444;
+}
+.res-nightmode #sr-header-area[id],
+.res-nightmode .commentarea > .usertext textarea:not(:focus) {
+  background: #333;
+  border-color: #333;
+}
+.res-nightmode #header .tabmenu a {
+  background: none;
+}
+.res-nightmode .arrow.up {
+  background-position: -0 -80px!important;
+}
+.res-nightmode .arrow.upmod, .arrow.up:hover {
+  background-position: -32px -80px!important;
+}
+.res-nightmode .arrow.down {
+  background-position: -64px -80px!important;
+}
+.res-nightmode .arrow.downmod, .arrow.down:hover {
+  background-position: -0 -100px!important;
+}
+.res-nightmode .link .entry .tagline a {
+  color: #828282;
+}
+
+/* Buttons */
+.res-nightmode button,
+.res-nightmode .morelink,
+.res-nightmode .morelink a,
+.res-nightmode .sidebox.create .morelink a,
+.res-nightmode .side .titlebox .md h3 a,
+.res-nightmode .drop-choices a.choice:hover,
+.res-nightmode .submit-page #newlink.submit.content ul.tabmenu.formtab,
+.res-nightmode .submit_text.enabled.roundfield,
+.res-nightmode body .btn, body button,
+.res-nightmode .content .infobar {
+  background-color: #0079d3;
+  color: #fff;
+}
+  .res-nightmode .morelink:hover,
+  .res-nightmode .morelink:hover a,
+  .res-nightmode .side .titlebox .md h3 a:hover,
+  .res-nightmode .btn:hover,
+  .res-nightmode body button:hover {
+    background-color: #158be2;
+    color: #fff;
+  }
+  .res-nightmode .morelink:active ,
+  .res-nightmode .side .titlebox .md h3 a:active,
+  .res-nightmode .btn:active,
+  .res-nightmode body button:active {
+    background-color: #0066b2;
+  }
