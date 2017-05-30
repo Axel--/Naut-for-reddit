@@ -1,0 +1,24 @@
+@import "../variables";
+@import "../mixins";
+
+#search input[type=text], .linkinfo .shortlink input {
+    border: none;
+    border-bottom: 1px solid $input-text-bottom-border-color;
+    box-shadow: none;
+    display: inline-block;
+    font-size: $input-text-font-size;
+    font-family: $font;
+    margin: 0;
+    padding: $input-text-padding 0;
+    width: $input-text-width;
+    background: none;
+    text-align: left;
+    color: inherit;
+    line-height: 32px;
+    transition: all 0.3s;
+
+    &:focus {
+        border-color: $input-text-highlight-color;
+        box-shadow: 0 1px 0 0 $input-text-highlight-color;
+    }
+}

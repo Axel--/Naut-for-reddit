@@ -1,0 +1,26 @@
+@import "../variables";
+
+body {
+    background: $layout-bg-color;
+}
+
+// ::-moz-selection {
+//     background: $text-link-color;
+//     text-shadow: none;
+//     color: $text-color-primary;
+// }
+
+// ::selection {
+//     background: $text-link-color;
+//     text-shadow: none;
+//     color: $text-color-primary;
+// }
+
+:focus {
+    outline: none !important;
+}
+
+body > .content {
+    margin: 16px 352px 64px 16px;
+    padding: 0;
+}

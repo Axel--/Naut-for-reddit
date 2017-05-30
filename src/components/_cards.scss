@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../variables";
+
+
+// Card
+.linklisting, .titlebox, .sidecontentbox, #search, #searchexpando, .side:before, .linkinfo, .reddit-infobar {
+    // font-size: $card-font-size;
+    font-weight: 400;
+    background: $card-background-color;
+    border-radius: 2px;
+    @include shadow-2dp();
+
+    margin-bottom: 16px;
+    border: 0;
+}
+
+// Card title
+.sidecontentbox .title {
+    color: inherit;
+    font-size: $card-title-font-size;
+    font-weight: $card-title-text-font-weight;
+    padding: $card-vertical-padding $card-horizontal-padding;
+    line-height: normal;
+    margin: 0;
+}
+
+// Card subtitle
+// .mdl-card__subtitle-text {
+//   font-size: $card-subtitle-font-size;
+//   color: $card-subtitle-color;
+//   margin: 0;
+// }
+
+// Card content
+.link, .titlebox, .sidecontentbox .content, #searchexpando, .side:before, .linkinfo {
+    color: $card-text-color;
+    font-size: $card-supporting-text-font-size;
+    line-height: normal;
+    padding: $card-vertical-padding $card-horizontal-padding;
+}

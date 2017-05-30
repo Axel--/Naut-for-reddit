@@ -1,0 +1,146 @@
+@import "../variables";
+
+.side {
+    background: 0;
+    margin: 0;
+    position: absolute;
+    right: 16px;
+    top: 100px;
+    z-index: 100;
+    width: 320px;
+
+    .spacer {
+        margin: 0;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        margin-bottom: 16px;
+        height: $sidebar-image-height + $sidebar-infobox-height;
+        background: $sidebar-image-bg center 0 no-repeat;
+    }
+}
+
+.titlebox {
+    h1 {
+        position: absolute;
+        top: $sidebar-infobox-position;
+        margin: 16px 0;
+
+        a {
+            color: $sidebar-infobox-color;
+        }
+
+    }
+    .fancy-toggle-button {
+        margin: 20px 16px;
+    }
+}
+
+.subscribers {
+    position: absolute;
+    left: 16px;
+    top: $sidebar-infobox-position + 42px;
+    color: $sidebar-infobox-color;
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 0;
+    top: $sidebar-infobox-position;
+}
+
+.toggle .option.active {
+    display: block;
+}
+
+#search {
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+    input[type=text] {
+        flex: 3;
+        display: inline-block;
+        padding: 0 16px;
+        line-height: 42px;
+        border: none;
+
+        &::-webkit-input-placeholder {
+            text-transform: capitalize;
+        }
+    }
+
+    input[type=submit] {
+        flex: 0 0 13px;
+        padding: 0;
+        margin: 14px;
+    }
+}
+
+#searchexpando {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+}
+
+.morelink {
+    display: block;
+    margin-bottom: 16px;
+
+    .nub { display: none}
+}
+
+.submit .morelink {
+    width: 152px;
+    font-size: 0;
+
+    a:before {
+        font-size: 14px;
+    }
+
+}
+
+// This shouldnt be permanent but it works for now.
+.submit-text {
+    .morelink {
+        position: absolute;
+        margin-top: -52px;
+        right: 0;
+
+        a:before {
+            content: 'submit text';
+        }
+    }
+}
+
+.submit-link .morelink a:before {
+    content: 'submit link';
+}
+
+.sidecontentbox {
+    .content {
+        border: 0
+    }
+
+    .title {
+        font-size: 16px;
+
+        h1 {
+            display: inline;
+            margin: 0;
+            color: inherit;
+            font-size: inherit;
+            font-weight: 700;
+        }
+    }
+}
+
+.sidebox .spacer {
+    display: none;
+}
+
+.linkinfo .shortlink input {
+    width: auto;
+}

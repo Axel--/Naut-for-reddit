@@ -1,0 +1,20 @@
+{
+    "name": "Naut",
+    "author": "Cryptonaut",
+    "license": "MIT",
+    "repository": "Axel--/Naut-for-reddit",
+    "version": "0.0.1",
+    "description": "A clean, modern, and organized theme for reddit.",
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^2.0.11",
+        "gulp-replace": "^0.5.4",
+        "gulp-header": "^1.2.2",
+        "gulp-sass": "^2.3.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {}
+}

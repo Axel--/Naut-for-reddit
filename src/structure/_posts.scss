@@ -1,0 +1,83 @@
+@import "../mixins";
+@import "../variables";
+
+.midcol {
+    float: initial;
+    margin: 0 16px 0 0;
+}
+
+.link {
+    display: flex;
+    margin: 0;
+
+    .rank {
+        display: none;
+    }
+
+    .title {
+        line-height: 18px;
+    }
+
+    .flat-list {
+        padding: 0;
+    }
+
+    &.last-clicked {
+        border: 0;
+        background: unquote("rgba(#{$color-black}, 0.06)");
+    }
+}
+
+.domain {
+    font-size: 0;
+    vertical-align: middle;
+
+    a {
+        font-size: 10px;
+    }
+}
+
+.entry {
+    flex: 3;
+
+    .buttons li {
+        line-height: 1;
+
+        a {
+            display: block;
+            font-size: 10px;
+            font-variant: small-caps;
+
+            &.comments {
+                color: $text-link-color;
+            }
+        }
+    }
+}
+
+.nsfw-stamp {
+    display: none;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 48px;
+    margin: 0 16px 0 0;
+    float: none;
+
+    &.default, &.self, &.nsfw, &.image {
+        width: $thumbnail-size;
+        height: $thumbnail-size;
+        margin: 0 28px 0 12px;
+        border-radius: $thumbnail-size / 2;
+        background: $thumbnail-bg;
+    }
+
+    &.nsfw {
+        background: $thumbnail-nsfw-color;
+    }
+
+    .stickied & {
+        background: $thumbnail-stickied-color;
+    }
+}
