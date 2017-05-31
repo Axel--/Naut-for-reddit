@@ -3,3 +3,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+[class] hr {
+    display: block;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    background: 0;
+}

@@ -85,6 +85,11 @@ $thumbnail-bg: unquote("rgba(#{$palette-grey-800}, 0.20)") !default;
 $thumbnail-nsfw-color: unquote("rgb(#{$palette-pink-400})") !default;
 $thumbnail-stickied-color: unquote("rgb(#{$palette-green-700})") !default;
 
+// Code
+
+$code-color: unquote("rgba(#{$color-black}, 0.87)") !default;
+$code-bg: unquote("rgba(#{$color-black}, 0.06)") !default;
+
 /* ==========  Text fields  ========== */
 
 $input-text-background-color: transparent !default;

@@ -165,16 +165,16 @@
   line-height: 1.35;
   letter-spacing: 0.08em;
 
-  &:before {
-    position: absolute;
-    left: -0.5em;
-    content: '“';
-  }
+  // &:before {
+  //   position: absolute;
+  //   left: -0.5em;
+  //   content: '“';
+  // }
 
-  &:after {
-    content: '”';
-    margin-left: -0.05em;
-  }
+  // &:after {
+  //   content: '”';
+  //   margin-left: -0.05em;
+  // }
 
   @if $colorContrast {
     opacity: 0.54;

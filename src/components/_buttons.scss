@@ -84,7 +84,9 @@ input[type="submit"] {
 }
 
 // Colored buttons
-button[name="save"], .morelink {
+button[name="save"], button.save, .morelink {
+    //srsly reddit TWO different selectors for save buttons?
+
     background: $button-primary-color-alt;
     color: $button-secondary-color-alt;
 

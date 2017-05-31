@@ -40,6 +40,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 .md {
+    max-width: 100%;
+
     h1 {
         @include typo-display-3;
 
@@ -112,5 +114,29 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
     ul, ol {
         @include typo-body-1;
+    }
+}
+
+[class][class] {
+    pre, :not(pre) > code {
+        display: inline-block;
+        border: 0;
+        background: $code-bg;
+        color: $code-color;
+        font-family: Consolas,Monaco,'Andale Mono',monospace;
+        direction: ltr;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        line-height: 1.5;
+        tab-size: 4;
+        hyphens: none;
+        font-size: 87%;
+        padding: 4px;
+    }
+
+    pre {
+        padding: 16px;
     }
 }

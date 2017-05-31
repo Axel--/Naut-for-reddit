@@ -26,6 +26,13 @@
         border: 0;
         background: unquote("rgba(#{$color-black}, 0.06)");
     }
+
+    .usertext-body .md {
+        padding: 0;
+        margin: 16px 0;
+        background: 0;
+        border: 0;
+    }
 }
 
 .domain {
@@ -45,7 +52,6 @@
 
         a {
             display: block;
-            font-size: 10px;
             font-variant: small-caps;
 
             &.comments {

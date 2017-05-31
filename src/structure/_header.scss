@@ -87,10 +87,11 @@
     left: 32px;
     top: 66px;
     font-variant: normal;
-    font-size: 48px;
+    font-size: 0;
     font-weight: 500;
 
     a {
+        font-size: 48px;
         color: inherit;
         vertical-align: bottom;
     }
