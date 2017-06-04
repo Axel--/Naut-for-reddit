@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleanCSS = require('gulp-clean-css'),
     replace = require('gulp-replace'),
-    header = require('gulp-header');
+    header = require('gulp-header'),
+    gutil = require('gulp-util');
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     t = new Date(),
@@ -28,6 +29,9 @@ gulp.task('compile', function() {
             includePaths: []
         }))
         .on('error', sass.logError)
+		.on('error', function() {
+			gutil.beep();
+		})
         .pipe(cleanCSS({
 			inline: ['none']
 		}))
