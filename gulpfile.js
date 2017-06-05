@@ -29,12 +29,12 @@ gulp.task('compile', function() {
             includePaths: []
         }))
         .on('error', sass.logError)
-		.on('error', function() {
-			gutil.beep();
-		})
+        .on('error', function() {
+            gutil.beep();
+        })
         .pipe(cleanCSS({
-			inline: ['none']
-		}))
+            inline: ['none']
+        }))
         .pipe(replace('@charset "UTF-8";', ''))
         .pipe(header(banner, {pkg, datestr}))
         .pipe(gulp.dest('./'));
