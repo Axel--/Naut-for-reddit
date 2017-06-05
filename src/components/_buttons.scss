@@ -2,7 +2,7 @@
 @import "../variables";
 
 // The button component. Defaults to a flat button.
-.btn, button, .morelink, .fancy-toggle-button .active {
+.btn, button, .morelink, .fancy-toggle-button .active, .account-activity-box a, .gadget .right a, .sidecontentbox a.helplink {
     background: transparent;
     border: none;
     border-radius: $button-border-radius;

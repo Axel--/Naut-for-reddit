@@ -2,12 +2,10 @@
 
 .side {
     background: 0;
-    margin: 0;
-    position: absolute;
-    right: 16px;
-    top: 100px;
+    margin: -$sidebar-overlap 16px 0 0;
     z-index: 100;
     width: 320px;
+    order: 100;
 
     .spacer {
         margin: 0;
@@ -33,6 +31,7 @@
         }
 
     }
+
     .fancy-toggle-button {
         margin: 20px 16px;
     }
@@ -40,14 +39,13 @@
 
 .subscribers {
     position: absolute;
-    left: 16px;
     top: $sidebar-infobox-position + 42px;
     color: $sidebar-infobox-color;
 }
 
 .subscribe-button {
     position: absolute;
-    right: 0;
+    right: 16px;
     top: $sidebar-infobox-position;
 }
 
@@ -107,7 +105,7 @@
     .morelink {
         position: absolute;
         margin-top: -52px;
-        right: 0;
+        right: 16px;
 
         a:before {
             content: 'submit text';
@@ -143,4 +141,8 @@
 
 .linkinfo .shortlink input {
     width: auto;
+}
+
+.bottom .flair {
+    display: none;
 }

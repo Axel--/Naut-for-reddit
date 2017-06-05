@@ -3,7 +3,7 @@
 
 
 // Card
-.linklisting, .titlebox, .sidecontentbox, #search, #searchexpando, .side:before, .linkinfo, .reddit-infobar {
+.linklisting, .commentarea > .sitetable > .thing, .titlebox, .sidecontentbox, #search, #searchexpando, .side:before, .linkinfo, .reddit-infobar, .gold-accent.comment-visits-box {
     // font-size: $card-font-size;
     font-weight: 400;
     background: $card-background-color;
@@ -32,7 +32,7 @@
 // }
 
 // Card content
-.link, .titlebox, .sidecontentbox .content, #searchexpando, .side:before, .linkinfo {
+.thing, .titlebox, .sidecontentbox .content, #searchexpando, .side:before, .linkinfo {
     color: $card-text-color;
     font-size: $card-supporting-text-font-size;
     line-height: normal;

@@ -3,15 +3,21 @@
 
 .midcol {
     float: initial;
-    margin: 0 16px 0 0;
+}
+
+.thing {
+    display: flex;
 }
 
 .link {
-    display: flex;
     margin: 0;
 
     .rank {
         display: none;
+    }
+
+    .midcol {
+        margin: 0 16px 0 0;
     }
 
     .title {

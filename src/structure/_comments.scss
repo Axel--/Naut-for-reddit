@@ -1,0 +1,58 @@
+@import "../variables";
+
+.commentarea {
+    display: flex;
+    flex-direction: column;
+
+    > .usertext {
+        order: -1;
+        overflow: visible;
+    }
+}
+
+.usertext {
+    .bottom-area {
+        overflow: visible;
+    }
+}
+
+.panestack-title {
+    border-bottom: 0;
+
+    .title {
+        // display: inline;
+        // margin: 0;
+        // color: inherit;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.menuarea {
+    font-size: inherit;
+}
+
+.gold-accent.comment-visits-box {
+    margin: 0 0 16px 0;
+    padding: 8px;
+}
+
+.comment {
+    flex-wrap: wrap;
+    margin: 0;
+
+    .child {
+        flex: 1 0 100%;
+        margin: 0;
+        border-left: 1px solid $divider-color;
+    }
+}
+
+.new-comment .usertext-body {
+    background-color: $comment-new-bg;
+    border-radius: 2px;
+    border: 0;
+    margin: 0;
+    padding: 0 8px;
+}

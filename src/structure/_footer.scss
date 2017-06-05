@@ -1,0 +1,60 @@
+@import "../variables";
+
+.footer-parent {
+    flex: 0 0 100%;
+    order: 9999;
+    background: $footer-bg;
+    margin-top: 32px;
+    font-size: 1rem;
+    padding: 0;
+
+    a {
+        color: $footer-alt-color;
+
+        &:hover {
+            color: $footer-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.debuginfo {
+    display: none;
+}
+
+.flat-vert.title {
+    font-size: inherit;
+    font-weight: bold;
+    color: $footer-color;
+    margin: 0 0 16px;
+}
+
+.footer {
+    text-transform: capitalize;
+    border: 0;
+    max-width: 1432px;
+    margin: 0 auto;
+    padding: 0;
+
+    .col {
+        flex: 0 0 auto;
+        margin: 0;
+        padding: 24px 40px 40px;
+        text-align: left;
+        border: 0;
+        width: 25%;
+    }
+
+    li {
+        margin: 0 0 16px;
+    }
+}
+
+.bottommenu {
+    display: inline-block;
+    font-size: 1rem;
+    color: $footer-color;
+    line-height: 64px;
+    padding: 0 8px;
+    z-index: 1;
+}

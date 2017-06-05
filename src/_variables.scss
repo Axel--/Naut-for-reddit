@@ -13,11 +13,12 @@
 
 /* ==========  TYPOGRAPHY  ========== */
 
-$font: Lato, Arial, sans-serif !default;
+$font: 'Helvetica', 'Arial', sans-serif !default;
 
 /* ==========  IMAGES  ========== */
 $image-header: '%%headerimg%%' !default;
 $image-sidebar: '%%sidebarimg%%' !default;
+$image-spritesheet: '%%spritesheet%%' !default;
 
 /* ==========  Color & Themes  ========== */
 
@@ -86,9 +87,19 @@ $thumbnail-nsfw-color: unquote("rgb(#{$palette-pink-400})") !default;
 $thumbnail-stickied-color: unquote("rgb(#{$palette-green-700})") !default;
 
 // Code
-
 $code-color: unquote("rgba(#{$color-black}, 0.87)") !default;
 $code-bg: unquote("rgba(#{$color-black}, 0.06)") !default;
+
+// Dividers
+$divider-color: #ccc !default;
+
+// Comments
+$comment-new-bg: $code-bg !default;
+
+// Footer
+$footer-bg: unquote("rgb(#{$color-accent})") !default;
+$footer-color: unquote("rgb(#{$color-primary-contrast})") !default;
+$footer-alt-color: unquote("rgb(#{$palette-blue-grey-100})") !default;
 
 /* ==========  Text fields  ========== */
 
@@ -148,11 +159,12 @@ $layout-header-height: 196px !default;
 
 /* SIDEBAR */
 
+$sidebar-overlap: 96px;
 $sidebar-image-height: 192px !default;
 $sidebar-image-fullsize: false !default;
 
 $sidebar-infobox-height: if($sidebar-image-fullsize, 0, 76px);
-$sidebar-infobox-position: $sidebar-image-height - if($sidebar-image-fullsize, 76, 0);
+$sidebar-infobox-position: $sidebar-image-height - if($sidebar-image-fullsize, 76, 0) + $sidebar-overlap + 4;
 
 /* THUMBNAILS */
 

@@ -3,6 +3,7 @@
 #header {
     display: flex;
     flex-wrap: wrap;
+    order: -1;
     justify-content: flex-start;
     height: $layout-header-height;
     background: $layout-header-bg;
@@ -13,7 +14,7 @@
         position: absolute;
         content: '';
         width: 100%;
-        height: 24px;
+        height: 26px;
         background: rgba(0,0,0,0.08);
         z-index: -1;
     }
@@ -23,8 +24,8 @@
     flex: 1 1 0%;
     background: 0;
     border: 0;
-    height: 24px;
-    line-height: 24px;
+    height: 26px;
+    line-height: 26px;
     font-size: 10px;
 
     .dropdown.srdrop .selected {
@@ -51,6 +52,8 @@
         height: 24px;
         ul {
             white-space: initial;
+            vertical-align: top;
+
             li {
                 display: inline-block;
             }
@@ -138,7 +141,7 @@
     align-self: flex-start;
     order: 1;
     background: 0;
-    padding: 0;
+    padding: 0 8px 0 0;
     line-height: 24px;
 
     .separator {
@@ -170,4 +173,68 @@
 
 .user {
     color: inherit;
+    padding: 0 8px 0 0;
+}
+
+.flat-list {
+    display: inline-block;
+}
+
+#mail[class], #modmail[class], #new_modmail[class], .pref-lang, .logout a {
+    top: initial;
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    background: url($image-spritesheet);
+    vertical-align: top;
+    margin: 3px 2px;
+    overflow: visible;
+}
+
+#mail {
+    &[class] {
+        background-position: -0px -0px;
+    }
+}
+
+#modmail {
+    &[class] {
+        background-position: -18px -0px;
+    }
+}
+
+#new_modmail {
+    &[class] {
+        background-position: -36px -0px;
+    }
+}
+
+#modmail.havemail:after, #new_modmail.havemail:after, .message-count {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: 8px;
+    line-height: 12px;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff4081;
+    color: $layout-header-text-color;
+    margin: 7px 0 0 8px;
+}
+
+.message-count {
+    left: initial;
+    margin: 10px 0 0 -12px;
+}
+
+.pref-lang {
+    background-position: -54px -0px;
+}
+
+.logout a {
+    background-position: -72px -0px;
 }
