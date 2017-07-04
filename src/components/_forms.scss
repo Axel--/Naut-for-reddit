@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../variables";
+
+.linefield, .roundfield {
+    padding: 0;
+    background: 0;
+    margin-bottom: 16px;
+
+    .title {
+        font-size: 1rem;
+        color: inherit;
+        text-transform: capitalize;
+        padding: 0;
+    }
+
+    .linefield-description {
+        display: none;
+    }
+
+    &-content {
+        padding: 0;
+    }
+}
+
+.usertext-edit {
+    margin-top: 0;
+    padding: 0;
+    width: auto;
+}
+
+.bottom-area {
+    a, span {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.save-button {
+    text-align: right;
+}
