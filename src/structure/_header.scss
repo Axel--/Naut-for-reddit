@@ -20,6 +20,10 @@
     }
 }
 
+.separator {
+    color: $layout-header-tab-highlight;
+}
+
 #sr-header-area {
     flex: 1 1 0%;
     background: 0;
@@ -59,6 +63,10 @@
             }
         }
     }
+
+    a:hover {
+        color: $layout-header-tab-highlight;
+    }
 }
 
 .sr-bar a, #header-bottom-right a, .dropdown.srdrop .selected {
@@ -85,6 +93,14 @@
     order: 2;
 }
 
+#header-img.default-header {
+    width: 30px;
+    height: 26px;
+    margin: 14px 6px 14px 0;
+    padding: 0;
+    background: $reddit-logo;
+}
+
 .pagename {
     position: absolute;
     left: 32px;
@@ -97,6 +113,10 @@
         font-size: 48px;
         color: inherit;
         vertical-align: bottom;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -116,10 +136,11 @@
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 700;
-        }
+            transition: color .24s $animation-curve-fast-out-slow-in;
 
-        &:hover {
-            border-color: $layout-header-tab-text-color;
+            &:hover {
+                color: $layout-header-tab-highlight;
+            }
         }
 
         &.selected {

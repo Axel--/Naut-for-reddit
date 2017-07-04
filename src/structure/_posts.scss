@@ -85,11 +85,15 @@
         background: $thumbnail-bg;
     }
 
-    &.nsfw {
-        background: $thumbnail-nsfw-color;
+    .stickied & {
+        background: $thumbnail-stickied;
     }
 
-    .stickied & {
-        background: $thumbnail-stickied-color;
+    &.outbound {
+        background: $thumbnail-link;
+    }
+
+    &.nsfw {
+        background: $thumbnail-nsfw;
     }
 }
