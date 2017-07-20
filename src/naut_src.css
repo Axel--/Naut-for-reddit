@@ -2,7 +2,7 @@
     Version 4.1
     Stylesheet by Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 20 February 2017
+    Last modified: 19 July 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -2594,7 +2594,7 @@ div.titlebox span.number:after {
         color: #E0E0E0 !important;
     }
 
-    .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover {
+    .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover, .res-nightmode .side .titlebox .md h4 a, .res-nightmode .side .titlebox .tagline a.flairselectbtn {
         background-color: #424242 !important;
     }
 
@@ -2622,7 +2622,7 @@ div.titlebox span.number:after {
 }
 
 /* Input Fields */
-.res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type="text"], .res-nightmode body .content input[type="password"], .res-nightmode body .content input[type="url"] {
+.res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type="text"], .res-nightmode body .content input[type="password"], .res-nightmode body .content input[type="url"], .res-nightmode #newlink-with-image-upload .image-upload-drop-target {
     background-color: #212121 !important;
     border: 1px solid #303030 !important;
     color: #D2D2D2 !important;
@@ -3321,6 +3321,10 @@ body #newlink-with-image-upload .file-upload-button {
         color: #98abba;
     }
 
+.wiki-page .wiki-page-content .wikirevisionlisting table tr:hover {
+    background-color: rgba(0,0,0,.10) !important;
+}
+
 /* Subreddit Settings Page / Flair Page / Stylesheet Page / Rules Page */
 .linefield, .linefield.mobile {
     background: #fff;
@@ -3403,6 +3407,10 @@ body #newlink-with-image-upload .file-upload-button {
 
 .fancy-settings .pretty-form {
     padding-top: 0;
+}
+
+.fancy-settings h1, .fancy-settings h1 strong {
+    color: rgba(0,0,0,.87);
 }
 
 /* Stylesheet Page */
