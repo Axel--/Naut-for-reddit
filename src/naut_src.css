@@ -1,8 +1,8 @@
 /*
-    Version 4.1
-    Stylesheet by Cryptonaut
+    Naut 4.1
+    Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 19 July 2017
+    Last modified: 20 July 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -273,11 +273,11 @@ body:not(.loggedin) #header-bottom-right {
 }
 
     #mail.nohavemail {
-        background-position: -0 -0;
+        background-position: 0 0;
     }
 
     #mail.havemail {
-        background-position: -0 -32px;
+        background-position: 0 -32px;
         opacity: 1;
     }
 
@@ -324,7 +324,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
     #modmail.nohavemail {
-        background-position: -16px -0;
+        background-position: -16px 0;
     }
 
     #modmail.havemail {
@@ -334,7 +334,7 @@ body:not(.loggedin) #header-bottom-right {
 
 /* Preferences & Logout Icons */
 #header-bottom-right a.pref-lang, .loggedin .logout a {
-    background-position: -32px -0;
+    background-position: -32px 0;
     background-image: url(%%spritesheet%%);
     width: 16px;
     height: 14px;
@@ -347,7 +347,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 .loggedin .logout a {
-    background-position: -48px -0;
+    background-position: -48px 0;
 }
 
 
@@ -359,7 +359,7 @@ body:not(.loggedin) #header-bottom-right {
     width: 0;
     padding-left: 42px;
     height: 42px;
-    background: url(%%spritesheet%%) -80px -0;
+    background: url(%%spritesheet%%) -80px 0;
     margin: 0 8px 0 0;
     vertical-align: top;
     font-size: 0;
@@ -491,7 +491,7 @@ body > .content .link .rank, .rank-spacer {
     /* Upvotes */
     .arrow.up {
         height: 20px;
-        background-position: -0 -80px;
+        background-position: 0 -80px;
         transition: background-color .25s ease;
     }
 
@@ -525,7 +525,7 @@ body > .content .link .rank, .rank-spacer {
 
     .arrow.downmod {
         height: 20px;
-        background-position: -0 -100px;
+        background-position: 0 -100px;
     }
 
     /* Downvote Hover Message */
@@ -769,6 +769,23 @@ body .content .sitetable .link .title a:hover {
             background-position: -48px -48px !important;
         }
 
+.expando-gate .expando-gate__show-once {
+    padding: 0 16px 0px 16px;
+}
+
+.expando-gate.expando-gate--interstitial {
+    background-color: #424242;
+}
+
+.link.self .expando-gate {
+    border-radius: 2px;
+}
+
+.expando-gate.expando-gate--overlay {
+    border-radius: 2px;
+    background-color: rgba(66,66,66,.54);
+}
+
 /* Expando Text */
 .link .usertext .md {
     margin-top: 12px;
@@ -994,13 +1011,15 @@ body .content .sitetable .link .title a:hover {
     text-transform: capitalize;
     transition: opacity .09s ease-in-out;
 }
-.side .titlebox .tagline a.flairselectbtn:after {
-    content: " Flair";
-}
-.side .titlebox .tagline a.flairselectbtn:hover {
-    opacity: .7;
-    text-decoration: none;
-}
+
+    .side .titlebox .tagline a.flairselectbtn:after {
+        content: " Flair";
+    }
+
+    .side .titlebox .tagline a.flairselectbtn:hover {
+        opacity: .7;
+        text-decoration: none;
+    }
 
 /* RES L+C */
 .link .entry .buttons li .redditSingleClick {
@@ -1349,12 +1368,6 @@ body > .content .link.compressed .midcol {
 
     .flairselector .error:first-letter {
         text-transform: capitalize;
-    }
-
-    .flairselector .error:after {
-        display: block;
-        color: #b3b3b3;
-        content: "Go to /r/.../about/flair";
     }
 
 .flairselector img {
@@ -2292,7 +2305,6 @@ div.titlebox span.number:after {
 
 /* Comments Page */
 .commentarea {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
@@ -2354,7 +2366,6 @@ div.titlebox span.number:after {
     margin: 0;
     padding: 16px;
     overflow: visible;
-    -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
 }
@@ -2541,7 +2552,7 @@ div.titlebox span.number:after {
     }
 
     .res-nightmode .arrow.downmod {
-        background-position: -0 -100px !important;
+        background-position: 0 -100px !important;
     }
 
 /* Thumbnails */
@@ -2744,7 +2755,7 @@ div.titlebox span.number:after {
 .usertext.grayed .usertext-body {
     margin: 4px 0;
     background-color: transparent;
-    text-transform: italic;
+    font-style: italic;
     padding: 0;
 }
 
@@ -3321,9 +3332,9 @@ body #newlink-with-image-upload .file-upload-button {
         color: #98abba;
     }
 
-.wiki-page .wiki-page-content .wikirevisionlisting table tr:hover {
-    background-color: rgba(0,0,0,.10) !important;
-}
+    .wiki-page .wiki-page-content .wikirevisionlisting table tr:hover {
+        background-color: rgba(0,0,0,.10) !important;
+    }
 
 /* Subreddit Settings Page / Flair Page / Stylesheet Page / Rules Page */
 .linefield, .linefield.mobile {
@@ -3601,6 +3612,7 @@ ul.image-preview-list {
 
 .res .thing .tagline .author.moderator {
     background-color: #27b062 !important;
+    color: #FFF;
     padding: 1px 4px;
     border-radius: 1px;
 }
@@ -3625,6 +3637,7 @@ ul.image-preview-list {
     background-color: transparent !important;
     color: rgba(255,255,255,0.45) !important;
     top: 1px !important;
+    padding-right: 23px;
 }
 
 .res #RESShortcuts {
@@ -4217,11 +4230,3 @@ body.listing-page > .content, body.other-discussions-page > .content, .comments-
         opacity: 0;
     }
 }
-
-/* ------------------------------------------------------------------------
-
-    End of Naut.
-    Add your customizations or any addons below!
-
---------------------------------------------------------------------------- */
-
