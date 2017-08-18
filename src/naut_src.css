@@ -3160,10 +3160,6 @@ body #newlink-with-image-upload .file-upload-button {
     padding: 4px 0;
 }
 
-.search-result-meta span.search-time {
-    display: none;
-}
-
 /* Item */
 .search-result {
     overflow: hidden;
