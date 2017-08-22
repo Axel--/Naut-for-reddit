@@ -999,7 +999,7 @@ body .content .sitetable .link .title a:hover {
         padding: 8px;
     }
 
-/* Flair Select Button */
+/* Edit Flair */
 .side .titlebox .tagline a.flairselectbtn {
     background: #FAFAFA;
     border-radius: 2px;
@@ -1020,6 +1020,10 @@ body .content .sitetable .link .title a:hover {
         opacity: .7;
         text-decoration: none;
     }
+
+.titlebox .tagline {
+    font-size: 0;
+}
 
 /* RES L+C */
 .link .entry .buttons li .redditSingleClick {
@@ -2533,7 +2537,7 @@ div.titlebox span.number:after {
     font-weight: 700;
 }
 
-/* RES Fixes / Nightmode */
+/* RES Fixes / RES Nightmode */
 /* Voting Arrows */
 .res-nightmode .arrow {
     background-image: url(%%spritesheet%%) !important;
@@ -2587,7 +2591,7 @@ div.titlebox span.number:after {
     background-color: rgba(0,0,0,0.08) !important;
 }
 
-.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo {
+.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent {
     background-color: #303030 !important;
 }
 
@@ -2596,12 +2600,12 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input {
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer {
     background-color: #212223 !important;
 }
 
     /* Medium Gray */
-    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd {
+    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header {
         color: #E0E0E0 !important;
     }
 
@@ -2610,7 +2614,7 @@ div.titlebox span.number:after {
     }
 
 /* Off White */
-.res-nightmode .link .entry .tagline a, .res-nightmode .hover-bubble, .res-nightmode body .content textarea:focus, .res-nightmode .md strong, .res-nightmode .search-result-body, .res-nightmode .linkflairlabel, .res-nightmode .search-page #search input, .res-nightmode #previoussearch p, .res-nightmode dt, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode .pretty-form, .res-nightmode .comments-page .side .linkinfo .score, .res-nightmode .titlebox:before, .res-nightmode .submit-page .roundfield .title, .res-nightmode .RESDropdownList li, .res-nightmode .RESDropdownList li a {
+.res-nightmode .link .entry .tagline a, .res-nightmode .hover-bubble, .res-nightmode body .content textarea:focus, .res-nightmode .md strong, .res-nightmode .search-result-body, .res-nightmode .linkflairlabel, .res-nightmode .search-page #search input, .res-nightmode #previoussearch p, .res-nightmode dt, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode .pretty-form, .res-nightmode .comments-page .side .linkinfo .score, .res-nightmode .titlebox:before, .res-nightmode .submit-page .roundfield .title, .res-nightmode .RESDropdownList li, .res-nightmode .RESDropdownList li a, .res-nightmode .reason-popup .reason-popup-content {
     color: #D2D2D2 !important;
 }
 
@@ -2677,6 +2681,10 @@ div.titlebox span.number:after {
     background: none !important;
 }
 
+.mod-toolbox.res-nightmode .reason-popup {
+    background-color: rgba(0,0,0,.84);
+}
+
 .res-nightmode body.mod-toolbox .tb-general-button, .res-nightmode body.mod-toolbox li a.tb-general-button, .res-nightmode body.mod-toolbox .tb-bracket-button {
     background-color: transparent;
     color: gray;
@@ -2717,6 +2725,16 @@ div.titlebox span.number:after {
         vertical-align: middle;
         line-height: 14px;
     }
+
+.res-nightmode .reason-popup .selectable-reason.reason-selected .styled-reason {
+    background-color: rgba(0,0,0,.25);
+}
+
+/* Toolbox */
+body.mod-toolbox .tb-action-button {
+    height: 22px !important;
+    line-height: 0px;
+}
 
 /* Comment Body Text */
 .comment .usertext .md {
@@ -2821,11 +2839,11 @@ div.titlebox span.number:after {
             margin-top: 8px;
         }
 
-.linkinfo .score .number {
+.linkinfo .score .number, .linkinfo .views .view-count {
     font-size: 14px;
 }
 
-.linkinfo .score .word {
+.linkinfo .score .word, .linkinfo .views .unit {
     font-size: 14px;
 }
 
