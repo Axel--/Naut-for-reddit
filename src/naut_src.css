@@ -212,7 +212,7 @@ a.random.choice {
     top: 0;
     right: 0;
     width: auto;
-    max-width: 300px;
+    max-width: 340px;
     height: 24px;
     background: none;
     font-size: 11px;
@@ -243,7 +243,6 @@ body:not(.loggedin) #header-bottom-right {
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;
-    vertical-align: middle;
 }
 
 .user .userkarma {
@@ -679,7 +678,7 @@ body .content .sitetable .link .title a:hover {
     border-radius: 2px;
     background-color: transparent;
     background-image: url(%%spritesheet%%) !important;
-    background-size: 264px 264px;
+    background-size: 264px 264px !important;
     border: 1px solid #e9e9e9;
     cursor: pointer;
 }
@@ -2139,7 +2138,6 @@ div.titlebox span.number:after {
 }
 
 .titlebox .tagline {
-    font-size: 12px;
     margin: 0;
 }
 
@@ -2591,7 +2589,7 @@ div.titlebox span.number:after {
     background-color: rgba(0,0,0,0.08) !important;
 }
 
-.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent {
+.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon {
     background-color: #303030 !important;
 }
 
@@ -2600,7 +2598,7 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer {
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre {
     background-color: #212223 !important;
 }
 
@@ -2704,6 +2702,7 @@ div.titlebox span.number:after {
     padding: 1px 4px;
     border-radius: 1px;
     background-color: #4F8EF7 !important;
+    color: #FFF;
     box-shadow: 0 0 0 rgba(0,0,0,0);
     transition: all .15s ease;
 }
@@ -2728,6 +2727,23 @@ div.titlebox span.number:after {
 
 .res-nightmode .reason-popup .selectable-reason.reason-selected .styled-reason {
     background-color: rgba(0,0,0,.25);
+}
+
+#search #searchexpando label, .res #search #searchexpando label {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.res #search #searchexpando {
+    line-height: 40px;
+}
+
+.res #searchexpando br {
+    display: none;
+}
+
+.res-nightmode .content .md pre, .res-nightmode .md code {
+    border-color: #121212;
 }
 
 /* Toolbox */
@@ -3044,7 +3060,7 @@ body.mod-toolbox .tb-action-button {
 
 body #newlink-with-image-upload .file-upload-button {
     padding-right: 18px;
-    line-height: 29px;
+    line-height: 37px;
 }
 
 #new-link-image-input > div:first-of-type {
@@ -3067,14 +3083,14 @@ body #newlink-with-image-upload .file-upload-button {
     display: none;
 }
 
-.search-page #search {
+.search-page #search, .res .search-page #search {
     position: absolute;
     top: -146px;
     transform: translateX(-50%);
     left: 50%;
 }
 
-    .search-page #search input[type=text] {
+    .search-page #search input[type=text], .res .search-page #search input[type=text] {
         min-width: 320px;
         width: 320px;
     }
