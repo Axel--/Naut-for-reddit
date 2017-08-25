@@ -2149,10 +2149,6 @@ div.titlebox span.number:after {
         margin-top: 16px;
     }
 
-    .leavemoderator, .titlebox .tagline a.author, .titlebox form.toggle.leavecontributor-button {
-        display: none;
-    }
-
 .titlebox form.flairtoggle {
     line-height: 2;
 }
@@ -2603,7 +2599,7 @@ div.titlebox span.number:after {
 }
 
     /* Medium Gray */
-    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header {
+    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header, .res-nightmode .md h1, .res-nightmode .md h3 {
         color: #E0E0E0 !important;
     }
 
@@ -2743,7 +2739,7 @@ div.titlebox span.number:after {
 }
 
 .res-nightmode .content .md pre, .res-nightmode .md code {
-    border-color: #121212;
+    border-color: #121212 !important;
 }
 
 /* Toolbox */
