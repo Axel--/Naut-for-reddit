@@ -2599,7 +2599,7 @@ div.titlebox span.number:after {
         color: #E0E0E0 !important;
     }
 
-    .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover, .res-nightmode .side .titlebox .md h4 a, .res-nightmode .side .titlebox .tagline a.flairselectbtn {
+    .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover, .res-nightmode .side .titlebox .md h4 a, .res-nightmode .side .titlebox .tagline a.flairselectbtn, .res-nightmode .leavemoderator a {
         background-color: #424242 !important;
     }
 
