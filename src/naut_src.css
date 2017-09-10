@@ -2,7 +2,7 @@
     Naut 4.1
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 20 July 2017
+    Last modified: 9 September 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -999,7 +999,7 @@ body .content .sitetable .link .title a:hover {
     }
 
 /* Edit Flair */
-.side .titlebox .tagline a.flairselectbtn {
+.side .titlebox .tagline a.flairselectbtn, .leavemoderator a {
     background: #FAFAFA;
     border-radius: 2px;
     color: #738491;
@@ -1011,11 +1011,7 @@ body .content .sitetable .link .title a:hover {
     transition: opacity .09s ease-in-out;
 }
 
-    .side .titlebox .tagline a.flairselectbtn:after {
-        content: " Flair";
-    }
-
-    .side .titlebox .tagline a.flairselectbtn:hover {
+    .side .titlebox .tagline a.flairselectbtn:hover, .leavemoderator a:hover {
         opacity: .7;
         text-decoration: none;
     }
@@ -2585,7 +2581,7 @@ div.titlebox span.number:after {
     background-color: rgba(0,0,0,0.08) !important;
 }
 
-.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon {
+.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions {
     background-color: #303030 !important;
 }
 
@@ -2594,7 +2590,7 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre {
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current {
     background-color: #212223 !important;
 }
 
