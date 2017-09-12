@@ -317,6 +317,13 @@ body:not(.loggedin) #header-bottom-right {
     background-color: #c73d3d;
     box-shadow: 0 4px 14px rgba(0,0,0,0.76);
 }
+    /* Fix comments page sorting options
+       being on top of the havemail element */
+    .commentarea .panestack-title,
+    .commentarea .menuarea,
+    .commentarea .sitetable {
+        z-index: -1;
+    }
 
 #modmail {
     top: -3px;
@@ -329,6 +336,9 @@ body:not(.loggedin) #header-bottom-right {
     #modmail.havemail {
         background-position: -16px -32px;
         opacity: 1;
+    }
+    #new_modmail {
+        transform: scale(.85);
     }
 
 /* Preferences & Logout Icons */
@@ -2002,6 +2012,14 @@ div.titlebox span.number:after {
             display: none !important;
         }
 
+    /* Responsive Positioning */
+        /* Search results page */
+        @media screen and (max-width: 1085px) {
+            .search-page #search {
+                left: 350px;
+            }
+        }
+
 /* Submit Button */
 .morelink {
     background: #0079d3;
@@ -2818,11 +2836,13 @@ body.mod-toolbox .tb-action-button {
 }
 
 /* Sidebar */
-.comments-page .side {
+.comments-page .side,
+.other-discussions-page .side {
     margin-top: 400px;
 }
 
-    .comments-page .side .linkinfo {
+    .comments-page .side .linkinfo,
+    .other-discussions-page .side .linkinfo {
         position: absolute;
         top: 494px;
         padding: 16px;
@@ -2834,20 +2854,26 @@ body.mod-toolbox .tb-action-button {
         border: none;
     }
 
-        .comments-page .side .linkinfo .date {
+        .comments-page .side .linkinfo .date,
+        .other-discussions-page .side .linkinfo .date {
             color: #98abba;
         }
 
-            .comments-page .side .linkinfo .date:first-letter {
+            .comments-page .side .linkinfo .date:first-letter,
+            .other-discussions-page .side .linkinfo .date:first-letter
+             {
                 text-transform: capitalize;
             }
 
-        .comments-page .side .linkinfo .score {
+        .comments-page .side .linkinfo .score,
+        .other-discussions-page .side .linkinfo .score {
             color: #292f34;
             margin-top: 8px;
         }
 
-.linkinfo .score .number, .linkinfo .views .view-count {
+.linkinfo .score .number, .linkinfo .views .view-count,
+.other-discussions-page .linkinfo .score .number,
+.other-discussions-page .linkinfo .views .view-count {
     font-size: 14px;
 }
 
@@ -2855,13 +2881,15 @@ body.mod-toolbox .tb-action-button {
     font-size: 14px;
 }
 
-.comments-page .side .linkinfo .shortlink {
+.comments-page .side .linkinfo .shortlink,
+.other-discussions-page .side .linkinfo .shortlink {
     font-size: 90%;
     margin-top: -2px;
     visibility: hidden;
 }
 
-    .comments-page .side .linkinfo .shortlink input {
+    .comments-page .side .linkinfo .shortlink input,
+    .other-discussions-page .side .linkinfo .shortlink input {
         background-color: #FAFAFA;
         border: none;
         border-radius: 0 0 2px 2px;
@@ -3086,6 +3114,8 @@ body #newlink-with-image-upload .file-upload-button {
         min-width: 320px;
         width: 320px;
     }
+    
+.search-page .side .create .morelink { top: 0; }
 
 .combined-search-page .search-submit-button {
     position: relative;
@@ -3719,6 +3749,7 @@ ul.image-preview-list {
 }
 
 .res a.beta-link {
+    left: -10px;
     top: 4px;
 }
 
