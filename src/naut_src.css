@@ -320,9 +320,8 @@ body:not(.loggedin) #header-bottom-right {
     /* Fix comments page sorting options
        being on top of the havemail element */
     .commentarea .panestack-title,
-    .commentarea .menuarea,
-    .commentarea .sitetable {
-        z-index: -1;
+    .commentarea .menuarea {
+        z-index: 0;
     }
 
 #modmail {
