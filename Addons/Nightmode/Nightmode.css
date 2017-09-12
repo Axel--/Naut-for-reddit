@@ -38,11 +38,15 @@ body {
     }
 
         /* Gray Text Color */
-        .bottommenu, .commentarea .menuarea .dropdown.lightdrop .selecte, .commentarea .menuarea .toggle a, .commentarea .menuarea span.dropdown-title.lightdrop, .comments-page .side .linkinfo .date, .entry .buttons li a, .entry .buttons li + li, .entry .buttons li, .entry .tagline, .flair, .gadget .score, .gold-accent.comment-visits-box, .gray, .linefield .title + .gray, .link .domain a, .linkinfo .shortlink, .md del, .nav-buttons .nextprev, .side #moderation_tools .title h1, .sidecontentbox .more a, .sidecontentbox .title h1, .tabmenu li a, .tagline .stickied-tagline, .top-page .menuarea, .usertext .bottom-area a, .usertext .bottom-area a.reddiquette, body .content input[type=url], dd, .combined-search-page .search-result .search-result-meta, span.age, .titlebox .bottom, ul.image-preview-list .description pre, .link .entry .buttons li .redditSingleClick, .keyNavAnnotation, .res .RESDashboardToggle, .linkinfo .totalvotes, .read-next .read-next-meta, td, .required-roundfield:before, #items-required {
+        .bottommenu, .commentarea .menuarea .dropdown.lightdrop .selecte, .commentarea .menuarea .toggle a, .commentarea .menuarea span.dropdown-title.lightdrop, .comments-page .side .linkinfo .date, .entry .buttons li a, .entry .buttons li + li, .entry .buttons li, .entry .tagline, .flair, .gadget .score, .gold-accent.comment-visits-box, .gray, .linefield .title + .gray, .link .domain a, .linkinfo .shortlink, .md del, .nav-buttons .nextprev, .side #moderation_tools .title h1, .sidecontentbox .more a, .sidecontentbox .title h1, .tabmenu li a, .tagline .stickied-tagline, .top-page .menuarea, .usertext .bottom-area a, .usertext .bottom-area a.reddiquette, body .content input[type=url], dd, .combined-search-page .search-result .search-result-meta, span.age, .titlebox .bottom, ul.image-preview-list .description pre, .link .entry .buttons li .redditSingleClick, .keyNavAnnotation, .res .RESDashboardToggle, .linkinfo .totalvotes, .read-next .read-next-meta, td, .required-roundfield:before, #items-required, a.voteWeight {
             color: #999;
         }
 
 /* Misc. Fix */
+a.voteWeight {
+    background-color: inherit !important;
+}
+
 #newlink-with-image-upload .image-upload-drop-target {
 	background-color: #1B1B1B !important;
 	border-color: #333 !important;
