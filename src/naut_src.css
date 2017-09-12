@@ -317,13 +317,6 @@ body:not(.loggedin) #header-bottom-right {
     background-color: #c73d3d;
     box-shadow: 0 4px 14px rgba(0,0,0,0.76);
 }
-    /* Fix comments page sorting options
-       being on top of the havemail element */
-    .commentarea .panestack-title,
-    .commentarea .menuarea,
-    .commentarea .sitetable {
-        z-index: -1;
-    }
 
 #modmail {
     top: -3px;
@@ -337,9 +330,10 @@ body:not(.loggedin) #header-bottom-right {
         background-position: -16px -32px;
         opacity: 1;
     }
-    #new_modmail {
-        transform: scale(.85);
-    }
+
+#new_modmail {
+    transform: scale(.85);
+}
 
 /* Preferences & Logout Icons */
 #header-bottom-right a.pref-lang, .loggedin .logout a {
@@ -2012,13 +2006,13 @@ div.titlebox span.number:after {
             display: none !important;
         }
 
-    /* Responsive Positioning */
-        /* Search results page */
-        @media screen and (max-width: 1085px) {
-            .search-page #search {
-                left: 350px;
-            }
-        }
+/* Responsive Positioning */
+/* Search results page */
+@media screen and (max-width: 1085px) {
+    .search-page #search {
+        left: 350px;
+    }
+}
 
 /* Submit Button */
 .morelink {
@@ -2860,8 +2854,7 @@ body.mod-toolbox .tb-action-button {
         }
 
             .comments-page .side .linkinfo .date:first-letter,
-            .other-discussions-page .side .linkinfo .date:first-letter
-             {
+            .other-discussions-page .side .linkinfo .date:first-letter {
                 text-transform: capitalize;
             }
 
@@ -3114,8 +3107,10 @@ body #newlink-with-image-upload .file-upload-button {
         min-width: 320px;
         width: 320px;
     }
-    
-.search-page .side .create .morelink { top: 0; }
+
+.search-page .side .create .morelink {
+    top: 0;
+}
 
 .combined-search-page .search-submit-button {
     position: relative;
