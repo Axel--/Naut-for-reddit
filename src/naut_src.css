@@ -2,7 +2,7 @@
     Naut 4.1
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 11 September 2017
+    Last modified: 16 September 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -316,6 +316,11 @@ body:not(.loggedin) #header-bottom-right {
 #mail.havemail:active:before {
     background-color: #c73d3d;
     box-shadow: 0 4px 14px rgba(0,0,0,0.76);
+}
+
+/* Fix comments page sorting options being on top of the havemail element */
+.commentarea .panestack-title, .commentarea .menuarea {
+    z-index: 0;
 }
 
 #modmail {
@@ -3758,6 +3763,7 @@ ul.image-preview-list {
 
     .res #header-bottom-right .user a {
         font-size: 11px;
+        line-height: 9px;
     }
 
 .res #sr-header-area a.RESShortcutsCurrentSub, .res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
