@@ -456,6 +456,41 @@ body[class] > .content, body.listing-page[class] > .content {
     position: relative;
 }
 
+/* Video Player */
+
+.pinnable-content.pinned .link {
+    display: flex;
+}
+
+.pinnable-content.pinned .link .midcol {
+    align-self: center;
+}
+
+.pinnable-content.pinned .link .entry {
+    display: flex;
+    max-width: initial;
+
+    /* height: 100%; */
+}
+
+.pinnable-content.pinned .midcol, .pinnable-content.pinned .top-matter, .pinnable-content.pinned .reddit-video-player-root {
+    position: initial;
+}
+
+.pinnable-content.pinned .top-matter {
+    order: 1;
+    width: initial;
+    align-self: center;
+}
+
+.pinnable-content.pinned .expando {
+    margin: 0 20px 0 0;
+}
+
+.pinnable-content.pinned .invisible-when-pinned {
+    display: none;
+}
+
 /* Link Objects - From Left to Right */
 body > .content .link .rank, .rank-spacer {
     display: none;
