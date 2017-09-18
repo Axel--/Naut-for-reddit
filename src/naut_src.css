@@ -2,7 +2,7 @@
     Naut 4.1
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 16 September 2017
+    Last modified: 18 September 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -469,8 +469,6 @@ body[class] > .content, body.listing-page[class] > .content {
 .pinnable-content.pinned .link .entry {
     display: flex;
     max-width: initial;
-
-    /* height: 100%; */
 }
 
 .pinnable-content.pinned .midcol, .pinnable-content.pinned .top-matter, .pinnable-content.pinned .reddit-video-player-root {
