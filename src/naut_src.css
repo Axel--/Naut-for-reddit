@@ -2,7 +2,7 @@
     Naut 4.1
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 18 September 2017
+    Last modified: 19 September 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -457,7 +457,6 @@ body[class] > .content, body.listing-page[class] > .content {
 }
 
 /* Video Player */
-
 .pinnable-content.pinned .link {
     display: flex;
 }
@@ -487,6 +486,10 @@ body[class] > .content, body.listing-page[class] > .content {
 
 .pinnable-content.pinned .invisible-when-pinned {
     display: none;
+}
+
+#newlink-with-image-upload #new-link-video-preview {
+    box-shadow: none !important;
 }
 
 /* Link Objects - From Left to Right */
@@ -2025,7 +2028,7 @@ div.titlebox span.number:after {
         border-radius: 0 0 2px 2px;
         margin: 0;
         padding: 4px;
-        height: 54px;
+        height: 154px;
         line-height: 50px;
         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
     }
@@ -2339,7 +2342,7 @@ div.titlebox span.number:after {
     margin: 0;
     padding: 10px 0;
     color: #24A0ED;
-    content: "This subreddit uses the /r/Naut theme.";
+    content: "Subreddit CSS Theme by /r/Naut";
     font: 16px Lato,Arial,sans-serif;
     position: absolute;
     width: 320px;
@@ -2601,11 +2604,11 @@ div.titlebox span.number:after {
 
 /* Thumbnails */
 .res-nightmode .thumbnail.default {
-    background: #424242 url(%%spritesheet%%) -152px -48px;
+    background: #212121 url(%%spritesheet%%) -152px -48px;
 }
 
 .res-nightmode .thumbnail.self {
-    background: #424242 url(%%spritesheet%%) -96px -48px;
+    background: #212121 url(%%spritesheet%%) -96px -48px;
 }
 
 .res-nightmode .stickied .thumbnail {
@@ -2631,8 +2634,8 @@ div.titlebox span.number:after {
     background-color: rgba(0,0,0,0.08) !important;
 }
 
-.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions {
-    background-color: #303030 !important;
+.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions, .res-nightmode #newlink-with-image-upload #new-link-video-preview, .res-nightmode #newlink-with-image-upload .media-post-upload-progress, .res-nightmode .gold-accent.comment-visits-box {
+    background-color: #121212 !important;
 }
 
 .res-nightmode .submit-page button {
@@ -2640,17 +2643,17 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current {
-    background-color: #212223 !important;
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .morelink, .res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button, .res-nightmode #newlink-with-image-upload .media-progress-bar-container {
+    background-color: #212121 !important;
 }
 
     /* Medium Gray */
-    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header, .res-nightmode .md h1, .res-nightmode .md h3 {
+    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header, .res-nightmode .md h1, .res-nightmode .md h3, .res-nightmode #newlink-with-image-upload .media-uploading-label, .res-nightmode .gold-accent.comment-visits-box {
         color: #E0E0E0 !important;
     }
 
     .res-nightmode .flairoptionpane ul li .linkflair:hover, .res-nightmode .flairselector li:hover, .res-nightmode .side .titlebox .md h4 a, .res-nightmode .side .titlebox .tagline a.flairselectbtn, .res-nightmode .leavemoderator a {
-        background-color: #424242 !important;
+        background-color: #212121 !important;
     }
 
 /* Off White */
@@ -2660,7 +2663,7 @@ div.titlebox span.number:after {
 
 /* Pure White */
 .res-nightmode .hover-bubble {
-    border: 1px solid #303030 !important;
+    border: 1px solid #121212 !important;
 }
 
 .res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a, .res-nightmode .submit_text.enabled.roundfield .md, .res-nightmode .sidebox.create .morelink a, .res-nightmode body .content input[type="text"]:hover, .res-nightmode .submit-page #url-field button, .res-nightmode .side *, .res-nightmode .submit-page #url-field button, .res-nightmode .submit-page #newlink.submit.content .btn {
@@ -2679,7 +2682,7 @@ div.titlebox span.number:after {
 /* Input Fields */
 .res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type="text"], .res-nightmode body .content input[type="password"], .res-nightmode body .content input[type="url"], .res-nightmode #newlink-with-image-upload .image-upload-drop-target {
     background-color: #212121 !important;
-    border: 1px solid #303030 !important;
+    border: 1px solid #121212 !important;
     color: #D2D2D2 !important;
 }
 
@@ -3583,30 +3586,6 @@ ul.image-preview-list {
 
 .subreddit-rule-item:hover {
     background-color: transparent;
-}
-
-/* FAQ */
-.stylesheet-customize-container:before {
-    position: fixed;
-    width: 100%;
-    padding: 16px;
-    color: #fff;
-    left: 0;
-    bottom: 0;
-    background: #2E2F31;
-    content: "Hey! There's an FAQ if you just scroll down a little.";
-    font-size: 18px;
-    z-index: 100;
-}
-
-.stylesheet-customize-container:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 800px;
-    z-index: 100;
-    margin-top: 40px;
-    background: url(%%faq%%) 50% 50% no-repeat;
 }
 
 /* Flairs */
