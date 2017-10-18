@@ -1,6 +1,6 @@
-#Addon: User Flair Images
+# Addon: User Flair Images
 
-Sometimes you want to add images to user flairs. This is how to do it easily.
+Sometimes you want to add images to user flairs. This addon makes it easy to perform this task.
 
 Some notes:
 
