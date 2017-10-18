@@ -1,4 +1,4 @@
-#Addon: Custom Colors
+# Addon: Custom Colors
 
 This addon allows you to easily customize all colors in the Naut theme. 
 
