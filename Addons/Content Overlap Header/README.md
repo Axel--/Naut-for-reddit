@@ -1,8 +1,8 @@
-##Addon: Content Overlap Header
+## Addon: Content Overlap Header
 
-The default theme has a header that is 196px. This addon changes the height of the header to be anything >192px. 
+The default theme has a header that is 196px. This addon changes the height of the header to be anything less than 192px. 
 
-What it does, is it essentially 'hides' the header and uses the body of the page as a background. Your image should be 1920px wide and >192px in height. Play around with it to see what you like. 
+What it does, is it essentially "hides" the header and uses the body of the page as a background. Your image should be 1920px wide and less than 192px in height. Play around with it to see what you like. 
 
 **This addon really works best if you have an eye for design. If you don't at all, chances are you'll just make the page look worse. So be cautious!**
 
