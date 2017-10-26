@@ -2544,6 +2544,22 @@ div.titlebox span.number:after {
     font-weight: 700;
 }
 
+/* Archived Posts */
+    /* Disable Arrows */
+    .archived-infobar + style + #siteTable .thing .arrow,
+    .archived-infobar + style + #siteTable + .commentarea .thing .arrow {
+        pointer-events: none;
+    }
+    /* Gray Arrows */
+    .archived-infobar + style + #siteTable .thing .arrow.up,
+    .archived-infobar + style + #siteTable + .commentarea .thing .arrow.up {
+        opacity: .12;
+    }
+    .archived-infobar + style + #siteTable .thing .arrow.down,
+    .archived-infobar + style + #siteTable + .commentarea .thing .arrow.down {
+        opacity: .17;
+    }
+
 /* RES Fixes / RES Nightmode */
 /* Voting Arrows */
 .res-nightmode .arrow {
