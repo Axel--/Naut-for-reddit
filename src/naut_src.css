@@ -2544,6 +2544,18 @@ div.titlebox span.number:after {
     font-weight: 700;
 }
 
+    /* Archived Posts */
+    /* Disable Voting Arrows */
+    .thing .arrow.archived {
+        pointer-events: none;
+    }
+    .thing .arrow.archived.up {
+        opacity: .1;
+    }
+    .thing .arrow.archived.down {
+        opacity: .2;
+    }
+
 /* RES Fixes / RES Nightmode */
 /* Voting Arrows */
 .res-nightmode .arrow {
