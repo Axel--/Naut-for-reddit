@@ -9,11 +9,11 @@ Naut is a CSS theme you can use on reddit.com. It's free to use and any subreddi
 Installation Instructions
 ===============
 
-'Subreddit' should be changed to your subreddit name.
+`Subreddit` should be changed to your subreddit name.
 
-  1. Go to /r/subreddit/about/stylesheet
-  2. Paste the CSS from the 'Naut 4 - Main CSS File.css' file into the CSS textarea.
-  3. Upload the images from the /images/ folder. (Don't rename them!)
+  1. Go to `/r/subreddit/about/stylesheet`
+  2. Paste the CSS from the `Naut 4 - Main CSS File.css` file into the CSS textarea.
+  3. Upload the images from the `/images/` folder. (Don't rename them!)
   4. Hit save!
 
 Now you can customize it by either adding customization lines yourself, or by visiting the [/r/Naut wiki](https://www.reddit.com/r/naut/wiki/index) and customizing it yourself!

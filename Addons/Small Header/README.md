@@ -1,4 +1,4 @@
-#Addon: Small Header
+# Addon: Small Header
 
 The default theme has a header that is 196px. This addon changes the header height to 144px. 
 

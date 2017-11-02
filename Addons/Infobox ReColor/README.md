@@ -1,6 +1,6 @@
-#Addon: Infobox ReColor
+# Addon: Infobox ReColor
 
-On the right, the sidebar box that contains the subscribe button and subreddit title/subscribers, that's the infobox. By default it's white, but with this addon you can change the background color very easily, like how it looks on /r/Naut. 
+On the right sidebar, the box which contains the subscribe button and subreddit title/subscribers. That's the infobox. By default it's white, but with this addon you can change the background color very easily, like how it looks in /r/Naut. 
 
 Some tips:
 

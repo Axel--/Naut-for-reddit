@@ -1,4 +1,4 @@
-# nautAddons
+# Naut Addons
 This repository contains the reorganized folder structure for the Naut addons' GitHub page. Folder structure includes:
 
 Content Overlap Header

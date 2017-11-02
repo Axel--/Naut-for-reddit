@@ -1,3 +1,3 @@
-#Addon: Nightmode
+# Addon: Nightmode
 
-This Addon adds a Night Theme to Naut for all users, with or without RES Nightmode enabled.
+This addon adds a Night Theme to Naut for all users, with or without RES Nightmode enabled.
