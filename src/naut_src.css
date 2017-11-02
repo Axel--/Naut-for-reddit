@@ -1,8 +1,8 @@
 /*
-    Naut 4.1
+    Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 19 September 2017
+    Last modified: 1 November 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -461,14 +461,14 @@ body[class] > .content, body.listing-page[class] > .content {
     display: flex;
 }
 
-.pinnable-content.pinned .link .midcol {
-    align-self: center;
-}
+    .pinnable-content.pinned .link .midcol {
+        align-self: center;
+    }
 
-.pinnable-content.pinned .link .entry {
-    display: flex;
-    max-width: initial;
-}
+    .pinnable-content.pinned .link .entry {
+        display: flex;
+        max-width: initial;
+    }
 
 .pinnable-content.pinned .midcol, .pinnable-content.pinned .top-matter, .pinnable-content.pinned .reddit-video-player-root {
     position: initial;
@@ -523,7 +523,7 @@ body > .content .link .rank, .rank-spacer {
 .arrow {
     margin: 0;
     background-image: url(%%spritesheet%%) !important;
-    width: 33px;
+    width: 32px;
     border-radius: 2px;
     transition: background-color .25s ease;
 }
@@ -2579,6 +2579,19 @@ div.titlebox span.number:after {
     color: #27b062 !important;
     font-weight: 700;
 }
+
+/* Archived Post Voting Arrows */
+.thing .arrow.archived {
+    pointer-events: none;
+}
+
+    .thing .arrow.archived.up {
+        opacity: .1;
+    }
+
+    .thing .arrow.archived.down {
+        opacity: .2;
+    }
 
 /* RES Fixes / RES Nightmode */
 /* Voting Arrows */
