@@ -1908,7 +1908,7 @@ div.titlebox span.number:after {
 
         /* Unsubscribe */
         .titlebox .fancy-toggle-button .active.remove {
-            background: 51A3E8;
+            background: #51A3E8;
             color: #fff;
             margin-left: -14px;
             box-shadow: none;
