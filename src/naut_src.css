@@ -2,7 +2,7 @@
     Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 1 November 2017
+    Last modified: 12 November 2017
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -1908,7 +1908,7 @@ div.titlebox span.number:after {
 
         /* Unsubscribe */
         .titlebox .fancy-toggle-button .active.remove {
-            background: rgba(0,0,0,0.24);
+            background: #51A3E8;
             color: #fff;
             margin-left: -14px;
             box-shadow: none;
