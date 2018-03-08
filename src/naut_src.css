@@ -733,19 +733,19 @@ body .content .sitetable .link .title a:hover {
         border-color: #0079d3;
     }
 
-    .expando-button.selftext.collapsed {
+    .expando-button.selftext.collapsed, .expando-button.crosspost.collapsed {
         background-position: 0 -48px !important;
     }
 
-        .expando-button.selftext.collapsed:hover {
+        .expando-button.selftext.collapsed:hover, .expando-button.crosspost.collapsed:hover {
             background-position: -16px -48px !important;
         }
 
-    .expando-button.selftext.expanded {
+    .expando-button.selftext.expanded, .expando-button.crosspost.expanded {
         background-position: -32px -48px !important;
     }
 
-        .expando-button.selftext.expanded:hover {
+        .expando-button.selftext.expanded:hover, .expando-button.crosspost.expanded:hover {
             background-position: -48px -48px !important;
         }
 
