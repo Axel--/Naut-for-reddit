@@ -3173,7 +3173,7 @@ body #newlink-with-image-upload .file-upload-button {
     height: 32px;
     margin: 0;
     padding: 0;
-    background: url(%%spritesheet%%) -64px -96px;
+    background: url(%%spritesheet%%) -64px -97px;
     box-shadow: none;
     border-radius: 50%;
     transition: background-color .2s cubic-bezier(.4,0,.2,1);
