@@ -2,7 +2,7 @@
     Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 1 November 2017
+    Last modified: 26 March 2018
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -2011,14 +2011,14 @@ div.titlebox span.number:after {
         height: 32px;
         width: 32px;
         margin-left: -38px;
-        background: url(%%spritesheet%%) -64px -96px no-repeat;
+        background: url(%%spritesheet%%) -64px -97px no-repeat;
         border: none !important;
         border-radius: 16px;
         transition: background .2s cubic-bezier(.4,0,.2,1);
     }
 
         #search input[type=submit]:hover {
-            background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -96px no-repeat;
+            background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -97px no-repeat;
         }
 
     /* Expando */
@@ -3173,7 +3173,7 @@ body #newlink-with-image-upload .file-upload-button {
     height: 32px;
     margin: 0;
     padding: 0;
-    background: url(%%spritesheet%%) -64px -96px;
+    background: url(%%spritesheet%%) -64px -97px;
     box-shadow: none;
     border-radius: 50%;
     transition: background-color .2s cubic-bezier(.4,0,.2,1);
@@ -3188,9 +3188,8 @@ body #newlink-with-image-upload .file-upload-button {
     }
 
 .search-page #previoussearch label {
-    position: absolute;
     margin: 0;
-    width: 100%;
+    width: 320px;
     padding: 12px;
     background: #f9f9f9;
     z-index: -1;
@@ -3310,7 +3309,8 @@ body #newlink-with-image-upload .file-upload-button {
     flex: 0 0 80px;
 }
 
-    .search-result.has-thumbnail > .thumbnail.self, .search-result.has-thumbnail > .thumbnail.default, .search-result.has-thumbnail > .thumbnail.nsfw, .search-result.has-thumbnail > .thumbnail.image {
+    .search-result.has-thumbnail > .thumbnail.self, .search-result.has-thumbnail > .thumbnail.default, .search-result.has-thumbnail > .thumbnail.nsfw, .search-result.has-thumbnail > .thumbnail.image, 
+    .search-result.has-thumbnail>.thumbnail.spoiler {
         margin-right: 28px;
         flex: 0 0 56px;
     }
