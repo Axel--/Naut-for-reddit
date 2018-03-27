@@ -2,7 +2,7 @@
     Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 11 March 2018
+    Last modified: 12 March 2018
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -3188,9 +3188,8 @@ body #newlink-with-image-upload .file-upload-button {
     }
 
 .search-page #previoussearch label {
-    position: absolute;
     margin: 0;
-    width: 100%;
+    width: 320px;
     padding: 12px;
     background: #f9f9f9;
     z-index: -1;
