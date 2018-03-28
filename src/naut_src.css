@@ -2659,7 +2659,7 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .morelink, .res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button, .res-nightmode #newlink-with-image-upload .media-progress-bar-container, .res-nightmode ul.res-search-tabs li a, .res-nightmode .other-discussions-page .side .linkinfo, .res-nightmode .side .md pre {
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .morelink, .res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button, .res-nightmode #newlink-with-image-upload .media-progress-bar-container, .res-nightmode ul.res-search-tabs li a, .res-nightmode .other-discussions-page .side .linkinfo, .res-nightmode .side .md pre, .res-nightmode .drop-choices a.choice:hover {
     background-color: #212121 !important;
 }
 
