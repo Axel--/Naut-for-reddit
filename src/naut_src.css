@@ -2,7 +2,7 @@
     Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 1 November 2017
+    Last modified: 27 March 2018
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -336,7 +336,7 @@ body:not(.loggedin) #header-bottom-right {
         opacity: 1;
     }
 
-#new_modmail {
+#new_modmail, #chat {
     transform: scale(.85);
 }
 
@@ -937,7 +937,7 @@ body .content .sitetable .link .title a:hover {
     line-height: normal;
 }
 
-    .entry .buttons li a {
+    .entry .buttons li a, .entry .buttons li {
         padding: 0 1px;
         color: #98abba;
         font-weight: 400;
@@ -962,7 +962,7 @@ body .content .sitetable .link .title a:hover {
     border: 0;
 }
 
-    .nsfw-stamp acronym, .spoiler-stamp {
+    .nsfw-stamp acronym, .spoiler-stamp, .res-nightmode .spoiler-stamp {
         position: relative;
         top: -1px;
         padding: 2px 3px;
@@ -1733,13 +1733,13 @@ div.commentarea div.RES-keyNav-activeElement .md {
 }
 
 /* Next Page */
-.nav-buttons {
+.nav-buttons, .search-result-group footer .nav-buttons * {
     padding: 16px 0;
     margin: 0 16px;
     color: #738491;
 }
 
-    .nav-buttons .nextprev {
+    .nav-buttons .nextprev, .search-result-group footer .nav-buttons * {
         color: #738491;
         font-size: 14px;
     }
@@ -2011,14 +2011,14 @@ div.titlebox span.number:after {
         height: 32px;
         width: 32px;
         margin-left: -38px;
-        background: url(%%spritesheet%%) -64px -96px no-repeat;
+        background: url(%%spritesheet%%) -64px -97px no-repeat;
         border: none !important;
         border-radius: 16px;
         transition: background .2s cubic-bezier(.4,0,.2,1);
     }
 
         #search input[type=submit]:hover {
-            background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -96px no-repeat;
+            background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -97px no-repeat;
         }
 
     /* Expando */
@@ -2136,6 +2136,10 @@ div.titlebox span.number:after {
     margin: 10px 10px 10px 0;
     float: right;
     margin-left: -16px;
+}
+
+.submit.mod-override .morelink:hover a:after {
+    opacity: 1;
 }
 
 /* Submit Links */
@@ -2354,7 +2358,6 @@ div.titlebox span.number:after {
 .commentarea {
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
 }
@@ -2629,7 +2632,7 @@ div.titlebox span.number:after {
 }
 
 /* Body */
-.res-nightmode body {
+.res-nightmode body, .res-nightmode .listing.search-result-listing, .res-nightmode .res-searchHelper-searchPageTabs ul.res-search-tabs {
     background-color: #000 !important;
 }
 
@@ -2647,7 +2650,7 @@ div.titlebox span.number:after {
     background-color: rgba(0,0,0,0.08) !important;
 }
 
-.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions, .res-nightmode #newlink-with-image-upload #new-link-video-preview, .res-nightmode #newlink-with-image-upload .media-post-upload-progress, .res-nightmode .gold-accent.comment-visits-box {
+.res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions, .res-nightmode #newlink-with-image-upload #new-link-video-preview, .res-nightmode #newlink-with-image-upload .media-post-upload-progress, .res-nightmode .gold-accent.comment-visits-box, .res-nightmode .wiki-page .wikititle {
     background-color: #121212 !important;
 }
 
@@ -2656,12 +2659,12 @@ div.titlebox span.number:after {
 }
 
 /* Dark Gray */
-.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .morelink, .res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button, .res-nightmode #newlink-with-image-upload .media-progress-bar-container {
+.res-nightmode .flairselector, .res-nightmode .hover-bubble, .res-nightmode .combined-search-page .searchfacets, .res-nightmode .linkinfo .shortlink input, .res-nightmode .reason-popup-header, .res-nightmode .reason-popup-footer, .res-nightmode #search #searchexpando select, .res-nightmode .md code, .res-nightmode .content .md pre, .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .morelink, .res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button, .res-nightmode #newlink-with-image-upload .media-progress-bar-container, .res-nightmode ul.res-search-tabs li a, .res-nightmode .other-discussions-page .side .linkinfo, .res-nightmode .side .md pre {
     background-color: #212121 !important;
 }
 
     /* Medium Gray */
-    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header, .res-nightmode .md h1, .res-nightmode .md h3, .res-nightmode #newlink-with-image-upload .media-uploading-label, .res-nightmode .gold-accent.comment-visits-box {
+    .res-nightmode .side .md .-blocks, .res-nightmode .side .md .-lists, .res-nightmode .side .md pre, .res-nightmode .side .md blockquote, .res-nightmode .side .md table, .res-nightmode .side .md p, .res-nightmode .side .md ul, .res-nightmode .side .md ol, .res-nightmode .hover-bubble.multi-selector strong, .res-nightmode .content .thing .title:visited, .res-nightmode .content .thing.visited .title, .res-nightmode .titlebox, .res-nightmode .md, .res-nightmode .titlebox:before, .res-nightmode dd, .res-nightmode .mod-toolbox .removal-reason-title, .res-nightmode .reason-popup-header, .res-nightmode .md h1, .res-nightmode .md h3, .res-nightmode #newlink-with-image-upload .media-uploading-label, .res-nightmode .gold-accent.comment-visits-box, .res-nightmode .wiki-page .wikititle strong {
         color: #E0E0E0 !important;
     }
 
@@ -2670,7 +2673,7 @@ div.titlebox span.number:after {
     }
 
 /* Off White */
-.res-nightmode .link .entry .tagline a, .res-nightmode .hover-bubble, .res-nightmode body .content textarea:focus, .res-nightmode .md strong, .res-nightmode .search-result-body, .res-nightmode .linkflairlabel, .res-nightmode .search-page #search input, .res-nightmode #previoussearch p, .res-nightmode dt, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode .pretty-form, .res-nightmode .comments-page .side .linkinfo .score, .res-nightmode .titlebox:before, .res-nightmode .submit-page .roundfield .title, .res-nightmode .RESDropdownList li, .res-nightmode .RESDropdownList li a, .res-nightmode .reason-popup .reason-popup-content {
+.res-nightmode .link .entry .tagline a, .res-nightmode .hover-bubble, .res-nightmode body .content textarea:focus, .res-nightmode .md strong, .res-nightmode .search-result-body, .res-nightmode .linkflairlabel, .res-nightmode .search-page #search input, .res-nightmode #previoussearch p, .res-nightmode dt, .res-nightmode .search-page #previoussearch label, .res-nightmode #search #searchexpando label, .res-nightmode .pretty-form, .res-nightmode .comments-page .side .linkinfo .score, .res-nightmode .titlebox:before, .res-nightmode .submit-page .roundfield .title, .res-nightmode .RESDropdownList li, .res-nightmode .RESDropdownList li a, .res-nightmode .reason-popup .reason-popup-content, .drop-choices a.choice {
     color: #D2D2D2 !important;
 }
 
@@ -2802,6 +2805,18 @@ div.titlebox span.number:after {
 
 .res-nightmode .content .md pre, .res-nightmode .md code {
     border-color: #121212 !important;
+}
+
+.res-nightmode.res-searchHelper-searchPageTabs .combined-search-page .search-result .search-expando.collapsed::before {
+    background: linear-gradient(rgba(0,0,0,.0) 0%, #000 100%);
+}
+
+.res-nightmode .nav-buttons .nextprev a, .res-nightmode .expando-button, .res-nightmode .side .md pre {
+    border-color: #212121;
+}
+
+.res-nightmode ul.res-search-tabs li a {
+    color: #9E9E9E;
 }
 
 /* Toolbox */
@@ -3173,9 +3188,9 @@ body #newlink-with-image-upload .file-upload-button {
     height: 32px;
     margin: 0;
     padding: 0;
-    background: url(%%spritesheet%%) -64px -96px;
+    background: url(%%spritesheet%%) -64px -97px;
     box-shadow: none;
-    border-radius: 50%;
+    border: none;
     transition: background-color .2s cubic-bezier(.4,0,.2,1);
 }
 
@@ -3188,9 +3203,8 @@ body #newlink-with-image-upload .file-upload-button {
     }
 
 .search-page #previoussearch label {
-    position: absolute;
     margin: 0;
-    width: 100%;
+    width: 320px;
     padding: 12px;
     background: #f9f9f9;
     z-index: -1;
@@ -3310,7 +3324,7 @@ body #newlink-with-image-upload .file-upload-button {
     flex: 0 0 80px;
 }
 
-    .search-result.has-thumbnail > .thumbnail.self, .search-result.has-thumbnail > .thumbnail.default, .search-result.has-thumbnail > .thumbnail.nsfw, .search-result.has-thumbnail > .thumbnail.image {
+    .search-result.has-thumbnail > .thumbnail.self, .search-result.has-thumbnail > .thumbnail.default, .search-result.has-thumbnail > .thumbnail.nsfw, .search-result.has-thumbnail > .thumbnail.image, .search-result.has-thumbnail>.thumbnail.spoiler {
         margin-right: 28px;
         flex: 0 0 56px;
     }
