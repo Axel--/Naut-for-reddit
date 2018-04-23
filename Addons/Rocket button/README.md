@@ -11,7 +11,6 @@ If you want to remove the down button (which is used to hate the posts) and use 
 **Here is the addon:**
 
     /* Addon: Rocket button - by u/Plasmmer */
-
     .arrow {
         background-image: url(%%rocket%%)!important;
     }
@@ -38,7 +37,6 @@ If you want to remove the down button (which is used to hate the posts) and use 
     .down {
         display: none;
     }
-
     /* End Addon */
 
 
