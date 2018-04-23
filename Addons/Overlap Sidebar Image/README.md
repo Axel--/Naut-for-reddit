@@ -2,23 +2,6 @@
 
 This addon gives a very beautifull appearence to your sidebar image card. The Infobox (title/readers/subscribe) uses a semi-transparent color and overlaps the sidebar img.
 
-
-**Here is the addon:**
-
-    /* Addon: Overlap Sidebar Image - by u/Plasmmer */
-    .side .titlebox h1.redditname:before {
-        background-color: #ffffff80!important;
-    }
-    .titlebox span.subscribers {
-        color: #000!important;
-    }
-    .side:before {
-        height: 268px!important;
-        background-size: cover;
-    }
-    /* End Addon */
-
-
 **Note**: to use use a image that exactly fits the background, this needs to have a 
     268px
  of height. Or you can use a greater background and it will fit the card.
