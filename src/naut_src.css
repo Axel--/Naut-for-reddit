@@ -708,7 +708,7 @@ body .content .sitetable .link .title a:hover {
             text-decoration: none;
         }
 
-.approval-checkmark {
+.approval-checkmark, .oc-tag {
     cursor: default;
     margin-left: 4px;
 }
