@@ -1,0 +1,18 @@
+/* Addon: Remove Infobox Name - by u/Plasmmer */
+.side:before {
+    height: 246px!important;
+    background-size: cover;
+}
+.side .titlebox h1.redditname:before {
+    height: 54px!important;
+}
+.side .titlebox h1.redditname a {
+    display: none!important;
+}
+.titlebox span.subscribers {
+    top: 312px!important;
+}
+.titlebox .fancy-toggle-button {
+    top: 304px!important;
+}
+/* End Addon */

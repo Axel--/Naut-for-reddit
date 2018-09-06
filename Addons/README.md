@@ -45,3 +45,20 @@ User Flair Images
 ---
     README.md
     User Flair Images.css
+
+# Plasmmer's Addons
+
+Rocket button
+---
+    Rocket button.css
+    README.md
+
+Overlap Sidebar Image
+---
+    Overlap Sidebar Image.css
+    README.md
+    
+Remove Infobox Name
+---
+    Remove Infobox Name.css
+    README.md

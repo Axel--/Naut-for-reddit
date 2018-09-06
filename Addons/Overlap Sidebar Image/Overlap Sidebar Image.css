@@ -1,0 +1,12 @@
+/* Addon: Overlap Sidebar Image - by u/Plasmmer */
+.side .titlebox h1.redditname:before {
+    background-color: #ffffff80!important;
+}
+.titlebox span.subscribers {
+    color: #000!important;
+}
+.side:before {
+    height: 268px!important;
+    background-size: cover;
+}
+/* End Addon */
