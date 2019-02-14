@@ -1,20 +1,14 @@
-# Naut
-
-Naut is a CSS theme you can use on [Reddit](http://www.Reddit.com). It's free to use, any Subreddit can use and edit it. Visit [/r/Naut](http://www.Reddit.com/r/Naut) to preview the theme.
-
-![Naut 4.2](https://i.imgur.com/xbLfJS6.png)
+# Naut/rewrite
+This is a ***heavily*** experimental version of Naut, using Sass
+use at your own risk
 
 ## Installation
+* [Install git](https://git-scm.com/downloads) (optional)
+* [Install nodejs](https://nodejs.org/en/download/)
 
-1. Navigate to `/r/YourSubreddit/about/stylesheet`.
-2. Paste the CSS from the `Naut 4 - Main CSS File.css` file into the Stylesheet text area.
-3. Upload the images from the `/Images/` folder, be sure not to rename them.
-4. Save!
+1. Git clone this branch
+2. `npm install`
+3. `npm install gulp -g`
 
-You may now customize Naut by either adding your own unique CSS Styles after Naut, or by visiting the [Naut Addons Repository](https://github.com/Axel--/Naut-for-reddit/tree/master/Addons)!
-
-If you have any questions on how to customize, [/r/CSSHelp](https://www.reddit.com/r/csshelp) might be better suited than [/r/Naut](https://www.reddit.com/r/Naut).
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/Axel--/Naut-for-reddit/blob/master/CONTRIBUTING.md) for more information.
+## Usage
+To compile, run `gulp compile`, or to watch for changes and compile on the fly, run `gulp watch`
