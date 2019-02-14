@@ -1,0 +1,20 @@
+@import "variables";
+
+*, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+[class] hr {
+    display: block;
+    height: 1px;
+    border-top: 1px solid $divider-color;
+    margin: 1em 0;
+    background: 0;
+}

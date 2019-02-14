@@ -1,0 +1,30 @@
+{
+  "name": "Naut",
+  "version": "4.2.1a",
+  "description": "Naut is a CSS theme you can use on [Reddit](http://www.Reddit.com). It's free to use, any Subreddit can use and edit it. Visit [/r/Naut](http://www.Reddit.com/r/Naut) to preview the theme.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-footer": "^2.0.2",
+    "gulp-header": "^2.0.7",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "npm": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axel--/Naut-for-reddit.git"
+  },
+  "author": "Axel--, notderw, EthanC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Axel--/Naut-for-reddit/issues"
+  },
+  "homepage": "https://github.com/Axel--/Naut-for-reddit#readme"
+}

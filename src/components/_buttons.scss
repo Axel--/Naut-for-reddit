@@ -1,0 +1,106 @@
+@import "../mixins";
+@import "../variables";
+
+// The button component. Defaults to a flat button.
+.btn, button, .morelink, .fancy-toggle-button .active, .account-activity-box a, .gadget .right a, .sidecontentbox a.helplink {
+    background: transparent;
+    border: none;
+    border-radius: $button-border-radius;
+    color: $button-secondary-color;
+    position: relative;
+    height: $button-height;
+    margin: 0;
+    min-width: $button-min-width;
+    padding: 0 $button-padding;
+    display: inline-block;
+    @include typo-button();
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow 0.2s $animation-curve-fast-out-linear-in,
+    background-color 0.2s $animation-curve-default,
+    color 0.2s $animation-curve-default;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: $button-height;
+    vertical-align: middle;
+
+    a {
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:hover {
+        background-color: $button-hover-color;
+    }
+
+    &:focus:not(:active) {
+        background-color: $button-focus-color;
+    }
+
+    &:active {
+        background-color: $button-active-color;
+    }
+
+    // Bump up specificity by using [disabled] twice.
+    &[disabled][disabled] {
+        color: $button-secondary-color-disabled;
+        cursor: default;
+        background: transparent;
+    }
+}
+
+input[type="submit"] {
+    -webkit-appearance:none;
+}
+
+// Raised buttons
+
+.btn, button, .morelink, .fancy-toggle-button .add.active {
+    background: $button-primary-color;
+
+    &:active {
+      background: $button-active-color;
+    }
+
+    &:focus:not(:active) {
+      background: $button-active-color;
+    }
+
+    // Bump up specificity by using [disabled] twice.
+    &[disabled][disabled] {
+        background: $button-primary-color-disabled;
+        color: $button-secondary-color-disabled;
+        box-shadow: none;
+    }
+}
+
+// Colored buttons
+button[name="save"], button.save, .morelink {
+    //srsly reddit TWO different selectors for save buttons?
+
+    background: $button-primary-color-alt;
+    color: $button-secondary-color-alt;
+
+    &:hover {
+        background: $button-hover-color-alt;
+    }
+
+    &:active {
+        background: $button-active-color-alt;
+    }
+
+    &:focus:not(:active) {
+        background: $button-active-color-alt;
+    }
+
+    // Bump up specificity by using [disabled] twice.
+    &[disabled][disabled] {
+        color: $button-secondary-color-disabled;
+    }
+}

@@ -1,0 +1,225 @@
+// Ripped from https://github.com/google/material-design-lite/blob/mdl-1.x/src/_variables.scss
+
+/* ==========  COLORS  ========== */
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+
+@import "color-definitions";
+
+/* ==========  TYPOGRAPHY  ========== */
+
+$font: 'Helvetica', 'Arial', sans-serif !default;
+
+/* ==========  IMAGES  ========== */
+$image-header: '%%headerimg%%' !default;
+$image-sidebar: '%%sidebarimg%%' !default;
+$image-spritesheet: '%%spritesheet%%' !default;
+
+/* ==========  Color & Themes  ========== */
+
+// Use color primarily for emphasis.
+$color-primary: unquote("rgb(#{$palette-cyan-700})") !default;
+$color-primary-dark: unquote("rgb(#{$palette-cyan-900})") !default;
+$color-accent: unquote("rgb(#{$palette-light-blue-900})") !default;
+
+// Our primary is dark, so use $color-dark-contrast for overlaid text.
+$color-primary-contrast: $color-dark-contrast !default;
+// Our accent is dark, so use $color-dark-contrast for overlaid text.
+$color-accent-contrast: $color-dark-contrast !default;
+
+// We use the following default color styles: text-color-primary and
+// text-color-secondary. For light themes, use text-color-primary-inverse
+// and text-color-secondary-inverse.
+$text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
+$text-link-color: $color-accent !default;
+
+// Default button colors.
+$button-primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
+$button-secondary-color: unquote("rgb(#{$color-black})") !default;
+$button-hover-color: $button-primary-color !default;
+$button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
+$button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+
+// Colored button colors.
+$button-primary-color-alt: $color-primary !default;
+$button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
+$button-hover-color-alt: $color-primary !default;
+$button-active-color-alt: $color-primary !default;
+$button-focus-color-alt: $button-focus-color !default;
+
+// Disabled button colors.
+$button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
+$button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !default;
+
+/* ==========  Radio Buttons  ========== */
+
+$radio-color: $color-primary !default;
+$radio-off-color: unquote("rgba(#{$color-black}, 0.54)") !default;
+$radio-disabled-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+
+/* ==========  Layout  ========== */
+
+$layout-bg-color: unquote("rgb(#{$palette-grey-200})") !default;
+
+// Header
+$layout-header-bg: url($image-header) $color-primary !default;
+$layout-header-text-color: unquote("rgb(#{$color-primary-contrast})") !default;
+$layout-header-nav-hover-color: unquote("rgba(#{$palette-grey-700}, 0.6)") !default;
+$layout-header-tab-text-color: unquote("rgba(#{$color-primary-contrast}, 0.65)") !default;
+
+$reddit-logo: 0 -18px !default;
+
+// Tabs
+$layout-header-tab-highlight: unquote("rgb(#{$color-primary-contrast})") !default;
+
+// Thumbnails
+$thumbnail-bg: unquote("rgba(#{$palette-grey-500}, 0.20)") url($image-spritesheet) 0 -88px !default;
+$thumbnail-stickied: unquote("rgb(#{$palette-green-500})");
+$thumbnail-link: unquote("rgba(#{$palette-grey-500}, 0.20)") url($image-spritesheet) -42px -88px !default;
+$thumbnail-nsfw: unquote("rgb(#{$palette-pink-400})") url($image-spritesheet) -84px -88px!default;
+
+// Code
+$code-color: unquote("rgba(#{$color-black}, 0.87)") !default;
+$code-bg: unquote("rgba(#{$color-black}, 0.06)") !default;
+
+// Dividers
+$divider-color: #ccc !default;
+
+// Comments
+$comment-new-bg: $code-bg !default;
+
+// Footer
+$footer-bg: $color-accent !default;
+$footer-color: unquote("rgb(#{$color-accent-contrast})") !default;
+$footer-alt-color: unquote("rgb(#{$palette-blue-grey-100})") !default;
+
+/* ==========  Text fields  ========== */
+
+$input-text-background-color: transparent !default;
+$input-text-label-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$input-text-bottom-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$input-text-highlight-color: $color-primary !default;
+$input-text-disabled-color: $input-text-bottom-border-color !default;
+$input-text-disabled-text-color: $input-text-label-color !default;
+$input-text-error-color: unquote("rgb(#{$palette-red-A700})") !default;
+
+/* ==========  Card  ========== */
+
+$card-background-color: unquote("rgb(#{$color-white})") !default;
+$card-text-color: unquote("rgb(#{$color-black})") !default;
+$card-image-placeholder-color: $color-accent !default;
+$card-supporting-text-text-color: unquote("rgba(#{$color-black}, 0.54)") !default;
+$card-border-color: $layout-bg-color !default;
+$card-subtitle-color: unquote("rgba(#{$color-black}, 0.54)") !default;
+
+/* ==========  Sidebar  ========== */
+$sidebar-image-bg: url($image-sidebar) $card-background-color !default;
+
+$sidebar-infobox-color: $text-color-primary !default;
+
+/* ==========  Dropdown menu ========== */
+
+$default-dropdown-bg-color: unquote("rgb(#{$color-white})") !default;
+
+/* ==========  Footer  ========== */
+
+$footer-bg-color: unquote("rgb(#{$palette-grey-800})") !default;
+$footer-color: unquote("rgb(#{$palette-grey-500})") !default;
+$footer-heading-color: unquote("rgb(#{$palette-grey-300})") !default;
+$footer-button-fill-color: $footer-color !default;
+$footer-underline-color: $footer-color !default;
+
+/* TEXTFIELD */
+
+$input-text-font-size: 16px !default;
+$input-text-width: 100% !default;
+$input-text-padding: 4px !default;
+$input-text-vertical-spacing: 20px !default;
+
+$input-text-button-size: 32px !default;
+$input-text-floating-label-fontsize: 12px !default;
+$input-text-expandable-icon-top: 16px !default;
+
+/* RADIO */
+
+$radio-label-font-size: 16px !default;
+$radio-label-height: 24px !default;
+$radio-button-size: 16px !default;
+$radio-inner-margin: $radio-button-size / 4;
+$radio-padding: 8px !default;
+$radio-top-offset: ($radio-label-height - $radio-button-size) / 2;
+$radio-ripple-size: 42px !default;
+
+/* LAYOUT */
+
+$layout-header-height: 224px !default;
+
+/* SIDEBAR */
+
+$sidebar-overlap: 96px !default;
+$sidebar-image-height: 192px !default;
+$sidebar-image-fullsize: false !default;
+
+$sidebar-infobox-height: if($sidebar-image-fullsize, 0, 76px);
+$sidebar-infobox-position: $layout-header-height - $sidebar-overlap + $sidebar-image-height - if($sidebar-image-fullsize, 76, 0);
+
+/* THUMBNAILS */
+
+$thumbnail-size: 42px !default;
+
+/* FOOTER */
+
+$footer-min-padding: 16px !default;
+$footer-padding-sides: 40px !default;
+$footer-heading-font-size: 14px !default;
+$footer-heading-line-height: (1.7 * $footer-heading-font-size) !default;
+$footer-btn-size: 36px  !default;
+
+/* CARD */
+
+$card-font-size: 16px !default;
+$card-title-font-size: 24px !default;
+$card-subtitle-font-size: 14px !default;
+$card-horizontal-padding: 16px !default;
+$card-vertical-padding: 16px !default;
+
+$card-supporting-text-font-size: 1rem !default;
+$card-supporting-text-line-height: 18px !default;
+
+$card-actions-font-size: 16px !default;
+
+$card-title-text-font-weight: 300 !default;
+$card-z-index: 1 !default;
+
+/* BUTTON */
+
+$button-min-width: 64px !default;
+$button-height: 36px !default;
+$button-padding: 16px !default;
+$button-margin: 4px !default;
+$button-border-radius: 0 !default;
+
+$button-fab-size: 56px !default;
+$button-fab-size-mini: 40px !default;
+$button-fab-font-size: 24px !default;
+
+$button-icon-size: 32px !default;
+$button-icon-size-mini: 24px !default;
+
+/* ANIMATION */
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
+
+$animation-curve-default: $animation-curve-fast-out-slow-in !default;
+
+/* SHADOWS */
+
+$shadow-key-umbra-opacity: 0.2 !default;
+$shadow-key-penumbra-opacity: 0.14 !default;
+$shadow-ambient-shadow-opacity: 0.12 !default;
