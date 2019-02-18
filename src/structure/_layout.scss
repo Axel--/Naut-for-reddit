@@ -1,0 +1,23 @@
+body {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background: $layout-bg-color;
+
+    > .content {
+        flex: 1 1 0;
+    }
+}
+
+#header {
+    width: 100%;
+}
+
+.side {
+    order: 4
+}
+
+.footer-parent, .debuginfo {
+    order: 9;
+    flex: 0 1 100%;
+}
