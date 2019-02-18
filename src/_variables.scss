@@ -23,7 +23,7 @@ $image-spritesheet: '%%spritesheet%%' !default;
 /* ==========  Color & Themes  ========== */
 
 // Use color primarily for emphasis.
-$color-primary: unquote("rgb(#{$palette-cyan-700})") !default;
+$color-primary: unquote("rgb(#{$palette-light-blue-700})") !default;
 $color-primary-dark: unquote("rgb(#{$palette-cyan-900})") !default;
 $color-accent: unquote("rgb(#{$palette-light-blue-900})") !default;
 
