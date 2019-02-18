@@ -1,23 +1,22 @@
 body {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: [h] 192px [c] auto [f] 300px / [c] auto [s] 320px;
 
     background: $layout-bg-color;
 
     > .content {
-        flex: 1 1 0;
+        grid-area: c / c;
     }
 }
 
 #header {
-    width: 100%;
+    grid-area: h / 1 / h / -1;
 }
 
 .side {
-    order: 4
+    grid-area: c / s;
 }
 
-.footer-parent, .debuginfo {
-    order: 9;
-    flex: 0 1 100%;
+.footer-parent {
+    grid-area: f / 1 / f / -1;
 }
