@@ -23,9 +23,9 @@ $image-spritesheet: '%%spritesheet%%' !default;
 /* ==========  Color & Themes  ========== */
 
 // Use color primarily for emphasis.
-$color-primary: unquote("rgb(#{$palette-light-blue-700})") !default;
-$color-primary-dark: unquote("rgb(#{$palette-cyan-900})") !default;
-$color-accent: unquote("rgb(#{$palette-light-blue-900})") !default;
+$color-primary: unquote("rgb(#{$palette-light-blue-600})") !default;
+$color-primary-dark: unquote("rgb(#{$palette-light-blue-800})") !default;
+$color-accent: unquote("rgb(#{$palette-cyan-600})") !default;
 
 // Our primary is dark, so use $color-dark-contrast for overlaid text.
 $color-primary-contrast: $color-dark-contrast !default;
