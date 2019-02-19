@@ -164,19 +164,6 @@ $radio-padding: 8px !default;
 $radio-top-offset: ($radio-label-height - $radio-button-size) / 2;
 $radio-ripple-size: 42px !default;
 
-/* LAYOUT */
-
-$layout-header-height: 224px !default;
-
-/* SIDEBAR */
-
-$sidebar-overlap: 96px !default;
-$sidebar-image-height: 192px !default;
-$sidebar-image-fullsize: false !default;
-
-$sidebar-infobox-height: if($sidebar-image-fullsize, 0, 76px);
-$sidebar-infobox-position: $layout-header-height - $sidebar-overlap + $sidebar-image-height - if($sidebar-image-fullsize, 76, 0);
-
 /* THUMBNAILS */
 
 $thumbnail-size: 42px !default;
