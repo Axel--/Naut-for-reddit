@@ -63,12 +63,15 @@ input[type="submit"] {
 
 .btn, button, .morelink, .fancy-toggle-button .add.active {
     background: $button-primary-color;
+    @include shadow-2dp();
 
     &:active {
+      @include shadow-4dp();
       background: $button-active-color;
     }
 
     &:focus:not(:active) {
+      @include focus-shadow();
       background: $button-active-color;
     }
 
