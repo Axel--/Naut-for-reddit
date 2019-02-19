@@ -1,0 +1,114 @@
+@import "../variables";
+@import "../mixins";
+
+.side {
+    &::before {
+        content: "";
+        display: block;
+        height: $sidebar-infobox-height;
+        background: $sidebar-image-bg;
+        border-radius: $card-border-radius;
+        @include card-shadow();
+    }
+
+    position: relative;
+    width: initial;
+    z-index: 99;
+    background: 0;
+    margin: -$sidebar-overlap 0 0 0;
+
+    .spacer {
+        margin: 16px 0 0 0;
+    }
+}
+
+/* === SEARCH === */
+
+#search {
+    input[type="text"] {
+        width: 100%;
+        height: $button-height;
+        border: 0;
+        border-radius: $button-border-radius;
+        padding: $button-padding;
+        @include shadow-2dp();
+
+        &::-moz-placeholder, &::-webkit-input-placeholder {
+            text-transform: capitalize;
+        }
+    }
+}
+
+#searchexpando {
+    position: absolute;
+    width: 100%;
+    @include card();
+    border: 0;
+    z-index: 100;
+}
+
+/* === SUBMIT BUTTONS === */
+
+.morelink {
+    display: block;
+
+    .nub { display: none; }
+}
+
+.submit {
+    width: ($sidebar-width / 2) - 8;
+
+    // grid-column: 1 / span 3;
+}
+
+.submit-text {
+    position: absolute;
+    right: 0;
+    margin-top: -$button-height - 16px;
+}
+
+/* CONTENT BOX */
+
+.titlebox {
+    @include card();
+
+    > h1 {
+        position: absolute;
+        top: $sidebar-infobox-height - 60;
+
+        a {
+            color: unquote("rgb(#{$color-primary-contrast})");
+        }
+    }
+
+    .fancy-toggle-button {
+        position: absolute;
+        top: $sidebar-infobox-height - 56;
+        right: 16px;
+        margin: 0;
+    }
+}
+
+.subscribers {
+    position: absolute;
+    top: $sidebar-infobox-height - 32;
+    color: unquote("rgb(#{$color-primary-contrast})");
+}
+
+.toggle .option.active {
+    display: block;
+    color: $button-secondary-color-alt;
+}
+
+.fancy-toggle-button .add.active {
+    background: $color-accent;
+}
+
+.sidecontentbox {
+    @include card();
+    width: $sidebar-width;
+
+    .content {
+        border: 0;
+    }
+}

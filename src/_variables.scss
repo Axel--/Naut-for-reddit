@@ -121,7 +121,14 @@ $card-border-radius: 2px;
 /* ==========  Sidebar  ========== */
 $sidebar-image-bg: url($image-sidebar) $card-background-color !default;
 
+$sidebar-width: 320px;
+$sidebar-overlap: 96px !default;
+$sidebar-image-height: 192px !default;
+$sidebar-image-fullsize: false !default;
+$sidebar-image-bg: url($image-sidebar) $color-primary no-repeat !default;
+
 $sidebar-infobox-color: $text-color-primary !default;
+$sidebar-infobox-height: $sidebar-image-height + if($sidebar-image-fullsize, 0, 76);
 
 /* ==========  Dropdown menu ========== */
 
