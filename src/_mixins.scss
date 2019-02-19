@@ -299,3 +299,17 @@
   // https://goo.gl/sK2O5o
   width: $units * 56px;
 }
+
+/* Card */
+
+@mixin card-shadow {
+  @include shadow-2dp()
+}
+
+@mixin card($padding: 16px, $shadow: true, $background: $card-background-color) {
+  @if($shadow) { @include card-shadow() }
+  @if($shadow) { padding: $padding; }
+  @if($background) { background: $background; }
+
+  border-radius: $card-border-radius;
+}

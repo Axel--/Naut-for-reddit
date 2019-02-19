@@ -116,6 +116,7 @@ $card-image-placeholder-color: $color-accent !default;
 $card-supporting-text-text-color: unquote("rgba(#{$color-black}, 0.54)") !default;
 $card-border-color: $layout-bg-color !default;
 $card-subtitle-color: unquote("rgba(#{$color-black}, 0.54)") !default;
+$card-border-radius: 2px;
 
 /* ==========  Sidebar  ========== */
 $sidebar-image-bg: url($image-sidebar) $card-background-color !default;
