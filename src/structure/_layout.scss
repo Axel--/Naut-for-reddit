@@ -20,3 +20,7 @@ body {
 .footer-parent {
     grid-area: f / 1 / f / -1;
 }
+
+.debuginfo {
+    grid-area: -1 / 1 / -1 / -1;
+}
