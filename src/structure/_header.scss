@@ -3,7 +3,7 @@
 
 #header {
     display: grid;
-    grid-template-rows: 24px auto;
+    grid-template: 24px auto / auto auto;
 
     border: 0;
     background: $color-primary url($image-header) 50% 50% / cover no-repeat;
@@ -108,10 +108,10 @@
 }
 
 #header-bottom-left {
-    grid-area: 2 / 1 / 2 / 3;
+    grid-area: 2 / 1 / 2 / -1;
 
     display: grid;
-    grid-template: auto [l] 48px auto [n] 42px / min-content auto;
+    grid-template: auto [l] 48px auto [n] 42px / min-content min-content auto;
 
 }
 
