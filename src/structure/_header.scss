@@ -2,19 +2,13 @@
 @import "../mixins";
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 192px;
+    display: grid;
+    grid-template-rows: 24px auto;
+
     border: 0;
     background: $color-primary url($image-header) 50% 50% / cover no-repeat;
 
     font-size: 11px;
-
-    ::before {
-        content: '';
-    }
 
     a {
         color: unquote("rgba(#{$color-primary-contrast}, 0.87)");
@@ -28,7 +22,6 @@
 /* === SR LIST === */
 
 #sr-header-area {
-    flex: 2;
     overflow: hidden;
 
     background: 0;
@@ -36,7 +29,6 @@
 
     .width-clip {
         position: initial;
-        display: flex;
     }
 }
 
@@ -71,21 +63,7 @@
     background: rgba(0,0,0,0.08);
     height: 24px;
     line-height: 24px;
-
-    a {
-
-    }
-}
-
-#header-bottom-left {
-    align-self: flex-end;
-    flex: 1 0 100%;
-    order: 9;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-
+    grid-row: 1;
 }
 
 /* === USER MENU === */
@@ -129,13 +107,23 @@
     }
 }
 
+#header-bottom-left {
+    grid-area: 2 / 1 / 2 / 3;
+
+    display: grid;
+    grid-template: auto [l] 48px auto [n] 42px / min-content auto;
+
+}
+
 /* === LOGO === */
 
 #header-img[class] {
     margin: 0 0 0 16px;
+    grid-area: l / 1;
 }
 
 .pagename {
+    grid-area: l / 2;
     font-variant: none;
 
     a {
@@ -147,8 +135,7 @@
 /* === NAVMENU === */
 
 .tabmenu {
-    order: 5;
-    flex: 1 0 100%;
+    grid-area: n / 1 / n / -1;
 
     line-height: 42px;
     text-transform: uppercase;
