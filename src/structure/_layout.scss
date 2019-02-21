@@ -3,7 +3,7 @@
 
 body {
     display: grid;
-    grid-template: [h] 192px 16px [c] auto [f] 300px / 16px [c] auto 16px [s] $sidebar-width 16px;
+    grid-template: [h] $layout-header-height 16px [c] auto [f] 300px / 16px [c] auto 16px [s] $sidebar-width 16px;
 
     background: $layout-bg-color;
 

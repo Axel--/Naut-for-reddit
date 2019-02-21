@@ -67,7 +67,7 @@ $radio-disabled-color: unquote("rgba(#{$color-black}, 0.26)") !default;
 $layout-bg-color: unquote("rgb(#{$palette-grey-200})") !default;
 
 // Header
-$layout-header-height: 224px !default;
+$layout-header-height: 196px !default;
 $layout-header-bg: url($image-header) $color-primary !default;
 $layout-header-text-color: unquote("rgb(#{$color-primary-contrast})") !default;
 $layout-header-nav-hover-color: unquote("rgba(#{$palette-grey-700}, 0.6)") !default;
