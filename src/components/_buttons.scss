@@ -36,15 +36,15 @@
     }
 
     &:hover {
-        background-color: $button-hover-color;
+        background: $button-hover-color;
     }
 
     &:focus:not(:active) {
-        background-color: $button-focus-color;
+        background: $button-focus-color;
     }
 
     &:active {
-        background-color: $button-active-color;
+        background: $button-active-color;
     }
 
     // Bump up specificity by using [disabled] twice.
