@@ -2,7 +2,13 @@
 @import "../variables";
 
 // The button component. Defaults to a flat button.
-.btn, button, .morelink, .fancy-toggle-button .active, .account-activity-box a, .gadget .right a {
+.btn,
+button,
+.morelink,
+.fancy-toggle-button
+.active,
+.account-activity-box a,
+.gadget .right a {
     background: transparent;
     border: none;
     border-radius: $button-border-radius;
@@ -61,7 +67,10 @@ input[type="submit"] {
 
 // Raised buttons
 
-.btn, button, .morelink, .fancy-toggle-button .add.active {
+.btn,
+button,
+.morelink,
+.fancy-toggle-button .add.active {
     background: $button-primary-color;
     @include shadow-2dp();
 
@@ -84,7 +93,9 @@ input[type="submit"] {
 }
 
 // Colored buttons
-button[name="save"], button.save, .morelink {
+button[name="save"],
+button.save,
+.morelink {
     //srsly reddit TWO different selectors for save buttons?
 
     background: $button-primary-color-alt;
