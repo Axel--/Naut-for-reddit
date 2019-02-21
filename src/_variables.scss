@@ -56,6 +56,11 @@ $button-focus-color-alt: $button-focus-color !default;
 $button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
 $button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !default;
 
+// FAB colors.
+$button-fab-color-alt: $color-accent !default;
+$button-fab-hover-color-alt: $color-accent !default;
+$button-fab-active-color-alt: $color-accent !default;
+
 /* ==========  Radio Buttons  ========== */
 
 $radio-color: $color-primary !default;

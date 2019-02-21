@@ -2,7 +2,7 @@
 @import "../variables";
 
 // The button component. Defaults to a flat button.
-.btn, button, .morelink, .fancy-toggle-button .active, .account-activity-box a, .gadget .right a, .sidecontentbox a.helplink {
+.btn, button, .morelink, .fancy-toggle-button .active, .account-activity-box a, .gadget .right a {
     background: transparent;
     border: none;
     border-radius: $button-border-radius;
@@ -105,5 +105,48 @@ button[name="save"], button.save, .morelink {
     // Bump up specificity by using [disabled] twice.
     &[disabled][disabled] {
         color: $button-secondary-color-disabled;
+    }
+}
+
+// FABs
+a.helplink {
+    border-radius: 50%;
+    font-size: 0;
+    height: $button-fab-size;
+    // margin: auto;
+    // min-width: $button-fab-size;
+    width: $button-fab-size;
+    padding: 0;
+    overflow: hidden;
+    background: $button-primary-color;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    line-height: normal;
+
+    &:active {
+        @include shadow-4dp();
+        background-color: $button-active-color;
+    }
+
+    &:focus:not(:active) {
+        @include focus-shadow();
+        background-color: $button-active-color;
+    }
+}
+
+a.helplink {
+    background: $button-fab-color-alt;
+    // color: $button-fab-text-color-alt;
+
+    &:hover {
+        background-color: $button-fab-hover-color-alt;
+    }
+
+    &:focus:not(:active) {
+        background-color: $button-fab-active-color-alt;
+    }
+
+    &:active {
+        background-color: $button-fab-active-color-alt;
     }
 }
