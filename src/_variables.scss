@@ -25,7 +25,7 @@ $image-spritesheet: '%%spritesheet%%' !default;
 // Use color primarily for emphasis.
 $color-primary: unquote("rgb(#{$palette-light-blue-600})") !default;
 $color-primary-dark: unquote("rgb(#{$palette-light-blue-800})") !default;
-$color-accent: unquote("rgb(#{$palette-cyan-600})") !default;
+$color-accent: unquote("rgb(#{$palette-pink-400})") !default;
 
 // Our primary is dark, so use $color-dark-contrast for overlaid text.
 $color-primary-contrast: $color-dark-contrast !default;
@@ -36,7 +36,7 @@ $color-accent-contrast: $color-dark-contrast !default;
 // text-color-secondary. For light themes, use text-color-primary-inverse
 // and text-color-secondary-inverse.
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
-$text-link-color: $color-accent !default;
+$text-link-color: $color-primary !default;
 
 // Default button colors.
 $button-primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
@@ -70,6 +70,7 @@ $radio-disabled-color: unquote("rgba(#{$color-black}, 0.26)") !default;
 /* ==========  Layout  ========== */
 
 $layout-bg-color: unquote("rgb(#{$palette-grey-200})") !default;
+$layout-nsfw-color: unquote("rgb(#{$palette-pink-400})") !default;
 
 // Header
 $layout-header-height: 196px !default;
@@ -78,16 +79,20 @@ $layout-header-text-color: unquote("rgb(#{$color-primary-contrast})") !default;
 $layout-header-nav-hover-color: unquote("rgba(#{$palette-grey-700}, 0.6)") !default;
 $layout-header-tab-text-color: unquote("rgba(#{$color-primary-contrast}, 0.65)") !default;
 
-$reddit-logo: 0 -18px !default;
+// $reddit-logo: 0 -18px !default;
 
 // Tabs
 $layout-header-tab-highlight: unquote("rgb(#{$color-primary-contrast})") !default;
 
 // Thumbnails
-$thumbnail-bg: unquote("rgba(#{$palette-grey-500}, 0.20)") url($image-spritesheet) 0 -88px !default;
+
+$thumbnail-size: 56px !default;
+$thumbnail-radius: $thumbnail-size / 2;
+
+$thumbnail-default: unquote("rgb(#{$palette-blue-grey-100})") url($image-spritesheet) 0 -88px !default;
 $thumbnail-stickied: unquote("rgb(#{$palette-green-500})");
-$thumbnail-link: unquote("rgba(#{$palette-grey-500}, 0.20)") url($image-spritesheet) -42px -88px !default;
-$thumbnail-nsfw: unquote("rgb(#{$palette-pink-400})") url($image-spritesheet) -84px -88px!default;
+$thumbnail-link: unquote("rgb(#{$palette-blue-grey-100})") url($image-spritesheet) -42px -88px !default;
+$thumbnail-nsfw: $layout-nsfw-color url($image-spritesheet) -84px -88px!default;
 
 // Code
 $code-color: unquote("rgba(#{$color-black}, 0.87)") !default;
@@ -125,16 +130,16 @@ $card-subtitle-color: unquote("rgba(#{$color-black}, 0.54)") !default;
 $card-border-radius: 2px;
 
 /* ==========  Sidebar  ========== */
-$sidebar-image-bg: url($image-sidebar) $card-background-color !default;
 
 $sidebar-width: 320px;
-$sidebar-overlap: 96px !default;
+$sidebar-overlap: 112px !default;
 $sidebar-image-height: 192px !default;
 $sidebar-image-fullsize: false !default;
 $sidebar-image-bg: url($image-sidebar) $color-primary no-repeat !default;
 
 $sidebar-infobox-color: $text-color-primary !default;
 $sidebar-infobox-height: $sidebar-image-height + if($sidebar-image-fullsize, 0, 76);
+// $sidebar-infobox-position: $layout-header-height - $sidebar-overlap + $sidebar-image-height - if($sidebar-image-fullsize, 76, 0);
 
 /* ==========  Dropdown menu ========== */
 
@@ -142,11 +147,17 @@ $default-dropdown-bg-color: unquote("rgb(#{$color-white})") !default;
 
 /* ==========  Footer  ========== */
 
-$footer-bg-color: unquote("rgb(#{$palette-grey-800})") !default;
-$footer-color: unquote("rgb(#{$palette-grey-500})") !default;
-$footer-heading-color: unquote("rgb(#{$palette-grey-300})") !default;
-$footer-button-fill-color: $footer-color !default;
-$footer-underline-color: $footer-color !default;
+// $footer-bg-color: unquote("rgb(#{$palette-grey-800})") !default;
+// $footer-color: unquote("rgb(#{$palette-grey-500})") !default;
+// $footer-heading-color: unquote("rgb(#{$palette-grey-300})") !default;
+// $footer-button-fill-color: $footer-color !default;
+// $footer-underline-color: $footer-color !default;
+
+// $footer-min-padding: 16px !default;
+// $footer-padding-sides: 40px !default;
+// $footer-heading-font-size: 14px !default;
+// $footer-heading-line-height: (1.7 * $footer-heading-font-size) !default;
+// $footer-btn-size: 36px  !default;
 
 /* TEXTFIELD */
 
@@ -169,48 +180,36 @@ $radio-padding: 8px !default;
 $radio-top-offset: ($radio-label-height - $radio-button-size) / 2;
 $radio-ripple-size: 42px !default;
 
-/* THUMBNAILS */
-
-$thumbnail-size: 42px !default;
-
-/* FOOTER */
-
-$footer-min-padding: 16px !default;
-$footer-padding-sides: 40px !default;
-$footer-heading-font-size: 14px !default;
-$footer-heading-line-height: (1.7 * $footer-heading-font-size) !default;
-$footer-btn-size: 36px  !default;
-
 /* CARD */
 
-$card-font-size: 16px !default;
-$card-title-font-size: 24px !default;
-$card-subtitle-font-size: 14px !default;
-$card-horizontal-padding: 16px !default;
-$card-vertical-padding: 16px !default;
+// $card-font-size: 16px !default;
+// $card-title-font-size: 24px !default;
+// $card-subtitle-font-size: 14px !default;
+// $card-horizontal-padding: 16px !default;
+// $card-vertical-padding: 16px !default;
 
-$card-supporting-text-font-size: 1rem !default;
-$card-supporting-text-line-height: 18px !default;
+// $card-supporting-text-font-size: 1rem !default;
+// $card-supporting-text-line-height: 18px !default;
 
-$card-actions-font-size: 16px !default;
+// $card-actions-font-size: 16px !default;
 
-$card-title-text-font-weight: 300 !default;
-$card-z-index: 1 !default;
+// $card-title-text-font-weight: 300 !default;
+// $card-z-index: 1 !default;
 
 /* BUTTON */
 
 $button-min-width: 64px !default;
 $button-height: 36px !default;
 $button-padding: 16px !default;
-$button-margin: 4px !default;
-$button-border-radius: 0 !default;
+// $button-margin: 4px !default;
+$button-border-radius: 2px !default;
 
 $button-fab-size: 56px !default;
-$button-fab-size-mini: 40px !default;
-$button-fab-font-size: 24px !default;
+// $button-fab-size-mini: 40px !default;
+// $button-fab-font-size: 24px !default;
 
-$button-icon-size: 32px !default;
-$button-icon-size-mini: 24px !default;
+// $button-icon-size: 32px !default;
+// $button-icon-size-mini: 24px !default;
 
 /* ANIMATION */
 $animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;

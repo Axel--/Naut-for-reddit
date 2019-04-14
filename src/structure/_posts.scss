@@ -1,0 +1,79 @@
+@import "../variables";
+@import "../mixins";
+
+a {
+    color: $text-link-color;
+}
+
+.content {
+    margin: 0;
+}
+
+.linklisting {
+    background: $card-background-color;
+    @include card-shadow();
+    border-radius: $card-border-radius;
+    padding: 8px 0;
+}
+
+.rank {
+    display: none
+}
+
+.link {
+    margin: 0;
+    padding: 8px 16px;
+
+    .midcol {
+        margin: 0 16px 0 0;
+    }
+
+    .title {
+        color: $text-link-color;
+    }
+}
+
+.thumbnail.default,
+.thumbnail.self,
+.thumbnail.nsfw,
+.thumbnail.image,
+.thumbnail.spoiler,
+.thumbnail[data-href-url*="reddit.com"] {
+    width: $thumbnail-size;
+    height: $thumbnail-size;
+    border-radius: $thumbnail-radius;
+    background: $thumbnail-default;
+    margin: 0 28px 0 12px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: $thumbnail-size;
+    margin: 0 16px 0 0;
+
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        max-height: 100%;
+    }
+
+    &.nsfw { background: $thumbnail-nsfw }
+    &.link { background: $thumbnail-link }
+    .stickied & { background: $thumbnail-stickied }
+}
+
+.stamp {
+    border-radius: 0;
+    border: 0;
+    color: unquote("rgb(#{$color-white})");
+}
+
+.nsfw-stamp {
+    background: $layout-nsfw-color;
+}
+
+.spoiler-stamp {
+    background: unquote("rgb(#{$color-black})");
+}
