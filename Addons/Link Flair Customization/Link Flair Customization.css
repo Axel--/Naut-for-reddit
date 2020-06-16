@@ -1,5 +1,6 @@
 /* --- Addon: Linkflair Example --- */
 .linkflair-example .title > .linkflairlabel,
+.linkflair-example .search-result-header > .linkflairlabel,
 .linkflair-example > .linkflairlabel {
     background-color: #7767DA;
 }
