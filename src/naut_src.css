@@ -2,7 +2,7 @@
     Naut 4.2
     Stylesheet by /u/Cryptonaut
     Maintained by /u/RenegadeAI & /u/LackingAGoodName
-    Last modified: 27 March 2018
+    Last modified: 20 July 2021
     Find out more on /r/Naut
 -------------------------------------------------------------------------- */
 
@@ -321,6 +321,11 @@ body:not(.loggedin) #header-bottom-right {
 /* Fix comments page sorting options being on top of the havemail element */
 .commentarea .panestack-title, .commentarea .menuarea {
     z-index: 0;
+}
+
+/* Fix comment sort drop down appearing behind signup comment banner */
+.infobar.commentsignupbar {
+    z-index: -1;
 }
 
 #modmail {
