@@ -1,0 +1,28 @@
+/* Addon: Rocket button - by u/Plasmmer */
+.arrow {
+    background-image: url(%%rocket%%)!important;
+}
+.arrow.up:focus:after {
+    position: absolute;
+    left: 18px;
+    bottom: 48px;
+    width: 28px;
+    height: 28px;
+    opacity: 1;
+    z-index: 100;
+    content: " ";
+    background: #f50;
+    border-radius: 28px;
+    animation: upvote .35s ease-out forwards;
+    -webkit-animation: upvote .35s ease-out forwards;
+}
+.arrow.up {
+    background-position: 0px -4px!important;
+}
+.arrow.upmod {
+    background-position: -32px -4px!important;
+}
+.down {
+    display: none;
+}
+/* End Addon */
